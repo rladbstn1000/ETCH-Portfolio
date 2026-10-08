@@ -9,6 +9,28 @@ const assets = readdirSync(assetDirectory).map(name => `/assets/${name}`);
 const sha256 = (value: Buffer) => createHash("sha256").update(value).digest("hex");
 const assetHashes = new Map(assets.map(path => [path, sha256(readFileSync(resolve(assetDirectory, path.slice("/assets/".length))))]));
 const licenseHash = sha256(readFileSync(resolve(assetDirectory, "../licenses.html")));
+const publicRepository = "https://github.com/rladbstn1000/ETCH-Portfolio";
+const sourceRoot = `${publicRepository}/blob/main/`;
+const caseSourcePaths = [
+  [
+    "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWorker.java",
+    "etch/backend/business-server/src/test/java/com/ssafy/etch/search/indexing/ProjectIndexWorkerTest.java",
+    "local/verify-project-recovery.py",
+  ],
+  [
+    "local/mysql/003-job-news-sync.sql", "local/logstash/pipeline/job.conf", "local/logstash/pipeline/news.conf",
+    "local/verify-incremental-sync.py", "local/test-search-sync.py", "docs/RUN.md",
+  ],
+  [
+    "deploy/rc/evaluate.py", "local/evaluation/corpus.json", "local/evaluation/queries.json",
+    "local/evaluation/build-corpus.py", "deploy/rc/SUBMISSION_SEARCH.md",
+  ],
+  [
+    "etch/backend/business-server/src/main/java/com/ssafy/etch/project/repository/ProjectRepository.java",
+    "etch/backend/business-server/src/test/java/com/ssafy/etch/project/service/ProjectListMysqlIntegrationTest.java",
+    "docs/portfolio/evidence/project-list-mysql/comparison.json",
+  ],
+];
 
 const test = base.extend<{ networkBoundary: () => Promise<void>; verifiedNavigation: Pick<Page, "goto" | "reload" | "goBack">; probeBoundary: boolean }>({
   probeBoundary: [false, { option: true }],
@@ -126,6 +148,10 @@ test("home and complete route inventory, direct navigation and reload", async ({
   test.setTimeout(60_000);
   await navigation.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("ETCH를 둘러보세요");
+  const source = page.getByRole("navigation", { name: "주 메뉴", exact: true }).getByRole("link", { name: "소스 코드 (GitHub, 새 탭)", exact: true });
+  await expect(source).toHaveAttribute("href", publicRepository);
+  await expect(source).toHaveAttribute("target", "_blank");
+  await expect(source).toHaveAttribute("rel", "noopener noreferrer");
   await page.screenshot({ path: testInfo.outputPath("home-desktop.png"), fullPage: true });
   await page.getByRole("link", { name: "검색 체험하기 →" }).click();
   await expect(page.getByRole("heading", { name: "통합 검색" })).toBeVisible();
@@ -173,6 +199,21 @@ test("four process cases preserve evidence scope, keyboard disclosure and narrow
     "MySQL 프로젝트 목록 조회 개선",
   ];
   await expect(page.locator("main section h2")).toHaveText(caseTitles);
+  const sourceLinks: { case: number; label: string; url: string }[] = [];
+  for (const [index, paths] of caseSourcePaths.entries()) {
+    const links = page.getByRole("navigation", { name: `CASE ${String(index + 1).padStart(2, "0")} 공개 근거`, exact: true }).getByRole("link");
+    await expect(links).toHaveCount(paths.length);
+    for (const [linkIndex, path] of paths.entries()) {
+      const link = links.nth(linkIndex);
+      await expect(link).toHaveAttribute("href", `${sourceRoot}${path}`);
+      await expect(link).toHaveAttribute("target", "_blank");
+      await expect(link).toHaveAttribute("rel", "noopener noreferrer");
+      sourceLinks.push({ case: index + 1, label: (await link.innerText()).trim(), url: `${sourceRoot}${path}` });
+    }
+  }
+  await testInfo.attach("case-source-links", { body: JSON.stringify(sourceLinks), contentType: "application/json" });
+  await expect(page.getByRole("link", { name: "보안 안내 (GitHub, 새 탭)", exact: true })).toHaveAttribute("href", `${sourceRoot}SECURITY.md`);
+  await expect(page.locator("main")).not.toContainText(/사용자 한정 승인|사용자 승인|7차 기록 재사용|7차의 일반 프로젝트/);
   const mysql = page.getByRole("region", { name: caseTitles[3], exact: true });
   const table = mysql.getByRole("table");
   const summary = mysql.locator("summary");
@@ -188,6 +229,8 @@ test("four process cases preserve evidence scope, keyboard disclosure and narrow
   // Keep the earlier search loss visible; adding a DB case does not replace it.
   await expect(page.getByRole("region", { name: caseTitles[2], exact: true })).toContainText("0.926045 → 0.881078");
   await expect(page.getByRole("region", { name: caseTitles[2], exact: true })).toContainText("과거 2/30 불일치는 FAIL로 보존");
+  await expect(page.getByRole("region", { name: caseTitles[2], exact: true })).toContainText("AI 도구로 작성한 작은 합성 코퍼스·관련도 라벨");
+  await expect(page.getByRole("region", { name: caseTitles[2], exact: true })).toContainText("단순 문자열 검색");
 
   for (const width of [1440, 390, 320]) {
     await page.setViewportSize({ width, height: width === 1440 ? 1000 : 844 });
@@ -223,6 +266,7 @@ test("four process cases preserve evidence scope, keyboard disclosure and narrow
     await testInfo.attach(`mysql-table-layout-${width}`, { body: JSON.stringify(numberLayout), contentType: "application/json" });
     expect(numberLayout.every(cell => cell.fits && cell.oneLine), "SQL counts fit on one line in their cells").toBe(true);
     await mysql.screenshot({ path: testInfo.outputPath(`mysql-case-${width}.png`) });
+    if (width === 1440 || width === 390) await page.screenshot({ path: testInfo.outputPath(`process-source-links-${width}.png`), fullPage: true });
     // Also record the actual viewport: very tall element captures can include
     // fixed off-screen controls outside the viewport's normal clipping area.
     await table.scrollIntoViewIfNeeded();
@@ -243,6 +287,58 @@ test("four process cases preserve evidence scope, keyboard disclosure and narrow
   await expect(page.getByRole("heading", { level: 1 })).toContainText("ETCH를 둘러보세요");
   await navigation.goBack();
   await expect(mysql).toBeVisible();
+});
+
+// Explicit, user-triggered GitHub navigation is checked in a separate fixture.
+// The existing static-flow and negative-control tests keep their strict guard;
+// GitHub's own asset/API requests are never counted as showcase requests.
+base("explicit source links reach public code, tests and reproduction documents", async ({ page, context, baseURL }, testInfo) => {
+  base.setTimeout(180_000);
+  const origin = new URL(baseURL!).origin;
+  const mainPageExternalRequests: string[] = [];
+  page.on("request", request => {
+    const url = new URL(request.url());
+    if (url.origin !== origin) mainPageExternalRequests.push(`${request.method()} ${url.origin}${url.pathname}`);
+  });
+  const destinations = [
+    { route: "/", label: "소스 코드 (GitHub, 새 탭)", url: publicRepository, content: "ETCH-Portfolio" },
+    { route: "/process", label: "outbox worker", url: `${sourceRoot}${caseSourcePaths[0][0]}`, content: "class ProjectIndexWorker" },
+    { route: "/process", label: "worker 테스트", url: `${sourceRoot}${caseSourcePaths[0][1]}`, content: "class ProjectIndexWorkerTest" },
+    { route: "/process", label: "EntityGraph Repository", url: `${sourceRoot}${caseSourcePaths[3][0]}`, content: "@EntityGraph" },
+    { route: "/process", label: "MySQL 계측 테스트", url: `${sourceRoot}${caseSourcePaths[3][1]}`, content: "class ProjectListMysqlIntegrationTest" },
+    { route: "/process", label: "검색 평가기", url: `${sourceRoot}${caseSourcePaths[2][0]}`, content: "def candidate_sections" },
+    { route: "/process", label: "독립 사본 검색 검사 안내", url: `${sourceRoot}${caseSourcePaths[2][4]}`, content: "SUBMISSION_SEARCH.md" },
+    { route: "/process", label: "채용 Logstash 설정", url: `${sourceRoot}${caseSourcePaths[1][1]}`, content: "jobs_incremental" },
+    { route: "/process", label: "복구 도구 테스트", url: `${sourceRoot}${caseSourcePaths[1][4]}`, content: "class CorruptRevisionTest" },
+  ];
+  const results: { label: string; url: string; status: number; contentType: string; tls: Awaited<ReturnType<import("@playwright/test").Response["securityDetails"]>> }[] = [];
+  for (const destination of destinations) {
+    await page.goto(destination.route);
+    const link = page.getByRole("link", { name: destination.label, exact: true });
+    await expect(link).toHaveAttribute("href", destination.url);
+    await link.focus();
+    await expect(link).toBeFocused();
+    const responseReady = context.waitForEvent("response", { predicate: response => response.url() === destination.url && response.request().resourceType() === "document" });
+    const popupReady = page.waitForEvent("popup");
+    await page.keyboard.press("Enter");
+    const [popup, response] = await Promise.all([popupReady, responseReady]);
+    try {
+      await popup.waitForLoadState("domcontentloaded");
+      await expect(popup).toHaveURL(destination.url);
+      expect(response.status()).toBe(200);
+      const contentType = response.headers()["content-type"] || "";
+      expect(contentType).toMatch(/^text\/html(?:;|$)/i);
+      const tls = await response.securityDetails();
+      expect(tls?.protocol, "GitHub navigation uses normal certificate-verified HTTPS").toBeTruthy();
+      await expect(popup.locator("body")).toContainText(destination.content);
+      results.push({ label: destination.label, url: destination.url, status: response.status(), contentType, tls });
+    } finally {
+      await popup.close();
+    }
+    await expect(page).toHaveURL(new URL(destination.route, origin).href);
+  }
+  await testInfo.attach("explicit-github-navigation", { body: JSON.stringify({ freshContext: true, serviceWorkers: "block", ignoreHTTPSErrors: false, interaction: "focused anchor + Enter opens a new tab", showcaseMainPageExternalRequests: mainPageExternalRequests, results, githubSubresources: "Separate destination site; excluded from showcase automatic-call counts" }), contentType: "application/json" });
+  expect(mainPageExternalRequests, "The showcase tab itself makes no automatic external request").toEqual([]);
 });
 
 test("search types, filters, quote, zero results and changed keyword", async ({ page, verifiedNavigation: navigation }) => {

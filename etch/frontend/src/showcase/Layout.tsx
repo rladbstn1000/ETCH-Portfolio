@@ -18,6 +18,7 @@ export default function Layout() {
         <Link to="/" aria-label="ETCH 홈" className="flex items-center gap-3"><img src={logo} alt="ETCH" width="94" height="38" /><span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">화면 체험판</span></Link>
         <nav aria-label="주 메뉴" className="flex flex-wrap gap-1 text-sm font-semibold">
           {[["/search?q=React", "검색"], ["/jobs", "채용"], ["/news", "뉴스"], ["/projects", "프로젝트"], ["/mypage", "가상 마이페이지"], ["/process", "개발 과정"]].map(([to, label]) => <NavLink key={to} to={to} className={({ isActive }) => `rounded-lg px-3 py-2 ${isActive ? "bg-blue-50 text-blue-700" : "hover:bg-gray-100"}`}>{label}</NavLink>)}
+          <a href="https://github.com/rladbstn1000/ETCH-Portfolio" target="_blank" rel="noopener noreferrer" className="rounded-lg px-3 py-2 text-blue-700 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">소스 코드<span className="sr-only"> (GitHub, 새 탭)</span></a>
         </nav>
       </div>
     </header>
