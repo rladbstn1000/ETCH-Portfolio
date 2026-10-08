@@ -1,0 +1,27 @@
+# 서로 다른 input/filter/output이 하나로 병합되지 않게 파이프라인을 분리한다.
+- pipeline.id: jobs
+  path.config: /usr/share/logstash/pipeline/job.conf
+  pipeline.workers: 1
+  pipeline.batch.size: 50
+  queue.type: persisted
+  queue.max_bytes: 64mb
+  queue.page_capacity: 16mb
+  queue.checkpoint.writes: 1
+  queue.checkpoint.acks: 1
+  dead_letter_queue.enable: true
+  dead_letter_queue.max_bytes: 16mb
+  dead_letter_queue.flush_interval: 1000
+  dead_letter_queue.storage_policy: drop_newer
+- pipeline.id: news
+  path.config: /usr/share/logstash/pipeline/news.conf
+  pipeline.workers: 1
+  pipeline.batch.size: 50
+  queue.type: persisted
+  queue.max_bytes: 64mb
+  queue.page_capacity: 16mb
+  queue.checkpoint.writes: 1
+  queue.checkpoint.acks: 1
+  dead_letter_queue.enable: true
+  dead_letter_queue.max_bytes: 16mb
+  dead_letter_queue.flush_interval: 1000
+  dead_letter_queue.storage_policy: drop_newer

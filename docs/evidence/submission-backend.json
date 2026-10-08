@@ -1,0 +1,910 @@
+{
+  "checkedDate": "2026-10-08",
+  "scope": "Independent candidate, new synthetic local resources; no original source/environment/DB mounted. Existing dependencies reused explicitly.",
+  "sourceBasis": "7ed428f07a661724c974954d47861df35070ab5b",
+  "newBackendJarSha256": "8e7f7f58c6a9aa57d18e6f932b9faa81ea45080371411f9c53536191336afc88",
+  "historicalJarApprovalApplies": false,
+  "mysql": {
+    "version": "8.4.12",
+    "measurementTests": 1,
+    "conditions": 158,
+    "primaryPath": "Direct controller -> real JPA -> DTO -> full JSON, not HTTP",
+    "wholeResponseJsonMatchesPreservedImproved": true,
+    "sameExecutionCountsAsPreservedImproved": true,
+    "businessRevisionOutboxInvariant": true,
+    "firstFullPages": [
+      {
+        "scenario": "same-author",
+        "sort": "popular",
+        "page": 1,
+        "size": 1,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "popular",
+        "page": 1,
+        "size": 3,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "popular",
+        "page": 1,
+        "size": 10,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "popular",
+        "page": 1,
+        "size": 30,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "popular",
+        "page": 1,
+        "size": 100,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "views",
+        "page": 1,
+        "size": 1,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "views",
+        "page": 1,
+        "size": 3,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "views",
+        "page": 1,
+        "size": 10,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "views",
+        "page": 1,
+        "size": 30,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "views",
+        "page": 1,
+        "size": 100,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "latest",
+        "page": 1,
+        "size": 1,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "latest",
+        "page": 1,
+        "size": 3,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "latest",
+        "page": 1,
+        "size": 10,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "latest",
+        "page": 1,
+        "size": 30,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "same-author",
+        "sort": "latest",
+        "page": 1,
+        "size": 100,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "popular",
+        "page": 1,
+        "size": 1,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "popular",
+        "page": 1,
+        "size": 3,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "popular",
+        "page": 1,
+        "size": 10,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "popular",
+        "page": 1,
+        "size": 30,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "popular",
+        "page": 1,
+        "size": 100,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "views",
+        "page": 1,
+        "size": 1,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "views",
+        "page": 1,
+        "size": 3,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "views",
+        "page": 1,
+        "size": 10,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "views",
+        "page": 1,
+        "size": 30,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "views",
+        "page": 1,
+        "size": 100,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "latest",
+        "page": 1,
+        "size": 1,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "latest",
+        "page": 1,
+        "size": 3,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "latest",
+        "page": 1,
+        "size": 10,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "latest",
+        "page": 1,
+        "size": 30,
+        "executedCount": 2,
+        "authorSelects": 0
+      },
+      {
+        "scenario": "distinct-authors",
+        "sort": "latest",
+        "page": 1,
+        "size": 100,
+        "executedCount": 2,
+        "authorSelects": 0
+      }
+    ],
+    "baselineBeforeEntityGraphReexecuted": false,
+    "latencyMeasured": false
+  },
+  "relatedTests": {
+    "total": 50,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "actualMysqlMockMvcSubset": 5,
+    "suites": [
+      {
+        "name": "com.ssafy.etch.global.json.JsonContractTest",
+        "tests": "6",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.search.indexing.ProjectIndexWorkerTest",
+        "tests": "4",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.search.indexing.ProjectLikeLockOrderTest",
+        "tests": "3",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.demo.PublicDemoIntegrationTest",
+        "tests": "8",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.project.service.ProjectListMysqlAuthorizationIntegrationTest",
+        "tests": "3",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.search.indexing.ProjectMemberLockOrderTest",
+        "tests": "2",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.project.service.ProjectListMysqlPublicDemoAuthorizationIntegrationTest",
+        "tests": "2",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.project.service.ProjectListQueryIntegrationTest",
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.search.indexing.ProjectIndexWriterTest",
+        "tests": "3",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.ssafy.etch.security.AuthorizationIntegrationTest",
+        "tests": "18",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      }
+    ],
+    "scope": "MySQL MockMvc 5 plus H2 and mocked unit tests; separate from 1 measurement test"
+  },
+  "runtime": {
+    "elasticsearchVersion": "9.4.7",
+    "noriVersions": [
+      "9.4.7"
+    ],
+    "logstashVersion": "9.5.4",
+    "volumes": [
+      "etch-submission-project-list-mysql-data",
+      "etch-submission_es-data",
+      "etch-submission_logstash-data",
+      "etch-submission_mysql-data"
+    ],
+    "backendRuntimeJarSha256": "8e7f7f58c6a9aa57d18e6f932b9faa81ea45080371411f9c53536191336afc88"
+  },
+  "synchronization": {
+    "job": {
+      "liveSources": 23,
+      "trackingRows": 24,
+      "esDocuments": 24,
+      "differenceCount": 0
+    },
+    "news": {
+      "liveSources": 23,
+      "trackingRows": 24,
+      "esDocuments": 24,
+      "differenceCount": 0
+    },
+    "projectDocumentsAfterInitialSeed": 24,
+    "wholePqDlqFailureSuiteReexecuted": false
+  },
+  "search": {
+    "actualApiQueries": 30,
+    "unified": 4,
+    "http200Responses": 34,
+    "functionalContractsPassed": true,
+    "savedAcceptedResultComparison": {
+      "sameRankingAndNdcg": true,
+      "queries": [
+        {
+          "queryId": "job-01",
+          "returnedIds": [
+            41002,
+            41013,
+            41001
+          ],
+          "ndcgAt5": 0.8810783669439536,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-02",
+          "returnedIds": [
+            41003,
+            41014,
+            41004
+          ],
+          "ndcgAt5": 0.8810783669439536,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-03",
+          "returnedIds": [
+            41005,
+            41006,
+            41015,
+            41003,
+            41009
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-04",
+          "returnedIds": [
+            41007,
+            41008,
+            41016
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-05",
+          "returnedIds": [
+            41009,
+            41017
+          ],
+          "ndcgAt5": 0.6732934624429354,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-06",
+          "returnedIds": [
+            41023,
+            41001,
+            41007,
+            41013,
+            41019
+          ],
+          "ndcgAt5": 0.8420809200104147,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-07",
+          "returnedIds": [
+            41011,
+            41021
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-08",
+          "returnedIds": [
+            41009,
+            41012,
+            41022,
+            41005,
+            41011
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-09",
+          "returnedIds": [
+            41018,
+            41019,
+            41004,
+            41010,
+            41016
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "job-10",
+          "returnedIds": [
+            41010,
+            41020
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-01",
+          "returnedIds": [
+            42002,
+            42013,
+            42001
+          ],
+          "ndcgAt5": 0.8810783669439536,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-02",
+          "returnedIds": [
+            42003,
+            42014,
+            42004
+          ],
+          "ndcgAt5": 0.8810783669439536,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-03",
+          "returnedIds": [
+            42005,
+            42006,
+            42015,
+            42003,
+            42009
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-04",
+          "returnedIds": [
+            42007,
+            42008,
+            42016
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-05",
+          "returnedIds": [
+            42009,
+            42017
+          ],
+          "ndcgAt5": 0.6732934624429354,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-06",
+          "returnedIds": [
+            42023,
+            42001,
+            42007,
+            42013,
+            42019
+          ],
+          "ndcgAt5": 0.8420809200104147,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-07",
+          "returnedIds": [
+            42011,
+            42021
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-08",
+          "returnedIds": [
+            42009,
+            42012,
+            42022,
+            42005,
+            42011
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-09",
+          "returnedIds": [
+            42019,
+            42018,
+            42004,
+            42010,
+            42016
+          ],
+          "ndcgAt5": 0.7967075809905066,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "news-10",
+          "returnedIds": [
+            42010,
+            42020
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-01",
+          "returnedIds": [
+            43013,
+            43012,
+            43002,
+            43001
+          ],
+          "ndcgAt5": 0.7595063773744855,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-02",
+          "returnedIds": [
+            43020,
+            43014,
+            43004,
+            43003
+          ],
+          "ndcgAt5": 0.7595063773744855,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-03",
+          "returnedIds": [
+            43015,
+            43006,
+            43005
+          ],
+          "ndcgAt5": 0.8145672023038535,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-04",
+          "returnedIds": [
+            43016,
+            43008,
+            43007
+          ],
+          "ndcgAt5": 0.8145672023038535,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-05",
+          "returnedIds": [
+            43017,
+            43009
+          ],
+          "ndcgAt5": 0.5364180057596336,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-06",
+          "returnedIds": [
+            43021,
+            43019,
+            43017,
+            43015,
+            43013
+          ],
+          "ndcgAt5": 0.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-07",
+          "returnedIds": [
+            43021,
+            43011
+          ],
+          "ndcgAt5": 0.7967075809905066,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-08",
+          "returnedIds": [
+            43012,
+            43009
+          ],
+          "ndcgAt5": 1.0,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-09",
+          "returnedIds": [
+            43019,
+            43018
+          ],
+          "ndcgAt5": 0.7967075809905066,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        },
+        {
+          "queryId": "project-10",
+          "returnedIds": [
+            43020,
+            43010
+          ],
+          "ndcgAt5": 0.7967075809905066,
+          "sameIdsAndOrderAsAcceptedResult": true,
+          "sameNdcgAsAcceptedResult": true
+        }
+      ]
+    },
+    "currentApprovedEngineRegression": {
+      "status": "NOT_EVALUATED_NEW_ARTIFACT",
+      "passed": null
+    },
+    "activationAllowed": false,
+    "historicalComparison": {
+      "passed": false,
+      "rankingDifferenceCount": 2,
+      "differences": [
+        {
+          "queryId": "job-02",
+          "beforeIds": [
+            41003,
+            41004,
+            41014
+          ],
+          "afterIds": [
+            41003,
+            41014,
+            41004
+          ],
+          "beforeNdcgAt5": 0.9260446319296772,
+          "afterNdcgAt5": 0.8810783669439536,
+          "sameIdsAndOrder": false,
+          "sameNdcgAt5": false
+        },
+        {
+          "queryId": "news-02",
+          "beforeIds": [
+            42003,
+            42004,
+            42014
+          ],
+          "afterIds": [
+            42003,
+            42014,
+            42004
+          ],
+          "beforeNdcgAt5": 0.9260446319296772,
+          "afterNdcgAt5": 0.8810783669439536,
+          "sameIdsAndOrder": false,
+          "sameNdcgAt5": false
+        }
+      ]
+    }
+  },
+  "outboxSmoke": {
+    "passed": true,
+    "scope": "New candidate only; actual HTTP, generated local JWT, MySQL, ES and outbox; no SIGKILL or original environment replay",
+    "checks": [
+      {
+        "check": "anonymous personal list denied",
+        "passed": true
+      },
+      {
+        "check": "anonymous private project denied",
+        "passed": true
+      },
+      {
+        "check": "other member private project denied",
+        "passed": true
+      },
+      {
+        "check": "authenticated create committed",
+        "passed": true
+      },
+      {
+        "check": "new project automatically indexed",
+        "passed": true,
+        "projectId": 43025
+      },
+      {
+        "check": "DB write succeeds while ES is stopped",
+        "passed": true
+      },
+      {
+        "check": "outbox remains durable after delivery failure",
+        "passed": true,
+        "state": {
+          "pending": 1,
+          "revision": 2,
+          "maxAttempts": 1,
+          "outboxCount": 2
+        }
+      },
+      {
+        "check": "actual search reports ES unavailable",
+        "passed": true
+      },
+      {
+        "check": "ES resume automatically recovers latest revision without replay command",
+        "passed": true,
+        "state": {
+          "pending": 0,
+          "revision": 2,
+          "maxAttempts": 5,
+          "outboxCount": 2
+        }
+      },
+      {
+        "check": "owner makes project private",
+        "passed": true
+      },
+      {
+        "check": "private project emits minimal tombstone",
+        "passed": true
+      },
+      {
+        "check": "anonymous new private detail denied",
+        "passed": true
+      },
+      {
+        "check": "other member new private detail denied",
+        "passed": true
+      },
+      {
+        "check": "owner private detail allowed",
+        "passed": true
+      },
+      {
+        "check": "owner deletion committed",
+        "passed": true
+      },
+      {
+        "check": "deleted detail unavailable",
+        "passed": true
+      },
+      {
+        "check": "delete remains a tombstone",
+        "passed": true
+      }
+    ],
+    "newSyntheticProjectId": 43025,
+    "doesNotApproveNewArtifactAsHistoricalBaseline": true
+  },
+  "toolGuards": {
+    "newIsolationUnitTests": 6,
+    "failures": 0,
+    "syntaxCompilation": "PASS with candidate-local Python cache",
+    "finalComposeConfigQuiet": "PASS"
+  },
+  "dependencyReuse": {
+    "images": "Existing exact image SHA for MySQL 8.4.12, ES/Nori 9.4.7, Logstash 9.5.4, Redis and Java 17 builder; no old backend image reused",
+    "gradleCache": "Read-only copy of caches/modules-2 only; new candidate directory used for offline tests. No source, daemon, credential or build cache copied.",
+    "freshMachinePath": "Included pinned Dockerfiles plus explicit dependencies actions and empty-cache online dependency resolution",
+    "freshMachineImageRebuildExecuted": false
+  },
+  "preservation": {
+    "newContainersRemoved": true,
+    "newNetworksRemoved": true,
+    "newVolumesPreserved": [
+      "etch-submission-project-list-mysql-data",
+      "etch-submission_es-data",
+      "etch-submission_logstash-data",
+      "etch-submission_mysql-data"
+    ],
+    "volumeRemovalCommandUsed": false,
+    "oldContainersStarted": false,
+    "oldDatabaseConnected": false,
+    "newSecretsGeneratedLocally": true
+  },
+  "issuesResolved": [
+    {
+      "kind": "dependency-name-lookup",
+      "result": "Tag inspect failed despite image list; same validated image SHA lookup succeeded."
+    },
+    {
+      "kind": "tool-path",
+      "result": "Wrong JAR filename corrected to actual Gradle output before application start."
+    },
+    {
+      "kind": "tool-arguments",
+      "result": "Missing compare kind corrected to job/news; no data change."
+    },
+    {
+      "kind": "search-adapter-prefix",
+      "result": "Initial /api/v1 direct-backend requests returned401; adapter-only path correction produced34x200. Both runs retained; authorization unchanged."
+    },
+    {
+      "kind": "python-cache-permission",
+      "result": "Host global pycache path was denied; candidate-local PYTHONPYCACHEPREFIX compile passed."
+    }
+  ],
+  "notReexecuted": [
+    "Historical slow MySQL baseline",
+    "Production latency/load",
+    "Full original SIGKILL/restart/migration/PQ/DLQ scenarios",
+    "Whole vulnerability scan",
+    "Fresh machine image rebuild/download path"
+  ],
+  "privateRawEvidence": ".local/submission-validation and .local/project-list-mysql (excluded from Git)"
+}

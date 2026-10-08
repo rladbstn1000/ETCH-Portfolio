@@ -1,0 +1,1518 @@
+{
+  "artifactFlavor": "public-demo",
+  "archive": "etch-0.0.1-SNAPSHOT.jar",
+  "archiveSha256": "2eda8d842f08590dfb8c9a0e4521ef19b744a4009efbce5639e16e8ffc304070",
+  "modules": [
+    {
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.38",
+      "file": "logback-classic-1.5.38.jar",
+      "sha256": "afb439c61fa287c9e1925523b13baab03617e724406a389d48b61c2c3e46b700"
+    },
+    {
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.38",
+      "file": "logback-core-1.5.38.jar",
+      "sha256": "a855a0fc97b1d06f4efb1c3bba5ebd0eb508d8b58e68e89e4bbc23a85135c883"
+    },
+    {
+      "group": "co.elastic.clients",
+      "name": "elasticsearch-java",
+      "version": "9.4.5",
+      "file": "elasticsearch-java-9.4.5.jar",
+      "sha256": "b222d0440a858e55dedcce173ef1b94c79b3b64fb5ed477df4f56a828509f7c6"
+    },
+    {
+      "group": "co.elastic.clients",
+      "name": "elasticsearch-rest5-client",
+      "version": "9.4.5",
+      "file": "elasticsearch-rest5-client-9.4.5.jar",
+      "sha256": "5146f9bd25d571735aedfa0c6a8c09581fadd857f5e9d0018a5a9f49d750b328"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.21",
+      "file": "jackson-annotations-2.21.jar",
+      "sha256": "53ca085f4a150f703f49e1aabd935bd03b43e1ea3d55d135438292af22cef56b"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.21.7",
+      "file": "jackson-core-2.21.7.jar",
+      "sha256": "8c5623b98f32d5f7e1287ff61ed50e08ab7b11381e991fff89327faabba42261"
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.21.7",
+      "file": "jackson-databind-2.21.7.jar",
+      "sha256": "1290c2795e93e8a6861a6c4d9ff0d844d32f5ea178362cb2721edf5561e828b1"
+    },
+    {
+      "group": "com.fasterxml.jackson.dataformat",
+      "name": "jackson-dataformat-yaml",
+      "version": "2.21.7",
+      "file": "jackson-dataformat-yaml-2.21.7.jar",
+      "sha256": "df2b3e6a194181dc067b7211d750926b4ae9e4f3c892a0005b8219a9b59be681"
+    },
+    {
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jsr310",
+      "version": "2.21.7",
+      "file": "jackson-datatype-jsr310-2.21.7.jar",
+      "sha256": "5989b937f0aa5b6407e7a061077c9bfcac0590dc0a32e54b2fac6a3e2d49e812"
+    },
+    {
+      "group": "com.fasterxml",
+      "name": "classmate",
+      "version": "1.7.3",
+      "file": "classmate-1.7.3.jar",
+      "sha256": "75fbda45456f123fb6e2028a6189442d8d0730b357adce4c0a6d7e789f70669b"
+    },
+    {
+      "group": "com.github.stephenc.jcip",
+      "name": "jcip-annotations",
+      "version": "1.0-1",
+      "file": "jcip-annotations-1.0-1.jar",
+      "sha256": "4fccff8382aafc589962c4edb262f6aa595e34f1e11e61057d1c6a96e8fc7323"
+    },
+    {
+      "group": "com.google.code.findbugs",
+      "name": "jsr305",
+      "version": "3.0.2",
+      "file": "jsr305-3.0.2.jar",
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    },
+    {
+      "group": "com.mysql",
+      "name": "mysql-connector-j",
+      "version": "26.7.0",
+      "file": "mysql-connector-j-26.7.0.jar",
+      "sha256": "69084713593a4aa8d07c383619b9639276f08bccf8faf1c562178147d389b1e1"
+    },
+    {
+      "group": "com.nimbusds",
+      "name": "content-type",
+      "version": "2.3",
+      "file": "content-type-2.3.jar",
+      "sha256": "60349793e006fba96b532cb0c21e10e969fe0db8d87f91c3b9eaf82ba2998895"
+    },
+    {
+      "group": "com.nimbusds",
+      "name": "lang-tag",
+      "version": "1.7",
+      "file": "lang-tag-1.7.jar",
+      "sha256": "e8c1c594e2425bdbea2d860de55c69b69fc5d59454452449a0f0913c2a5b8a31"
+    },
+    {
+      "group": "com.nimbusds",
+      "name": "nimbus-jose-jwt",
+      "version": "10.9.1",
+      "file": "nimbus-jose-jwt-10.9.1.jar",
+      "sha256": "33152ea83ec50d22706fdaf3b07acbcd716f9a68edcabdd7c4d02843cbdcdcf6"
+    },
+    {
+      "group": "com.nimbusds",
+      "name": "oauth2-oidc-sdk",
+      "version": "11.38.2",
+      "file": "oauth2-oidc-sdk-11.38.2.jar",
+      "sha256": "30e63220c15bd93006c557bd0d614bb57a5f00232188693577c222383ea4bbe7"
+    },
+    {
+      "group": "com.sun.istack",
+      "name": "istack-commons-runtime",
+      "version": "4.1.2",
+      "file": "istack-commons-runtime-4.1.2.jar",
+      "sha256": "7fd6792361f4dd00f8c56af4a20cecc0066deea4a8f3dec38348af23fc2296ee"
+    },
+    {
+      "group": "com.zaxxer",
+      "name": "HikariCP",
+      "version": "7.0.2",
+      "file": "HikariCP-7.0.2.jar",
+      "sha256": "f1e612fa27345be3107a85431e8a8aeb205c15364ab2f2d411e40a9d7bb08095"
+    },
+    {
+      "group": "commons-logging",
+      "name": "commons-logging",
+      "version": "1.3.6",
+      "file": "commons-logging-1.3.6.jar",
+      "sha256": "f8ead8943401081dea0aa824b5b1ba40a0e4ed297a572a0f02258150a0b62357"
+    },
+    {
+      "group": "io.jsonwebtoken",
+      "name": "jjwt-api",
+      "version": "0.12.3",
+      "file": "jjwt-api-0.12.3.jar",
+      "sha256": "013dd3189fa62b433a0781eb6cfce1986aa00d1ea08d2f44a5c5047c7fab4722"
+    },
+    {
+      "group": "io.jsonwebtoken",
+      "name": "jjwt-impl",
+      "version": "0.12.3",
+      "file": "jjwt-impl-0.12.3.jar",
+      "sha256": "6bbba1fc9ff3fc06aa3e6f2b85d5269373cd60ece47d923e1078b179c83bb45c"
+    },
+    {
+      "group": "io.jsonwebtoken",
+      "name": "jjwt-jackson",
+      "version": "0.12.3",
+      "file": "jjwt-jackson-0.12.3.jar",
+      "sha256": "cd9a28261323bd926add4344f786220b40937de476270a02e849486f940b30cb"
+    },
+    {
+      "group": "io.lettuce",
+      "name": "lettuce-core",
+      "version": "7.5.2.RELEASE",
+      "file": "lettuce-core-7.5.2.RELEASE.jar",
+      "sha256": "86e245a6cfc36a40aaa1f54027e639a70cb4008d12717164041aefe9bbd072c1"
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-commons",
+      "version": "1.17.1",
+      "file": "micrometer-commons-1.17.1.jar",
+      "sha256": "f2cee6ef046e72eec8128474c7f58c6217173b45ae373c30de0289f2a56ab0fd"
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-core",
+      "version": "1.17.1",
+      "file": "micrometer-core-1.17.1.jar",
+      "sha256": "9ca47dfa831409b40253c8dc98c17b9d3e050ebbde4d1543c5521dca2b95ad56"
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-jakarta9",
+      "version": "1.17.1",
+      "file": "micrometer-jakarta9-1.17.1.jar",
+      "sha256": "37fbb0a98ba92e185ae7ebe0804fe6c1394bf7fba7573b204fa6fc3998c2e246"
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-observation",
+      "version": "1.17.1",
+      "file": "micrometer-observation-1.17.1.jar",
+      "sha256": "eb34f0cd84a879393ae5c21160fc06385ccdc74f36a4d1e31b199f59acfdaf71"
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-registry-prometheus",
+      "version": "1.17.1",
+      "file": "micrometer-registry-prometheus-1.17.1.jar",
+      "sha256": "ac24d43f123e103828a23a86f092a8709d87d309ad3212e798305654e951a8ce"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-buffer",
+      "version": "4.2.17.Final",
+      "file": "netty-buffer-4.2.17.Final.jar",
+      "sha256": "0d249178ec0204b35a6ad3e5ac8a6c2ecb3eb496c6cdae40b8eca4fa3cb6a0c7"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-base",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-base-4.2.17.Final.jar",
+      "sha256": "3b92bc3b7d231fa6f4889b2b9281cae6b634428b8121fb1b9b5fccba1543d352"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-classes-quic",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-classes-quic-4.2.17.Final.jar",
+      "sha256": "542e718fdd8fa4f6d57bef9f91a5fa01200940cb8b381fd4c21fb5c170276c71"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-compression",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-compression-4.2.17.Final.jar",
+      "sha256": "425b287a1f36986a5c8edd76379a49decdf99d284f3454f3fa607a073bfb2c18"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-dns",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-dns-4.2.17.Final.jar",
+      "sha256": "394f4649a824683735f28b299d0a48caff059ae30e654e2abf8b3f392af4d374"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-http-4.2.17.Final.jar",
+      "sha256": "a5bde91ac82ab90579df6559c0bd7ea6ae37460e3f18116ab4122194283b3669"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http2",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-http2-4.2.17.Final.jar",
+      "sha256": "450af97424cf58d2d72ad4d476d9e290f2fdf69fa181c289a6e6dd176bb86a7b"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-http3",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-http3-4.2.17.Final.jar",
+      "sha256": "9fcf9873e31b2899c407b42d320aaf6afeb69807e63d9a865c391b4339fa24c7"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-native-quic",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-native-quic-4.2.17.Final-linux-x86_64.jar",
+      "sha256": "9225b069850e2238126359b6d3ad00df1c8c528ce5123682b8090c09ec37bdbf"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-native-quic",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-native-quic-4.2.17.Final-linux-aarch_64.jar",
+      "sha256": "350ba4c87cb8d2066d895f511605e1479da2c25e2bf5c2cf5dcb4cd34fcaae75"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-native-quic",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-native-quic-4.2.17.Final-osx-x86_64.jar",
+      "sha256": "d8c48589adfafd798d1c4b3996d9b19dc7bd9f1785524b821388e2db73a52dd2"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-native-quic",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-native-quic-4.2.17.Final-osx-aarch_64.jar",
+      "sha256": "a6b5bee555259e6b955ecc45f0425a000332d35d545a9a97e5730f0e939c0065"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-native-quic",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-native-quic-4.2.17.Final-windows-x86_64.jar",
+      "sha256": "1540888c76d55eff98899d7f1cd109fddda137992e170ee4096871886e15f4b8"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-codec-socks",
+      "version": "4.2.17.Final",
+      "file": "netty-codec-socks-4.2.17.Final.jar",
+      "sha256": "6b5760cc512cee1f7515e25010892471f3995045f84cd6c1d1b6e6cee534733c"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-common",
+      "version": "4.2.17.Final",
+      "file": "netty-common-4.2.17.Final.jar",
+      "sha256": "502aae2a6680e9bca3558a3fa098f06dc4d87340b8b714e925a6d690871c092a"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-handler",
+      "version": "4.2.17.Final",
+      "file": "netty-handler-4.2.17.Final.jar",
+      "sha256": "4df11c7520b556c5e2c84b939182699d48fcbb09e97a6bb5e1c0b6835227d126"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-handler-proxy",
+      "version": "4.2.17.Final",
+      "file": "netty-handler-proxy-4.2.17.Final.jar",
+      "sha256": "94089bea6ba6f3248725f2bf233aa2bc70ac1547c21b9bdfc7548f710a845aa0"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-resolver",
+      "version": "4.2.17.Final",
+      "file": "netty-resolver-4.2.17.Final.jar",
+      "sha256": "7a4b599b9c0c29a505d3b7311f142df883fb27d0f67495a7cbaf533b0e456623"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-resolver-dns",
+      "version": "4.2.17.Final",
+      "file": "netty-resolver-dns-4.2.17.Final.jar",
+      "sha256": "d332481c22136a68c2ee9e45e86212174932587d93a5dd4d201e196828bf9f91"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-resolver-dns-classes-macos",
+      "version": "4.2.17.Final",
+      "file": "netty-resolver-dns-classes-macos-4.2.17.Final.jar",
+      "sha256": "e5708301fe173ce03d31f1a76ac0682d0a7b955451c968314a13e661855b33c5"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-resolver-dns-native-macos",
+      "version": "4.2.17.Final",
+      "file": "netty-resolver-dns-native-macos-4.2.17.Final-osx-x86_64.jar",
+      "sha256": "69ba9124d88cde3c5d96237aabd7cadcdf416200e52f2933c275863d5ee8831e"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport",
+      "version": "4.2.17.Final",
+      "file": "netty-transport-4.2.17.Final.jar",
+      "sha256": "d2409ce3a735cbab4188d0ea5d82abed823a6a07a8389f49af4a9e1243a562bc"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-classes-epoll",
+      "version": "4.2.17.Final",
+      "file": "netty-transport-classes-epoll-4.2.17.Final.jar",
+      "sha256": "4e21d8a2e3429d9de967a716d58119f57585786bd2f7213bf5b27770425269de"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-native-epoll",
+      "version": "4.2.17.Final",
+      "file": "netty-transport-native-epoll-4.2.17.Final-linux-x86_64.jar",
+      "sha256": "c295b1d7f46e3c7375c93fa4c8abcc3944398c5e4eb53e31587cbbf0bf559d4f"
+    },
+    {
+      "group": "io.netty",
+      "name": "netty-transport-native-unix-common",
+      "version": "4.2.17.Final",
+      "file": "netty-transport-native-unix-common-4.2.17.Final.jar",
+      "sha256": "e01aa467b9104de54a57c08c290f70b22e53ec97cf5583c87c112170ef5832cc"
+    },
+    {
+      "group": "io.opentelemetry.semconv",
+      "name": "opentelemetry-semconv",
+      "version": "1.41.1",
+      "file": "opentelemetry-semconv-1.41.1.jar",
+      "sha256": "636ad7dac093d22fb84bf8d928ef836694f2d63c92d72b3df21b86002e8becef"
+    },
+    {
+      "group": "io.opentelemetry",
+      "name": "opentelemetry-api",
+      "version": "1.62.0",
+      "file": "opentelemetry-api-1.62.0.jar",
+      "sha256": "d58143928c049233653e6bf1282ff8a767ebdd5e6a82b3f336158c30e40b431d"
+    },
+    {
+      "group": "io.opentelemetry",
+      "name": "opentelemetry-common",
+      "version": "1.62.0",
+      "file": "opentelemetry-common-1.62.0.jar",
+      "sha256": "d6310bebde67d65c1519696728d8604005315ed08ab14071956fc0826fd71815"
+    },
+    {
+      "group": "io.opentelemetry",
+      "name": "opentelemetry-context",
+      "version": "1.62.0",
+      "file": "opentelemetry-context-1.62.0.jar",
+      "sha256": "8ec86c3609222b9b6307bf40154c1f1c288d1f18ada0155409e7797adbdbe517"
+    },
+    {
+      "group": "io.projectreactor.netty",
+      "name": "reactor-netty-core",
+      "version": "1.3.7",
+      "file": "reactor-netty-core-1.3.7.jar",
+      "sha256": "8bf232cbaef9ee7445adecc714999aa8ccc8f027d00d881a686cc99c1a4952e9"
+    },
+    {
+      "group": "io.projectreactor.netty",
+      "name": "reactor-netty-http",
+      "version": "1.3.7",
+      "file": "reactor-netty-http-1.3.7.jar",
+      "sha256": "f351ff98022e1b73dd93aa59283c3e69cdbb11e21ba217bed732cc0a7d9b83fa"
+    },
+    {
+      "group": "io.projectreactor",
+      "name": "reactor-core",
+      "version": "3.8.7",
+      "file": "reactor-core-3.8.7.jar",
+      "sha256": "9a5f1bfc5ad0416a410ff63beaa279cc30c2da3ae9b111a678c83c99298a1551"
+    },
+    {
+      "group": "io.prometheus",
+      "name": "prometheus-metrics-config",
+      "version": "1.7.0",
+      "file": "prometheus-metrics-config-1.7.0.jar",
+      "sha256": "bc9455f938df76ec4add13fe31903a5bb583c605679a16a779d6a6c2b21218f2"
+    },
+    {
+      "group": "io.prometheus",
+      "name": "prometheus-metrics-core",
+      "version": "1.7.0",
+      "file": "prometheus-metrics-core-1.7.0.jar",
+      "sha256": "f9e5f1c8a20073347c88941d43e8c64ae6810afe0a61cbfe9c2f4efffe72808b"
+    },
+    {
+      "group": "io.prometheus",
+      "name": "prometheus-metrics-exposition-formats",
+      "version": "1.7.0",
+      "file": "prometheus-metrics-exposition-formats-1.7.0.jar",
+      "sha256": "7352ca8b50e861eca3567ceb332e9590a06742a9d177cff54e52c8cff4c4fb90"
+    },
+    {
+      "group": "io.prometheus",
+      "name": "prometheus-metrics-exposition-textformats",
+      "version": "1.7.0",
+      "file": "prometheus-metrics-exposition-textformats-1.7.0.jar",
+      "sha256": "7e49065895a35181c57f2c3c6d07b7b3f9b5754cd6422e0a7bd793f20a29c28a"
+    },
+    {
+      "group": "io.prometheus",
+      "name": "prometheus-metrics-model",
+      "version": "1.7.0",
+      "file": "prometheus-metrics-model-1.7.0.jar",
+      "sha256": "e6d94538f8735c4161c36a660298f3a0fa8e4b281ceaf209723aaf9e212d292d"
+    },
+    {
+      "group": "io.prometheus",
+      "name": "prometheus-metrics-tracer-common",
+      "version": "1.7.0",
+      "file": "prometheus-metrics-tracer-common-1.7.0.jar",
+      "sha256": "b7e8699032f0f1501556eeafd20fcfdd89b355f5d22b6d8361d723d467d88ed4"
+    },
+    {
+      "group": "io.swagger.core.v3",
+      "name": "swagger-annotations-jakarta",
+      "version": "2.2.55",
+      "file": "swagger-annotations-jakarta-2.2.55.jar",
+      "sha256": "d464521aac0e9ae2cfead9d2f56e9e8c110ef4b15ad9c046408a087a4c58952b"
+    },
+    {
+      "group": "io.swagger.core.v3",
+      "name": "swagger-core-jakarta",
+      "version": "2.2.55",
+      "file": "swagger-core-jakarta-2.2.55.jar",
+      "sha256": "3d72786a7133dbf8569dda19549e0ef3e0d68d01d3b4dd221a96eb1b29263d5f"
+    },
+    {
+      "group": "io.swagger.core.v3",
+      "name": "swagger-models-jakarta",
+      "version": "2.2.55",
+      "file": "swagger-models-jakarta-2.2.55.jar",
+      "sha256": "f83577d4090301a49342dd73708ace743ea46fe382e922a9e892368c45cc6a8d"
+    },
+    {
+      "group": "jakarta.activation",
+      "name": "jakarta.activation-api",
+      "version": "2.1.4",
+      "file": "jakarta.activation-api-2.1.4.jar",
+      "sha256": "c9db52100ce6c8aac95cc39075f95720d2e561b11f8051b81c121ad4effd7004"
+    },
+    {
+      "group": "jakarta.annotation",
+      "name": "jakarta.annotation-api",
+      "version": "3.0.0",
+      "file": "jakarta.annotation-api-3.0.0.jar",
+      "sha256": "b01f55552284cfb149411e64eabca75e942d26d2e1786b32914250e4330afaa2"
+    },
+    {
+      "group": "jakarta.inject",
+      "name": "jakarta.inject-api",
+      "version": "2.0.1",
+      "file": "jakarta.inject-api-2.0.1.jar",
+      "sha256": "f7dc98062fccf14126abb751b64fab12c312566e8cbdc8483598bffcea93af7c"
+    },
+    {
+      "group": "jakarta.json",
+      "name": "jakarta.json-api",
+      "version": "2.1.3",
+      "file": "jakarta.json-api-2.1.3.jar",
+      "sha256": "bc934142805ea1d794f1440563965a3861a2a9fb7414ecd3fe44f26500734414"
+    },
+    {
+      "group": "jakarta.persistence",
+      "name": "jakarta.persistence-api",
+      "version": "3.2.0",
+      "file": "jakarta.persistence-api-3.2.0.jar",
+      "sha256": "be8a26b0e75c84c1b7600f759256fbc68d60333d89ec0ce3f784fc3ffa09aa8c"
+    },
+    {
+      "group": "jakarta.transaction",
+      "name": "jakarta.transaction-api",
+      "version": "2.0.1",
+      "file": "jakarta.transaction-api-2.0.1.jar",
+      "sha256": "50c0a7c760c13ae6c042acf182b28f0047413db95b4636fb8879bcffab5ba875"
+    },
+    {
+      "group": "jakarta.validation",
+      "name": "jakarta.validation-api",
+      "version": "3.1.1",
+      "file": "jakarta.validation-api-3.1.1.jar",
+      "sha256": "63ce00156388c365f3ac1be71fcfaf114682fc0c452020b5df6e7ec236e142ab"
+    },
+    {
+      "group": "jakarta.xml.bind",
+      "name": "jakarta.xml.bind-api",
+      "version": "4.0.5",
+      "file": "jakarta.xml.bind-api-4.0.5.jar",
+      "sha256": "5e489b6c874c4119e003ff1403db523ee3a8959ec499f3de29e77245efccf216"
+    },
+    {
+      "group": "net.bytebuddy",
+      "name": "byte-buddy",
+      "version": "1.18.11",
+      "file": "byte-buddy-1.18.11.jar",
+      "sha256": "e32f454c2c1f4aca982f9ec764ed892d9a6eee7e8a77f435cbdd180f6ffdb821"
+    },
+    {
+      "group": "net.minidev",
+      "name": "accessors-smart",
+      "version": "2.6.0",
+      "file": "accessors-smart-2.6.0.jar",
+      "sha256": "222c9f547bb20a99fc486403a398352d1306fb671b38abd7ecab6401df170e61"
+    },
+    {
+      "group": "net.minidev",
+      "name": "json-smart",
+      "version": "2.6.0",
+      "file": "json-smart-2.6.0.jar",
+      "sha256": "1ae4b561458afb540be8ec5c6dbb4f2e715a319a7ae64854998aaf924770d61b"
+    },
+    {
+      "group": "org.antlr",
+      "name": "antlr4-runtime",
+      "version": "4.13.2",
+      "file": "antlr4-runtime-4.13.2.jar",
+      "sha256": "dd3e8a13a2d669bf84fb8d834de35ce4875f27157698d206241ec8488aadcaf7"
+    },
+    {
+      "group": "org.apache.commons",
+      "name": "commons-lang3",
+      "version": "3.20.0",
+      "file": "commons-lang3-3.20.0.jar",
+      "sha256": "69e5c9fa35da7a51a5fd2099dfe56a2d8d32cf233e2f6d770e796146440263f4"
+    },
+    {
+      "group": "org.apache.httpcomponents.client5",
+      "name": "httpclient5",
+      "version": "5.6.4",
+      "file": "httpclient5-5.6.4.jar",
+      "sha256": "bdef5f8841145cd76c4c605ff301bc840eea0d5292332b7b892a93316c0d8ee1"
+    },
+    {
+      "group": "org.apache.httpcomponents.core5",
+      "name": "httpcore5",
+      "version": "5.4.3",
+      "file": "httpcore5-5.4.3.jar",
+      "sha256": "18bfbbabb478dfb67f31aeaf428c387f3c3df654582e1309f708ee1f3086830a"
+    },
+    {
+      "group": "org.apache.httpcomponents.core5",
+      "name": "httpcore5-h2",
+      "version": "5.4.3",
+      "file": "httpcore5-h2-5.4.3.jar",
+      "sha256": "c7db7026b8e2dea39132b04a6069f6671e2858309b20a146ec5c7dd6ed73a0b6"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.25.5",
+      "file": "log4j-api-2.25.5.jar",
+      "sha256": "64777f73ea0b3104c04eb82befbdccc30a425a19e83ad06cb2f93aa303511863"
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-to-slf4j",
+      "version": "2.25.5",
+      "file": "log4j-to-slf4j-2.25.5.jar",
+      "sha256": "b68e8b47342dbc9b35644a14fe2efc0b7bf18da703910cd05ad5501ffe07bba1"
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-core",
+      "version": "11.0.26",
+      "file": "tomcat-embed-core-11.0.26.jar",
+      "sha256": "062cf4191139c08aef678673039e41ed9d69b6c1b9b30b44820e5a83d0c09cb6"
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-el",
+      "version": "11.0.26",
+      "file": "tomcat-embed-el-11.0.26.jar",
+      "sha256": "a852c99fb5e4e174c08fb4b13cc6c7cd9de9332d46582020aaa219e95092a309"
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-websocket",
+      "version": "11.0.26",
+      "file": "tomcat-embed-websocket-11.0.26.jar",
+      "sha256": "89184380e3c4b0d3c7af828230b179e35123623f2a5b4231c052d6f2eecb5976"
+    },
+    {
+      "group": "org.aspectj",
+      "name": "aspectjweaver",
+      "version": "1.9.25.1",
+      "file": "aspectjweaver-1.9.25.1.jar",
+      "sha256": "4fe86fdc18faea571f29129c70eaad5d121363504a06d7907be88f6c60ba3116"
+    },
+    {
+      "group": "org.eclipse.angus",
+      "name": "angus-activation",
+      "version": "2.0.3",
+      "file": "angus-activation-2.0.3.jar",
+      "sha256": "a6bd35c538cf90fff941ad6258c40c08fca0b5c9c3f536c657114f27ce0527a7"
+    },
+    {
+      "group": "org.eclipse.parsson",
+      "name": "parsson",
+      "version": "1.1.9",
+      "file": "parsson-1.1.9.jar",
+      "sha256": "03dc4dc834a928730d52a50952de0f30c35e0daf048889132be19ee1e5053a6c"
+    },
+    {
+      "group": "org.glassfish.jaxb",
+      "name": "jaxb-core",
+      "version": "4.0.9",
+      "file": "jaxb-core-4.0.9.jar",
+      "sha256": "6b014df25d22c8446cc2df0a378c5b2137747f197a731d99eb24c756b26f7e8d"
+    },
+    {
+      "group": "org.glassfish.jaxb",
+      "name": "jaxb-runtime",
+      "version": "4.0.9",
+      "file": "jaxb-runtime-4.0.9.jar",
+      "sha256": "93e09b7316b6af68d6e2083e4c297daf28e8957f45d725077af812c0b12c39ab"
+    },
+    {
+      "group": "org.glassfish.jaxb",
+      "name": "txw2",
+      "version": "4.0.9",
+      "file": "txw2-4.0.9.jar",
+      "sha256": "d6343e5945d87266ca4e8974a0a2a876e1bd147a00fb65ed3f2e1a3a00f3a82a"
+    },
+    {
+      "group": "org.hdrhistogram",
+      "name": "HdrHistogram",
+      "version": "2.2.2",
+      "file": "HdrHistogram-2.2.2.jar",
+      "sha256": "22d1d4316c4ec13a68b559e98c8256d69071593731da96136640f864fa14fad8"
+    },
+    {
+      "group": "org.hibernate.models",
+      "name": "hibernate-models",
+      "version": "1.1.1",
+      "file": "hibernate-models-1.1.1.jar",
+      "sha256": "7cb645f2ebe5fcb63e21d26259cef62d93a1ca77c400bda6992c92cb19826a89"
+    },
+    {
+      "group": "org.hibernate.orm",
+      "name": "hibernate-core",
+      "version": "7.4.5.Final",
+      "file": "hibernate-core-7.4.5.Final.jar",
+      "sha256": "e894c0ae560f0031883a2f5c819e1ef1ee3e16b2cbca31e6301a004876a67dc7"
+    },
+    {
+      "group": "org.hibernate.validator",
+      "name": "hibernate-validator",
+      "version": "9.1.3.Final",
+      "file": "hibernate-validator-9.1.3.Final.jar",
+      "sha256": "0497ebbe23fafe4180b74bd0b96a67eee8556552decc4d3c120c1dc737a2b5fb"
+    },
+    {
+      "group": "org.jboss.logging",
+      "name": "jboss-logging",
+      "version": "3.6.3.Final",
+      "file": "jboss-logging-3.6.3.Final.jar",
+      "sha256": "7c12ee575508f81e22b1db9334b969d0ec54ef0fd1dcba24eeab1a44235fc366"
+    },
+    {
+      "group": "org.jspecify",
+      "name": "jspecify",
+      "version": "1.0.1",
+      "file": "jspecify-1.0.1.jar",
+      "sha256": "070d75f261fe4c5b8202508366715f7f2d4660f88c8ef7e6d3575e48c9683b66"
+    },
+    {
+      "group": "org.ow2.asm",
+      "name": "asm",
+      "version": "9.7.1",
+      "file": "asm-9.7.1.jar",
+      "sha256": "8cadd43ac5eb6d09de05faecca38b917a040bb9139c7edeb4cc81c740b713281"
+    },
+    {
+      "group": "org.reactivestreams",
+      "name": "reactive-streams",
+      "version": "1.0.4",
+      "file": "reactive-streams-1.0.4.jar",
+      "sha256": "f75ca597789b3dac58f61857b9ac2e1034a68fa672db35055a8fb4509e325f28"
+    },
+    {
+      "group": "org.slf4j",
+      "name": "jul-to-slf4j",
+      "version": "2.0.18",
+      "file": "jul-to-slf4j-2.0.18.jar",
+      "sha256": "cbb7d1aaaa9e871eb1a06594abd911bf97027152976edf1edc315be75239204e"
+    },
+    {
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.18",
+      "file": "slf4j-api-2.0.18.jar",
+      "sha256": "44508fd1576500688c790b190acdd16fec4f8c79a3e0b900afd70503cf055f55"
+    },
+    {
+      "group": "org.springdoc",
+      "name": "springdoc-openapi-starter-common",
+      "version": "3.1.1",
+      "file": "springdoc-openapi-starter-common-3.1.1.jar",
+      "sha256": "8765460695778bc383f12d9f96d62195ec8ddaef64277854891e9ff0f76e9b97"
+    },
+    {
+      "group": "org.springdoc",
+      "name": "springdoc-openapi-starter-webmvc-api",
+      "version": "3.1.1",
+      "file": "springdoc-openapi-starter-webmvc-api-3.1.1.jar",
+      "sha256": "3b9aa208f93c3e6ff93ae505ea9b8467d00943ca9f6f0041ee0de8008d079a2d"
+    },
+    {
+      "group": "org.springdoc",
+      "name": "springdoc-openapi-starter-webmvc-ui",
+      "version": "3.1.1",
+      "file": "springdoc-openapi-starter-webmvc-ui-3.1.1.jar",
+      "sha256": "aba2b0885cfa2c3c0df6ba4cbafd877101edaa85c7bc10c430b010a7c726836b"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot",
+      "version": "4.1.1",
+      "file": "spring-boot-4.1.1.jar",
+      "sha256": "0d92b532b1d4020640e72d78c31af175c23db8e0ddd45b81855b7fdf4c9c70f0"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-actuator",
+      "version": "4.1.1",
+      "file": "spring-boot-actuator-4.1.1.jar",
+      "sha256": "2bbb38417af25cfc6f57a9b01a85db9b6ccdcadb9e5d40f6b1b2f54a08f8b798"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-actuator-autoconfigure",
+      "version": "4.1.1",
+      "file": "spring-boot-actuator-autoconfigure-4.1.1.jar",
+      "sha256": "bedbd4282a0f0c6a08bd5342d3940b50d8a013420d8a536695aedb1421b5e0f5"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-autoconfigure",
+      "version": "4.1.1",
+      "file": "spring-boot-autoconfigure-4.1.1.jar",
+      "sha256": "59228756ddd76cea050f95d86deff334789bc53b6688beaa673b1af2b9794592"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-data-commons",
+      "version": "4.1.1",
+      "file": "spring-boot-data-commons-4.1.1.jar",
+      "sha256": "e9911b99825ea5650827ec1e2d2fc1890c7e63b6f048c1f4dba2c8e85ff6d354"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-data-elasticsearch",
+      "version": "4.1.1",
+      "file": "spring-boot-data-elasticsearch-4.1.1.jar",
+      "sha256": "88074ace93cda73d879e3de22876b87d0bd5de192ff3b1276a3efb2e56037783"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-data-jpa",
+      "version": "4.1.1",
+      "file": "spring-boot-data-jpa-4.1.1.jar",
+      "sha256": "19860139ccffcdeb27ea5a6c96bc2977bbc586f0aa2e5bb64eca49602e9de95c"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-data-redis",
+      "version": "4.1.1",
+      "file": "spring-boot-data-redis-4.1.1.jar",
+      "sha256": "8df7709a73616c85f12fbee0476a2856a766cda70c6ad87c9a24062b8fe34c91"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-elasticsearch",
+      "version": "4.1.1",
+      "file": "spring-boot-elasticsearch-4.1.1.jar",
+      "sha256": "60ac6cdf24c60e71959af02bea325a50eee2971d71bd10d73078dd11abb48311"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-health",
+      "version": "4.1.1",
+      "file": "spring-boot-health-4.1.1.jar",
+      "sha256": "f60151e1f014b40761d0644be1cb04f82df7fc3e9b7bf6e946848547eec399e7"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-hibernate",
+      "version": "4.1.1",
+      "file": "spring-boot-hibernate-4.1.1.jar",
+      "sha256": "8ad72a7fea79102390661779157a5064ac9e61c395dccc01c0696debf3c69859"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-http-client",
+      "version": "4.1.1",
+      "file": "spring-boot-http-client-4.1.1.jar",
+      "sha256": "a7bae90c3d39eb318fee764d8a18dfa4009d62a9b0d6843c3ce987f4c0ad606e"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-http-codec",
+      "version": "4.1.1",
+      "file": "spring-boot-http-codec-4.1.1.jar",
+      "sha256": "fadc1a322454c68ad78e20c11002255e143bd991d3e619b952a3a5f542b5d0fd"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-http-converter",
+      "version": "4.1.1",
+      "file": "spring-boot-http-converter-4.1.1.jar",
+      "sha256": "52a167430a918c223b2ccd2eb62aff91a8e43e6daebe5a07caa37b9a04c61cb9"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-jackson",
+      "version": "4.1.1",
+      "file": "spring-boot-jackson-4.1.1.jar",
+      "sha256": "69a9b4d8850a0532a5e44ff7306a03621485b26596e7f9481de7d28e68a2dd42"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-jdbc",
+      "version": "4.1.1",
+      "file": "spring-boot-jdbc-4.1.1.jar",
+      "sha256": "30de56a06ccedb40245fd3a69a5107c7b3c0500447bb982a54a3b5da2859ae2c"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-jpa",
+      "version": "4.1.1",
+      "file": "spring-boot-jpa-4.1.1.jar",
+      "sha256": "ccefec84e31f99938543031511215ea16d9a06984be010702ca5c5960c3a2c1f"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-micrometer-metrics",
+      "version": "4.1.1",
+      "file": "spring-boot-micrometer-metrics-4.1.1.jar",
+      "sha256": "70dd91dcc319d00998ce5e410b03b841e682aa2f60e4bab159c78ff0ecdb7d0f"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-micrometer-observation",
+      "version": "4.1.1",
+      "file": "spring-boot-micrometer-observation-4.1.1.jar",
+      "sha256": "09ebd9ff7de21d10b1f11c70ca0ea8766a8a727affd19642584bee5a314ea11a"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-netty",
+      "version": "4.1.1",
+      "file": "spring-boot-netty-4.1.1.jar",
+      "sha256": "09f218966bcdc79014269b2e79fc705761d9d15113ad7cecc5333ebf0e7ee630"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-persistence",
+      "version": "4.1.1",
+      "file": "spring-boot-persistence-4.1.1.jar",
+      "sha256": "0f78d2556ac3ed75f9eaf3134a1fba94ad1ec3414b52aa279c1f690217e71e3c"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-reactor",
+      "version": "4.1.1",
+      "file": "spring-boot-reactor-4.1.1.jar",
+      "sha256": "13690004a723022d7692225122bbfaa6be102e084041c325a6767004659dd440"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-security",
+      "version": "4.1.1",
+      "file": "spring-boot-security-4.1.1.jar",
+      "sha256": "c940697be9bc67820d5011b86d58105836b7cae7c8fb5d4e61d635b51b392cbe"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-security-oauth2-client",
+      "version": "4.1.1",
+      "file": "spring-boot-security-oauth2-client-4.1.1.jar",
+      "sha256": "f194178e5ba4ea7e27b2c1ba172f4f4b9ebcce4abc7780c93b82ad45d0a2ba38"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-servlet",
+      "version": "4.1.1",
+      "file": "spring-boot-servlet-4.1.1.jar",
+      "sha256": "4dcb156e311a4c1ad5f1ed7eabd94a78ea74510b05c429a4fcfdcf8beb9d5882"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-sql",
+      "version": "4.1.1",
+      "file": "spring-boot-sql-4.1.1.jar",
+      "sha256": "fa4f6ddded1bb3bbc496897686336d8433e34f1f22daa886872be2aa184def23"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-4.1.1.jar",
+      "sha256": "de5b2dd28400eda20914fd4a6054d0c201e68d2e4de35a25a4d89f054ccc2e63"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-actuator",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-actuator-4.1.1.jar",
+      "sha256": "d26bb8461ccc417c97a869fbd2e9f0067ce8a56a9ab6058093097ca16e4cc128"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-data-elasticsearch",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-data-elasticsearch-4.1.1.jar",
+      "sha256": "075c67aa274bfee28da07650eb48e8f144be696630828f0ba7106d011a9440b0"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-data-jpa",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-data-jpa-4.1.1.jar",
+      "sha256": "88eb7c8a4d1af4333f40e9c8d53835fd306600ae8a078d633b673f491fcba79a"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-data-redis",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-data-redis-4.1.1.jar",
+      "sha256": "98b8367cff4cc11005e43452c45dafd0ce9c7f66d20411e6f0850c99bc79575d"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-jackson",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-jackson-4.1.1.jar",
+      "sha256": "d30e594a3e0f3a090438fc22000a87ab577a3b80c674180a10544ca331207f24"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-jdbc",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-jdbc-4.1.1.jar",
+      "sha256": "c51b28a3793168bff837eea90b1ae641efc3a28d6cdb980dd2b0b230914e93ee"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-logging",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-logging-4.1.1.jar",
+      "sha256": "8eca7d72c8434f5c3b935385c656cd5337f473434bdbcb4913b3b3a34897d178"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-micrometer-metrics",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-micrometer-metrics-4.1.1.jar",
+      "sha256": "ad34ce3535a82b3920efea7f9c5d6322de484969f3ab5fa6da05030edd7c14d4"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-security",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-security-4.1.1.jar",
+      "sha256": "38628875b75cbed6ba4642f3b0a4baf4735bd4f82b49450e4ae5a5e4d1b7b4a9"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-security-oauth2-client",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-security-oauth2-client-4.1.1.jar",
+      "sha256": "ac7578a5fbe272d3f38ab78fb9d9003d62bc3c308475cbf0ffb38eb6bf658a8d"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-tomcat",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-tomcat-4.1.1.jar",
+      "sha256": "f224d8504be3b413825ee85ef549a7b1598ee8512e062c6bd5ddce1043cd388a"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-tomcat-runtime",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-tomcat-runtime-4.1.1.jar",
+      "sha256": "580f0d9a9d02a1a6e387640e422af42f9dbdf302836d562ec595fdb2b31a1c29"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-webclient",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-webclient-4.1.1.jar",
+      "sha256": "01becc91376dc687653534476c4535943c880b99399e4a49f2b815eeccf9312c"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-webmvc",
+      "version": "4.1.1",
+      "file": "spring-boot-starter-webmvc-4.1.1.jar",
+      "sha256": "4aec3edbdf6317fefe23db1b989d8bba143a45a51c1fc32346146ecebf67d625"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-tomcat",
+      "version": "4.1.1",
+      "file": "spring-boot-tomcat-4.1.1.jar",
+      "sha256": "17f65629e4eb3c979c0572b69b57d630bb12e64869e9d7520adddaa6734256b6"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-transaction",
+      "version": "4.1.1",
+      "file": "spring-boot-transaction-4.1.1.jar",
+      "sha256": "e7f2fad4fe65bf6aaf1b1a538a68a1cf69988adb558f4a0fc0992a8be4fddf64"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-validation",
+      "version": "4.1.1",
+      "file": "spring-boot-validation-4.1.1.jar",
+      "sha256": "c2546a81b6b7a39f51d889c99047f24567e4b28d1717fb53a65e9327cfc436f1"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-web-server",
+      "version": "4.1.1",
+      "file": "spring-boot-web-server-4.1.1.jar",
+      "sha256": "6912fb1fdf7f657a61ac050760fa835fb1e7496399291697e2901f82887a4fee"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-webclient",
+      "version": "4.1.1",
+      "file": "spring-boot-webclient-4.1.1.jar",
+      "sha256": "e20eeeba3fb8ec2005661f9b8828cba34b847080092e87a0ddf5e53df5ecdb0c"
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-webmvc",
+      "version": "4.1.1",
+      "file": "spring-boot-webmvc-4.1.1.jar",
+      "sha256": "9f08c1fb938c45a8693fec5f3065be3aca203948a7ab4d56b06444986f75a6b2"
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-commons",
+      "version": "4.1.1",
+      "file": "spring-data-commons-4.1.1.jar",
+      "sha256": "cf2a3f9bfabefca1a8c2c0f0a65c393d9ff83b0cb1cf7b705accac18a6ed0ee4"
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-elasticsearch",
+      "version": "6.1.1",
+      "file": "spring-data-elasticsearch-6.1.1.jar",
+      "sha256": "1af5de9837753e385a4bd9870446a7dba81b3ae396965d5da1f10c8a9a2f971d"
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-jpa",
+      "version": "4.1.1",
+      "file": "spring-data-jpa-4.1.1.jar",
+      "sha256": "e90191b8d9f1c5a9398db0587460f1f4002e0fe4ff267321ed3a107f7fec46e1"
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-keyvalue",
+      "version": "4.1.1",
+      "file": "spring-data-keyvalue-4.1.1.jar",
+      "sha256": "e8986c8e2577d271096266335a798c8fb5df91fd2fdf85607252056884fb554d"
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-redis",
+      "version": "4.1.1",
+      "file": "spring-data-redis-4.1.1.jar",
+      "sha256": "ad609b5a51bb8591cd923d358125a65d9bea193f79480a37ae60a1d0d5ae55b2"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-config",
+      "version": "7.1.1",
+      "file": "spring-security-config-7.1.1.jar",
+      "sha256": "1f947c853f14cab76563464ee22e72f6672f3913db52647d2f5d1df5f2b1e5a5"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-core",
+      "version": "7.1.1",
+      "file": "spring-security-core-7.1.1.jar",
+      "sha256": "98a5011baa78df36fb184e6ce0e8e086ca9a64fcdd8f161c0a96475a3a0907bd"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-crypto",
+      "version": "7.1.1",
+      "file": "spring-security-crypto-7.1.1.jar",
+      "sha256": "6e8bb2337faccabd30626f917ed1d2bfa9dde982229b6b373b644d1a01635403"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-oauth2-client",
+      "version": "7.1.1",
+      "file": "spring-security-oauth2-client-7.1.1.jar",
+      "sha256": "d871b3571201c69e0142cca3a61fbcca4fd4ec9c0dedb21fdd4fe4a77ff9991d"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-oauth2-core",
+      "version": "7.1.1",
+      "file": "spring-security-oauth2-core-7.1.1.jar",
+      "sha256": "29140d71b37cf1246bf16e33619e88e7baaa1c66bf5574e3c3e9a9f225f0ef6e"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-oauth2-jose",
+      "version": "7.1.1",
+      "file": "spring-security-oauth2-jose-7.1.1.jar",
+      "sha256": "e07d47cac04de4f01be6a6c3f8be249472444b24fd4fad8ff030b45bfe6c5b9c"
+    },
+    {
+      "group": "org.springframework.security",
+      "name": "spring-security-web",
+      "version": "7.1.1",
+      "file": "spring-security-web-7.1.1.jar",
+      "sha256": "dece134a2332c976a2c94ecf13f816c64e8ea7f2139795485afe655fba0408f3"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-aop",
+      "version": "7.0.9",
+      "file": "spring-aop-7.0.9.jar",
+      "sha256": "b8c5d6bfcb1f4993f2cc124f7ab7fac40edf5256b9e43c2f7250a733cb5510e9"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-aspects",
+      "version": "7.0.9",
+      "file": "spring-aspects-7.0.9.jar",
+      "sha256": "68247ea5d8cc7c2d06fb36b80b9e9692bddab72fffeac5e68f974d547fb28875"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-beans",
+      "version": "7.0.9",
+      "file": "spring-beans-7.0.9.jar",
+      "sha256": "ff218b827a25c9e8929b0cd56dfb56916cea9d5b669ed97dc7cb262508ff548b"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-context",
+      "version": "7.0.9",
+      "file": "spring-context-7.0.9.jar",
+      "sha256": "7552a2fcfa30cea53eb14d7a65a7a8e1b1dd82e832a7164fb7e6fb105f438858"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-context-support",
+      "version": "7.0.9",
+      "file": "spring-context-support-7.0.9.jar",
+      "sha256": "3c0c35a0371539f5e7d4e9d0226b9a009a4109cd0e20e805e27132dd6ae0727d"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-core",
+      "version": "7.0.9",
+      "file": "spring-core-7.0.9.jar",
+      "sha256": "5195f4722699b39878d99a832549fe65df2890b159d063b88fff31b1ca65ae36"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-expression",
+      "version": "7.0.9",
+      "file": "spring-expression-7.0.9.jar",
+      "sha256": "046434c40f43819729b9b1db0e6c659dfa68184c1c2c2efa5f7b3a5b27c4e2e2"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-jdbc",
+      "version": "7.0.9",
+      "file": "spring-jdbc-7.0.9.jar",
+      "sha256": "ca0d9af1c5721eef8cac1f94c8b9d27a753248bc33c86e3472bd3d1dbd78f450"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-messaging",
+      "version": "7.0.9",
+      "file": "spring-messaging-7.0.9.jar",
+      "sha256": "19ea7561e5d61e19bee0c94733d03bbf9384c9356eea2d4e90cce7ba3c0ab01b"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-orm",
+      "version": "7.0.9",
+      "file": "spring-orm-7.0.9.jar",
+      "sha256": "d44082acd9377b67858ae207316057e2ef236a16c96e1b4fd8af8d43a6784b31"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-oxm",
+      "version": "7.0.9",
+      "file": "spring-oxm-7.0.9.jar",
+      "sha256": "213b742973516a7ae0846c79757cf905b634e2367ee0bdc0c34a067d365f922b"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-tx",
+      "version": "7.0.9",
+      "file": "spring-tx-7.0.9.jar",
+      "sha256": "bfb15da6e096e2c0752e9db9987d2415bf0da1d744efc988535c10c6b6c2eedd"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-web",
+      "version": "7.0.9",
+      "file": "spring-web-7.0.9.jar",
+      "sha256": "941ced476427bde2533872f293da535fd0258de3f3a650a7f1bfe01ed2927302"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-webflux",
+      "version": "7.0.9",
+      "file": "spring-webflux-7.0.9.jar",
+      "sha256": "70ce35b3b507c2b5711daf78afccdb5d78142fdd3fc1ad0790257655bd6794da"
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-webmvc",
+      "version": "7.0.9",
+      "file": "spring-webmvc-7.0.9.jar",
+      "sha256": "8f114c1461692c5e534e82b27de23b7fb23370db8dee7ce0c92d5106906c9555"
+    },
+    {
+      "group": "org.webjars",
+      "name": "swagger-ui",
+      "version": "5.32.14",
+      "file": "swagger-ui-5.32.14.jar",
+      "sha256": "d17ca6b09c60518574c14d4a40318dc58a11ea92a962e94f30e5a286e1efa4a6"
+    },
+    {
+      "group": "org.webjars",
+      "name": "webjars-locator-lite",
+      "version": "1.1.4",
+      "file": "webjars-locator-lite-1.1.4.jar",
+      "sha256": "9f03705a0cb6adb8ef54c881f24c9433b83b88d4af2da12db97d8c5148521ded"
+    },
+    {
+      "group": "org.yaml",
+      "name": "snakeyaml",
+      "version": "2.6",
+      "file": "snakeyaml-2.6.jar",
+      "sha256": "c8f7a98e7394adda02f6317249710e4d1b4c7a25aa8c7eace0c2eea52eb8bf85"
+    },
+    {
+      "group": "redis.clients.authentication",
+      "name": "redis-authx-core",
+      "version": "0.1.1-beta2",
+      "file": "redis-authx-core-0.1.1-beta2.jar",
+      "sha256": "cc56edb08b3df8562cddac108dca61907d21cc4ad04de05e9f5d1b01058390af"
+    },
+    {
+      "group": "tools.jackson.core",
+      "name": "jackson-core",
+      "version": "3.1.7",
+      "file": "jackson-core-3.1.7.jar",
+      "sha256": "7608c367fd8a92666d28711519599543c180298259963184ce04d2947a8f71e7"
+    },
+    {
+      "group": "tools.jackson.core",
+      "name": "jackson-databind",
+      "version": "3.1.7",
+      "file": "jackson-databind-3.1.7.jar",
+      "sha256": "48c781de87e2016e1f0d973748a27130f11643e7ac080173f40e2d9669d84be3"
+    }
+  ],
+  "packagedLibraries": [
+    "BOOT-INF/lib/",
+    "BOOT-INF/lib/HdrHistogram-2.2.2.jar",
+    "BOOT-INF/lib/HikariCP-7.0.2.jar",
+    "BOOT-INF/lib/accessors-smart-2.6.0.jar",
+    "BOOT-INF/lib/angus-activation-2.0.3.jar",
+    "BOOT-INF/lib/antlr4-runtime-4.13.2.jar",
+    "BOOT-INF/lib/asm-9.7.1.jar",
+    "BOOT-INF/lib/aspectjweaver-1.9.25.1.jar",
+    "BOOT-INF/lib/byte-buddy-1.18.11.jar",
+    "BOOT-INF/lib/classmate-1.7.3.jar",
+    "BOOT-INF/lib/commons-lang3-3.20.0.jar",
+    "BOOT-INF/lib/commons-logging-1.3.6.jar",
+    "BOOT-INF/lib/content-type-2.3.jar",
+    "BOOT-INF/lib/elasticsearch-java-9.4.5.jar",
+    "BOOT-INF/lib/elasticsearch-rest5-client-9.4.5.jar",
+    "BOOT-INF/lib/hibernate-core-7.4.5.Final.jar",
+    "BOOT-INF/lib/hibernate-models-1.1.1.jar",
+    "BOOT-INF/lib/hibernate-validator-9.1.3.Final.jar",
+    "BOOT-INF/lib/httpclient5-5.6.4.jar",
+    "BOOT-INF/lib/httpcore5-5.4.3.jar",
+    "BOOT-INF/lib/httpcore5-h2-5.4.3.jar",
+    "BOOT-INF/lib/istack-commons-runtime-4.1.2.jar",
+    "BOOT-INF/lib/jackson-annotations-2.21.jar",
+    "BOOT-INF/lib/jackson-core-2.21.7.jar",
+    "BOOT-INF/lib/jackson-core-3.1.7.jar",
+    "BOOT-INF/lib/jackson-databind-2.21.7.jar",
+    "BOOT-INF/lib/jackson-databind-3.1.7.jar",
+    "BOOT-INF/lib/jackson-dataformat-yaml-2.21.7.jar",
+    "BOOT-INF/lib/jackson-datatype-jsr310-2.21.7.jar",
+    "BOOT-INF/lib/jakarta.activation-api-2.1.4.jar",
+    "BOOT-INF/lib/jakarta.annotation-api-3.0.0.jar",
+    "BOOT-INF/lib/jakarta.inject-api-2.0.1.jar",
+    "BOOT-INF/lib/jakarta.json-api-2.1.3.jar",
+    "BOOT-INF/lib/jakarta.persistence-api-3.2.0.jar",
+    "BOOT-INF/lib/jakarta.transaction-api-2.0.1.jar",
+    "BOOT-INF/lib/jakarta.validation-api-3.1.1.jar",
+    "BOOT-INF/lib/jakarta.xml.bind-api-4.0.5.jar",
+    "BOOT-INF/lib/jaxb-core-4.0.9.jar",
+    "BOOT-INF/lib/jaxb-runtime-4.0.9.jar",
+    "BOOT-INF/lib/jboss-logging-3.6.3.Final.jar",
+    "BOOT-INF/lib/jcip-annotations-1.0-1.jar",
+    "BOOT-INF/lib/jjwt-api-0.12.3.jar",
+    "BOOT-INF/lib/jjwt-impl-0.12.3.jar",
+    "BOOT-INF/lib/jjwt-jackson-0.12.3.jar",
+    "BOOT-INF/lib/json-smart-2.6.0.jar",
+    "BOOT-INF/lib/jspecify-1.0.1.jar",
+    "BOOT-INF/lib/jsr305-3.0.2.jar",
+    "BOOT-INF/lib/jul-to-slf4j-2.0.18.jar",
+    "BOOT-INF/lib/lang-tag-1.7.jar",
+    "BOOT-INF/lib/lettuce-core-7.5.2.RELEASE.jar",
+    "BOOT-INF/lib/log4j-api-2.25.5.jar",
+    "BOOT-INF/lib/log4j-to-slf4j-2.25.5.jar",
+    "BOOT-INF/lib/logback-classic-1.5.38.jar",
+    "BOOT-INF/lib/logback-core-1.5.38.jar",
+    "BOOT-INF/lib/micrometer-commons-1.17.1.jar",
+    "BOOT-INF/lib/micrometer-core-1.17.1.jar",
+    "BOOT-INF/lib/micrometer-jakarta9-1.17.1.jar",
+    "BOOT-INF/lib/micrometer-observation-1.17.1.jar",
+    "BOOT-INF/lib/micrometer-registry-prometheus-1.17.1.jar",
+    "BOOT-INF/lib/mysql-connector-j-26.7.0.jar",
+    "BOOT-INF/lib/netty-buffer-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-base-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-classes-quic-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-compression-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-dns-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-http-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-http2-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-http3-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-codec-native-quic-4.2.17.Final-linux-aarch_64.jar",
+    "BOOT-INF/lib/netty-codec-native-quic-4.2.17.Final-linux-x86_64.jar",
+    "BOOT-INF/lib/netty-codec-native-quic-4.2.17.Final-osx-aarch_64.jar",
+    "BOOT-INF/lib/netty-codec-native-quic-4.2.17.Final-osx-x86_64.jar",
+    "BOOT-INF/lib/netty-codec-native-quic-4.2.17.Final-windows-x86_64.jar",
+    "BOOT-INF/lib/netty-codec-socks-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-common-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-handler-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-handler-proxy-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-resolver-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-resolver-dns-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-resolver-dns-classes-macos-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-resolver-dns-native-macos-4.2.17.Final-osx-x86_64.jar",
+    "BOOT-INF/lib/netty-transport-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-transport-classes-epoll-4.2.17.Final.jar",
+    "BOOT-INF/lib/netty-transport-native-epoll-4.2.17.Final-linux-x86_64.jar",
+    "BOOT-INF/lib/netty-transport-native-unix-common-4.2.17.Final.jar",
+    "BOOT-INF/lib/nimbus-jose-jwt-10.9.1.jar",
+    "BOOT-INF/lib/oauth2-oidc-sdk-11.38.2.jar",
+    "BOOT-INF/lib/opentelemetry-api-1.62.0.jar",
+    "BOOT-INF/lib/opentelemetry-common-1.62.0.jar",
+    "BOOT-INF/lib/opentelemetry-context-1.62.0.jar",
+    "BOOT-INF/lib/opentelemetry-semconv-1.41.1.jar",
+    "BOOT-INF/lib/parsson-1.1.9.jar",
+    "BOOT-INF/lib/prometheus-metrics-config-1.7.0.jar",
+    "BOOT-INF/lib/prometheus-metrics-core-1.7.0.jar",
+    "BOOT-INF/lib/prometheus-metrics-exposition-formats-1.7.0.jar",
+    "BOOT-INF/lib/prometheus-metrics-exposition-textformats-1.7.0.jar",
+    "BOOT-INF/lib/prometheus-metrics-model-1.7.0.jar",
+    "BOOT-INF/lib/prometheus-metrics-tracer-common-1.7.0.jar",
+    "BOOT-INF/lib/reactive-streams-1.0.4.jar",
+    "BOOT-INF/lib/reactor-core-3.8.7.jar",
+    "BOOT-INF/lib/reactor-netty-core-1.3.7.jar",
+    "BOOT-INF/lib/reactor-netty-http-1.3.7.jar",
+    "BOOT-INF/lib/redis-authx-core-0.1.1-beta2.jar",
+    "BOOT-INF/lib/slf4j-api-2.0.18.jar",
+    "BOOT-INF/lib/snakeyaml-2.6.jar",
+    "BOOT-INF/lib/spring-aop-7.0.9.jar",
+    "BOOT-INF/lib/spring-aspects-7.0.9.jar",
+    "BOOT-INF/lib/spring-beans-7.0.9.jar",
+    "BOOT-INF/lib/spring-boot-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-actuator-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-actuator-autoconfigure-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-autoconfigure-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-data-commons-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-data-elasticsearch-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-data-jpa-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-data-redis-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-elasticsearch-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-health-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-hibernate-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-http-client-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-http-codec-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-http-converter-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-jackson-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-jarmode-tools-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-jdbc-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-jpa-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-micrometer-metrics-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-micrometer-observation-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-netty-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-persistence-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-reactor-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-security-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-security-oauth2-client-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-servlet-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-sql-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-tomcat-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-transaction-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-validation-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-web-server-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-webclient-4.1.1.jar",
+    "BOOT-INF/lib/spring-boot-webmvc-4.1.1.jar",
+    "BOOT-INF/lib/spring-context-7.0.9.jar",
+    "BOOT-INF/lib/spring-context-support-7.0.9.jar",
+    "BOOT-INF/lib/spring-core-7.0.9.jar",
+    "BOOT-INF/lib/spring-data-commons-4.1.1.jar",
+    "BOOT-INF/lib/spring-data-elasticsearch-6.1.1.jar",
+    "BOOT-INF/lib/spring-data-jpa-4.1.1.jar",
+    "BOOT-INF/lib/spring-data-keyvalue-4.1.1.jar",
+    "BOOT-INF/lib/spring-data-redis-4.1.1.jar",
+    "BOOT-INF/lib/spring-expression-7.0.9.jar",
+    "BOOT-INF/lib/spring-jdbc-7.0.9.jar",
+    "BOOT-INF/lib/spring-messaging-7.0.9.jar",
+    "BOOT-INF/lib/spring-orm-7.0.9.jar",
+    "BOOT-INF/lib/spring-oxm-7.0.9.jar",
+    "BOOT-INF/lib/spring-security-config-7.1.1.jar",
+    "BOOT-INF/lib/spring-security-core-7.1.1.jar",
+    "BOOT-INF/lib/spring-security-crypto-7.1.1.jar",
+    "BOOT-INF/lib/spring-security-oauth2-client-7.1.1.jar",
+    "BOOT-INF/lib/spring-security-oauth2-core-7.1.1.jar",
+    "BOOT-INF/lib/spring-security-oauth2-jose-7.1.1.jar",
+    "BOOT-INF/lib/spring-security-web-7.1.1.jar",
+    "BOOT-INF/lib/spring-tx-7.0.9.jar",
+    "BOOT-INF/lib/spring-web-7.0.9.jar",
+    "BOOT-INF/lib/spring-webflux-7.0.9.jar",
+    "BOOT-INF/lib/spring-webmvc-7.0.9.jar",
+    "BOOT-INF/lib/springdoc-openapi-starter-common-3.1.1.jar",
+    "BOOT-INF/lib/springdoc-openapi-starter-webmvc-api-3.1.1.jar",
+    "BOOT-INF/lib/springdoc-openapi-starter-webmvc-ui-3.1.1.jar",
+    "BOOT-INF/lib/swagger-annotations-jakarta-2.2.55.jar",
+    "BOOT-INF/lib/swagger-core-jakarta-2.2.55.jar",
+    "BOOT-INF/lib/swagger-models-jakarta-2.2.55.jar",
+    "BOOT-INF/lib/swagger-ui-5.32.14.jar",
+    "BOOT-INF/lib/tomcat-embed-core-11.0.26.jar",
+    "BOOT-INF/lib/tomcat-embed-el-11.0.26.jar",
+    "BOOT-INF/lib/tomcat-embed-websocket-11.0.26.jar",
+    "BOOT-INF/lib/txw2-4.0.9.jar",
+    "BOOT-INF/lib/webjars-locator-lite-1.1.4.jar"
+  ],
+  "awsImplementationClasses": [],
+  "storageFacadeIncluded": true
+}

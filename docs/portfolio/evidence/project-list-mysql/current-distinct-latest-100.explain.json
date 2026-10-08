@@ -1,0 +1,163 @@
+{
+  "query_block": {
+    "select_id": 1,
+    "cost_info": {
+      "query_cost": "74.50"
+    },
+    "ordering_operation": {
+      "using_filesort": true,
+      "cost_info": {
+        "sort_cost": "52.50"
+      },
+      "table": {
+        "table_name": "pe1_0",
+        "access_type": "ALL",
+        "rows_examined_per_scan": 210,
+        "rows_produced_per_join": 52,
+        "filtered": "25.00",
+        "cost_info": {
+          "read_cost": "16.75",
+          "eval_cost": "5.25",
+          "prefix_cost": "22.00",
+          "data_read_per_join": "315K"
+        },
+        "used_columns": [
+          "created_at",
+          "is_deleted",
+          "updated_at",
+          "id",
+          "member_id",
+          "view_count",
+          "content",
+          "thumbnail_url",
+          "title",
+          "category",
+          "github_url",
+          "is_public",
+          "youtube_url"
+        ],
+        "attached_condition": "((`etch_project_list`.`pe1_0`.`is_public` = true) and (`etch_project_list`.`pe1_0`.`is_deleted` = false))"
+      },
+      "select_list_subqueries": [
+        {
+          "dependent": true,
+          "cacheable": false,
+          "query_block": {
+            "select_id": 5,
+            "cost_info": {
+              "query_cost": "42.25"
+            },
+            "table": {
+              "table_name": "c",
+              "access_type": "ALL",
+              "possible_keys": [
+                "FK84ljbddgbrlngd23jvbj10q7h"
+              ],
+              "rows_examined_per_scan": 420,
+              "rows_produced_per_join": 21,
+              "filtered": "5.00",
+              "cost_info": {
+                "read_cost": "21.25",
+                "eval_cost": "2.10",
+                "prefix_cost": "42.25",
+                "data_read_per_join": "1008"
+              },
+              "used_columns": [
+                "is_deleted",
+                "project_post"
+              ],
+              "attached_condition": "((`etch_project_list`.`c`.`is_deleted` = 0) and (`etch_project_list`.`c`.`project_post` = `etch_project_list`.`pe1_0`.`id`))"
+            }
+          }
+        },
+        {
+          "dependent": true,
+          "cacheable": false,
+          "query_block": {
+            "select_id": 4,
+            "cost_info": {
+              "query_cost": "64.10"
+            },
+            "table": {
+              "table_name": "lc",
+              "access_type": "ALL",
+              "rows_examined_per_scan": 631,
+              "rows_produced_per_join": 15,
+              "filtered": "2.50",
+              "cost_info": {
+                "read_cost": "48.33",
+                "eval_cost": "1.58",
+                "prefix_cost": "64.10",
+                "data_read_per_join": "504"
+              },
+              "used_columns": [
+                "targetId",
+                "type"
+              ],
+              "attached_condition": "((`etch_project_list`.`lc`.`type` = 'PROJECT') and (`etch_project_list`.`lc`.`targetId` = `etch_project_list`.`pe1_0`.`id`))"
+            }
+          }
+        },
+        {
+          "dependent": true,
+          "cacheable": false,
+          "query_block": {
+            "select_id": 3,
+            "cost_info": {
+              "query_cost": "64.10"
+            },
+            "table": {
+              "table_name": "lc",
+              "access_type": "ALL",
+              "rows_examined_per_scan": 631,
+              "rows_produced_per_join": 15,
+              "filtered": "2.50",
+              "cost_info": {
+                "read_cost": "48.33",
+                "eval_cost": "1.58",
+                "prefix_cost": "64.10",
+                "data_read_per_join": "504"
+              },
+              "used_columns": [
+                "targetId",
+                "type"
+              ],
+              "attached_condition": "((`etch_project_list`.`lc`.`type` = 'PROJECT') and (`etch_project_list`.`lc`.`targetId` = `etch_project_list`.`pe1_0`.`id`))"
+            }
+          }
+        },
+        {
+          "dependent": true,
+          "cacheable": false,
+          "query_block": {
+            "select_id": 2,
+            "cost_info": {
+              "query_cost": "42.25"
+            },
+            "table": {
+              "table_name": "c",
+              "access_type": "ALL",
+              "possible_keys": [
+                "FK84ljbddgbrlngd23jvbj10q7h"
+              ],
+              "rows_examined_per_scan": 420,
+              "rows_produced_per_join": 21,
+              "filtered": "5.00",
+              "cost_info": {
+                "read_cost": "21.25",
+                "eval_cost": "2.10",
+                "prefix_cost": "42.25",
+                "data_read_per_join": "1008"
+              },
+              "used_columns": [
+                "is_deleted",
+                "project_post"
+              ],
+              "attached_condition": "((`etch_project_list`.`c`.`is_deleted` = 0) and (`etch_project_list`.`c`.`project_post` = `etch_project_list`.`pe1_0`.`id`))"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

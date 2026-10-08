@@ -1,0 +1,6294 @@
+{
+  "baselineCommit": "a5a4d8397660ac454b761391841480fd58a0c8cc",
+  "startCommit": "22109569f45055d09b0b0b8c642257eba52bd759",
+  "target": "fresh",
+  "project": "etch-phase7-fresh-v4",
+  "manifest": {
+    "version": "etch-synthetic-search-v1",
+    "baselineCommit": "a5a4d8397660ac454b761391841480fd58a0c8cc",
+    "frozenAtUtc": "2026-09-29T01:05:51.624552+00:00",
+    "beforeAnyEvaluationSearch": true,
+    "dataHashes": {
+      "corpus.json": "d4d611c7873ef5dfb55eefa5e776bb5d051368eedc9f99c36625ceccd1797d52",
+      "queries.json": "74292436394f887000a5b190bd17e836ef672b170649c2ec9cc01608f5e5356c"
+    },
+    "baselineFileHashes": {
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/JobSearchController.java": "07c104ca3619654b5049a580bacc55078b7dbb43b356ba653741d85d23a3078e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/NewsSearchController.java": "7837e78ab8b8c6a138386f268c564685c7720f698bea3cd1cbbc6c91a96ef4af",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/ProjectSearchController.java": "d8ac472f56d16fc95a13e35a87c92d6b54eb57603a1c445fb4b581c2b6688a41",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/SearchController.java": "4577eb91cad19bf4e997fad68a2436764073544336e3dfe7065d004b26290469",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/JobDocument.java": "bf78a25f8fbb023013ff53397b6cef1f5dda4d93c16bfc723c670059fb0baa11",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/NewsDocument.java": "4b5f4166818b857b33c19eec74de7f45b4eb07db392436060a73e60be7c2627e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/ProjectDocument.java": "a758ac4570ee885c33704035d8091a26f4f53fcedf68da70a898078e6183b540",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/JobSearchResponseDTO.java": "d429d29d928145bed29e3baf47e8e9b9b2d6c1c53265626ec40f3b66b53fa653",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/NewsSearchResponseDTO.java": "0d73d928f956bc9f832015815343692bcd94d9fb20b90845bdb9ac0b9485619c",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/ProjectSearchPage.java": "31503e64f0efba458f06df7b576f4b9a3897627871987fb62199f7f6ae4404ca",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/ProjectSearchResponseDTO.java": "9dfcef4f3803aa8f297af950e6f661ea43b00d5d1e75e3c1402c9d144f3cf238",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/SearchResponseDTO.java": "bfa547854507005621866d70e88318e7f43e0a5f5ad87ba5c0d8f6b12ddc4037",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/enumeration/ProjectSort.java": "b13dc43e09f16bf179ea53c36c071f8c1791b427c99d7ec0954ed9b54b5b782e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexOutbox.java": "c6bc0adf35137b5517fdf93c2e13c6b0bdde4fd7227bcfcc88292e3bc467d3a0",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexStore.java": "ce46542607fb2203a052a0495e05cc3ff44ac149bc59bdbe6adbfe808e78dcb6",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWorker.java": "3b1fc4ce2e57d1877e4c8a5f6c75d9de3b73a2a777f09032ebfbbd79c275593f",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWriter.java": "8f318c0b73c369dbb53f70ce636d0ea854bae14c601fa7cd7e5b8fdb24da9d47",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectLikeCountSync.java": "3a6d3d2176f364d155f88409a724b02732d30ad489264dffad62b634bc73e82d",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectSearchSync.java": "a1955e3daaf984fe533db383b8da5b48a308f118c6f408425dcfec11ae1df4a2",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectViewCountSync.java": "2ff17ad34ece10b906cecbd0eed97bdf0051db42a8b2e9e9779c3dd75928d557",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/JobDocumentRepository.java": "473bb3b5442da0ac183517343c1e6a24c5ba4cdb093e4a134cb4d628d1342e44",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/NewsDocumentRepository.java": "dc099046e29fcd8182776eb68da188d72d95f37d4c75e2127124ae12073480df",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/ProjectDocumentRepository.java": "41c9a49df256ce4f59d9ccc04469c62140f95a88a0bb69d145a4d80f19ed8180",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/JobSearchService.java": "1d7fa7511c8c3e43d428fd14e34e0b152d2f59a10623161d37a324bd12762acd",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/NewsSearchService.java": "342769e9e40cfb73fd239947e0fdf1289febdf26d86403f227cc6173e25131f2",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/ProjectSearchService.java": "4539fa872344f5069290726d597345a8c1c7a77d0cb4bd10b48d27d4aa2f7cc5",
+      "etch/backend/business-server/src/main/resources/es/job-mappings.json": "6d616f4dedb6147d2d53da22faa7ff631284b0725d3ed2b9ed615133caf440df",
+      "etch/backend/business-server/src/main/resources/es/job-settings.json": "7b608967a79c88343763289374ecad4fe5a919eded96144fc0425f847d6fb587",
+      "etch/backend/business-server/src/main/resources/es/news-mappings.json": "6598f6377b045de8a01cf97fdc376de3398f1383d9ffc49b9cd3c9ab47c971b0",
+      "etch/backend/business-server/src/main/resources/es/news-settings.json": "df3910e160c1b4fdb5860897ab2c07fcba3c8f077acac8e1eca3d32a367699bc",
+      "etch/backend/business-server/src/main/resources/es/project-mappings.json": "785c55fb3fb711891da678cc0816cd603586c621980bb47c6b231d3f8971653b",
+      "etch/backend/business-server/src/main/resources/es/project-settings.json": "df3910e160c1b4fdb5860897ab2c07fcba3c8f077acac8e1eca3d32a367699bc"
+    },
+    "policy": "라벨은 결과 확인 전에 고정. 평가 실행은 hash 불일치 시 거부하며 사후 성적 튜닝 금지.",
+    "compatibilityAdjustments": [
+      {
+        "file": "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWriter.java",
+        "frozenSha256": "8f318c0b73c369dbb53f70ce636d0ea854bae14c601fa7cd7e5b8fdb24da9d47",
+        "currentSha256": "e36e602b13c7605d45e9996e8d293bf20e51d9ff102365e77bedcf27e401895d",
+        "change": "Only ObjectMapper import moves from Jackson2 to Jackson3; all other bytes equal Phase4 freeze."
+      }
+    ],
+    "corpusLabelsMappingsAndSearchPolicyUnchanged": true
+  },
+  "runningImageIds": {
+    "mysql": "sha256:ccbf152841ff331161b37aeb0f77a015e114245038c724a5a252482fd902c07f",
+    "backend": "sha256:aed43c0b95ce8f7f07e45a5d47867de507670bc814edf55241df92659ab623dd",
+    "elasticsearch": "sha256:24c66d1ebb69726bb0593c6073123265a7e0be473ab4eff5af5d027bbbc81a40",
+    "web": "sha256:41870cec177ede9f1cf659d4ffc4967ea3ae849e191676f11f2cf1c977947e3e"
+  },
+  "source": {
+    "sourceMatch": true,
+    "sourceCounts": {
+      "job": 23,
+      "news": 23,
+      "project": 24
+    },
+    "trackingCounts": {
+      "states": 48,
+      "projects": 24,
+      "tombstones": 2
+    }
+  },
+  "sync": {
+    "job": {
+      "checkedAt": "2026-09-30T04:21:18.168447+00:00",
+      "kind": "job",
+      "scope": "FULL source/state/ES comparison (not incremental polling)",
+      "sourceCount": 23,
+      "stateCount": 24,
+      "esCount": 24,
+      "checkedIds": 24,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "news": {
+      "checkedAt": "2026-09-30T04:21:18.639347+00:00",
+      "kind": "news",
+      "scope": "FULL source/state/ES comparison (not incremental polling)",
+      "sourceCount": 23,
+      "stateCount": 24,
+      "esCount": 24,
+      "checkedIds": 24,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "project": {
+      "checked": 24,
+      "differences": 0,
+      "unfinishedOutbox": 0
+    }
+  },
+  "metricChecks": {
+    "passed": 6,
+    "knownSwapScore": 0.7967075809905066,
+    "perfect": 1,
+    "emptyWithRelevant": 0,
+    "noRelevant": "excluded from mean",
+    "unjudged": "invalid query score, explicit error; never silently grade 0",
+    "duplicate": "invalid query score"
+  },
+  "queries": [
+    {
+      "queryId": "job-01",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41002,
+        41013,
+        41001
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        41002,
+        41013,
+        41001
+      ],
+      "baselineNdcgAt5": 0.8810783669439536,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-02",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41003,
+        41014,
+        41004
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        41003,
+        41004,
+        41014
+      ],
+      "baselineNdcgAt5": 0.9260446319296772,
+      "sameIds": false,
+      "sameScore": false
+    },
+    {
+      "queryId": "job-03",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41005,
+        41006,
+        41015,
+        41003,
+        41009
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41005,
+        41006,
+        41015,
+        41003,
+        41009
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-04",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41007,
+        41008,
+        41016
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41007,
+        41008,
+        41016
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-05",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41009,
+        41017
+      ],
+      "ndcgAt5": 0.6732934624429354,
+      "baselineReturnedIds": [
+        41009,
+        41017
+      ],
+      "baselineNdcgAt5": 0.6732934624429354,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-06",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41023,
+        41001,
+        41007,
+        41013,
+        41019
+      ],
+      "ndcgAt5": 0.8420809200104147,
+      "baselineReturnedIds": [
+        41023,
+        41001,
+        41007,
+        41013,
+        41019
+      ],
+      "baselineNdcgAt5": 0.8420809200104147,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-07",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41011,
+        41021
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41011,
+        41021
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-08",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41009,
+        41012,
+        41022,
+        41005,
+        41011
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41009,
+        41012,
+        41022,
+        41005,
+        41011
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-09",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41018,
+        41019,
+        41004,
+        41010,
+        41016
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41018,
+        41019,
+        41004,
+        41010,
+        41016
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-10",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41010,
+        41020
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41010,
+        41020
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-01",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42002,
+        42013,
+        42001
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        42002,
+        42013,
+        42001
+      ],
+      "baselineNdcgAt5": 0.8810783669439536,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-02",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42003,
+        42014,
+        42004
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        42003,
+        42004,
+        42014
+      ],
+      "baselineNdcgAt5": 0.9260446319296772,
+      "sameIds": false,
+      "sameScore": false
+    },
+    {
+      "queryId": "news-03",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42005,
+        42006,
+        42015,
+        42003,
+        42009
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42005,
+        42006,
+        42015,
+        42003,
+        42009
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-04",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42007,
+        42008,
+        42016
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42007,
+        42008,
+        42016
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-05",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42009,
+        42017
+      ],
+      "ndcgAt5": 0.6732934624429354,
+      "baselineReturnedIds": [
+        42009,
+        42017
+      ],
+      "baselineNdcgAt5": 0.6732934624429354,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-06",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42023,
+        42001,
+        42007,
+        42013,
+        42019
+      ],
+      "ndcgAt5": 0.8420809200104147,
+      "baselineReturnedIds": [
+        42023,
+        42001,
+        42007,
+        42013,
+        42019
+      ],
+      "baselineNdcgAt5": 0.8420809200104147,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-07",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42011,
+        42021
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42011,
+        42021
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-08",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42009,
+        42012,
+        42022,
+        42005,
+        42011
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42009,
+        42012,
+        42022,
+        42005,
+        42011
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-09",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42019,
+        42018,
+        42004,
+        42010,
+        42016
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        42019,
+        42018,
+        42004,
+        42010,
+        42016
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-10",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42010,
+        42020
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42010,
+        42020
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-01",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43013,
+        43012,
+        43002,
+        43001
+      ],
+      "ndcgAt5": 0.7595063773744855,
+      "baselineReturnedIds": [
+        43013,
+        43012,
+        43002,
+        43001
+      ],
+      "baselineNdcgAt5": 0.7595063773744855,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-02",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43020,
+        43014,
+        43004,
+        43003
+      ],
+      "ndcgAt5": 0.7595063773744855,
+      "baselineReturnedIds": [
+        43020,
+        43014,
+        43004,
+        43003
+      ],
+      "baselineNdcgAt5": 0.7595063773744855,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-03",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43015,
+        43006,
+        43005
+      ],
+      "ndcgAt5": 0.8145672023038535,
+      "baselineReturnedIds": [
+        43015,
+        43006,
+        43005
+      ],
+      "baselineNdcgAt5": 0.8145672023038535,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-04",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43016,
+        43008,
+        43007
+      ],
+      "ndcgAt5": 0.8145672023038535,
+      "baselineReturnedIds": [
+        43016,
+        43008,
+        43007
+      ],
+      "baselineNdcgAt5": 0.8145672023038535,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-05",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43017,
+        43009
+      ],
+      "ndcgAt5": 0.5364180057596336,
+      "baselineReturnedIds": [
+        43017,
+        43009
+      ],
+      "baselineNdcgAt5": 0.5364180057596336,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-06",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43021,
+        43019,
+        43017,
+        43015,
+        43013
+      ],
+      "ndcgAt5": 0.0,
+      "baselineReturnedIds": [
+        43021,
+        43019,
+        43017,
+        43015,
+        43013
+      ],
+      "baselineNdcgAt5": 0.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-07",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43021,
+        43011
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        43021,
+        43011
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-08",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43012,
+        43009
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        43012,
+        43009
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-09",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43019,
+        43018
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        43019,
+        43018
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-10",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43020,
+        43010
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        43020,
+        43010
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    }
+  ],
+  "meanByKind": {
+    "job": 0.9277531116341258,
+    "news": 0.9074238697331763,
+    "project": 0.7074687908087831
+  },
+  "unifiedChecks": [
+    {
+      "name": "unified-Spring",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [
+          41002,
+          41013,
+          41001
+        ],
+        "news": [
+          42002,
+          42013,
+          42001
+        ],
+        "projects": [
+          43013,
+          43012,
+          43002,
+          43001
+        ]
+      }
+    },
+    {
+      "name": "unified-React",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [
+          41003,
+          41014,
+          41004
+        ],
+        "news": [
+          42003,
+          42014,
+          42004
+        ],
+        "projects": [
+          43020,
+          43014,
+          43004,
+          43003
+        ]
+      }
+    },
+    {
+      "name": "unified-검색",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [
+          41010,
+          41020
+        ],
+        "news": [
+          42010,
+          42020
+        ],
+        "projects": [
+          43020,
+          43010
+        ]
+      }
+    },
+    {
+      "name": "unified-\"",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [],
+        "news": [],
+        "projects": []
+      }
+    }
+  ],
+  "allSameIdsAndScores": false,
+  "allChecksPassed": true,
+  "note": "4차와 동일 데이터·라벨·검색 경로·정렬·계산. 공개 정책 HTTP/권한 검사는 check-public.py로 별도. 70ms pacing 포함, 새로운 응답시간 벤치마크가 아니다.",
+  "queryContracts": [
+    {
+      "queryId": "job-01",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-02",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-03",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-04",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-05",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-06",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-07",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-08",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-09",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "job-10",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-01",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-02",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-03",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-04",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-05",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-06",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-07",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-08",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-09",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "news-10",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-01",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-02",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-03",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-04",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-05",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-06",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-07",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-08",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-09",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    },
+    {
+      "queryId": "project-10",
+      "passed": true,
+      "http200": true,
+      "validContentAndIdTypes": true,
+      "forbiddenReturnedIds": [],
+      "nonPublicOrDeletedOrUnknownIds": [],
+      "duplicateIds": false
+    }
+  ],
+  "functionalContracts": {
+    "passed": true,
+    "queryContracts": [
+      {
+        "queryId": "job-01",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-02",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-03",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-04",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-05",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-06",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-07",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-08",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-09",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "job-10",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-01",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-02",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-03",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-04",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-05",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-06",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-07",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-08",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-09",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "news-10",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-01",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-02",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-03",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-04",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-05",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-06",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-07",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-08",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-09",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      },
+      {
+        "queryId": "project-10",
+        "passed": true,
+        "http200": true,
+        "validContentAndIdTypes": true,
+        "forbiddenReturnedIds": [],
+        "nonPublicOrDeletedOrUnknownIds": [],
+        "duplicateIds": false
+      }
+    ],
+    "executedScope": "30 actual API searches, four unified contracts, frozen corpus and DB/ES revision/content/tombstone reconciliation; metric self-checks",
+    "otherContracts": "Authorization, JSON, date and read-only checks require their separately linked evidence; not newly executed by this evaluator.",
+    "reusedEvidence": [
+      {
+        "file": "docs/portfolio/evidence/phase7/fresh-v4-public-policy.json",
+        "sha256": "0759e4f526dd0a1ae8b8482fb5dc13180364343d7fff9c5836bddc94ae21dd83",
+        "scope": "142 public authorization/read-only policies",
+        "status": "REUSED_IDENTICAL_ARTIFACT",
+        "executedThisRun": false,
+        "identityProof": [
+          {
+            "file": "docs/portfolio/evidence/phase7/candidate-image-inventory-final4.json",
+            "sha256": "c430befbf5f959f5c28120c953eb078cec5c34643deb51439858acc2dd35fb6d"
+          },
+          {
+            "file": "docs/portfolio/evidence/phase7/backend-image-artifacts-final4.json",
+            "sha256": "a37d1829cd108dbd90cd0c0f9a7644e0e16c1ad894ed4121445f86ae0fb09630"
+          },
+          {
+            "file": "docs/portfolio/evidence/phase7/backend-public-runtime.json",
+            "sha256": "64b9e836a42e617cd5b251b498152857d94be9f09f5af0494077826faa9c0c24"
+          }
+        ]
+      },
+      {
+        "file": "docs/portfolio/evidence/phase7/fresh-v4-http-contract.json",
+        "sha256": "6dfd0b062e202fa50e32a055b5b078c87d7b33bc6d8f6b6fa7c12db98c084117",
+        "scope": "142 exact HTTP JSON contracts",
+        "status": "REUSED_IDENTICAL_ARTIFACT",
+        "executedThisRun": false,
+        "identityProof": [
+          {
+            "file": "docs/portfolio/evidence/phase7/candidate-image-inventory-final4.json",
+            "sha256": "c430befbf5f959f5c28120c953eb078cec5c34643deb51439858acc2dd35fb6d"
+          },
+          {
+            "file": "docs/portfolio/evidence/phase7/backend-image-artifacts-final4.json",
+            "sha256": "a37d1829cd108dbd90cd0c0f9a7644e0e16c1ad894ed4121445f86ae0fb09630"
+          },
+          {
+            "file": "docs/portfolio/evidence/phase7/backend-public-runtime.json",
+            "sha256": "64b9e836a42e617cd5b251b498152857d94be9f09f5af0494077826faa9c0c24"
+          }
+        ]
+      },
+      {
+        "file": "docs/portfolio/evidence/phase7/migration-jdbc-regression-v4.json",
+        "sha256": "fa96b82b6fce7e01d74f33d567a55eb1a3a66f41c4b3874424781d471a7a7a42",
+        "scope": "24 isolated full-profile JDBC/date/recovery contracts",
+        "status": "REUSED_IDENTICAL_ARTIFACT",
+        "executedThisRun": false,
+        "identityProof": [
+          {
+            "file": "docs/portfolio/evidence/phase7/candidate-image-inventory-final4.json",
+            "sha256": "c430befbf5f959f5c28120c953eb078cec5c34643deb51439858acc2dd35fb6d"
+          },
+          {
+            "file": "docs/portfolio/evidence/phase7/backend-image-artifacts-final4.json",
+            "sha256": "a37d1829cd108dbd90cd0c0f9a7644e0e16c1ad894ed4121445f86ae0fb09630"
+          },
+          {
+            "file": "docs/portfolio/evidence/phase7/backend-public-runtime.json",
+            "sha256": "64b9e836a42e617cd5b251b498152857d94be9f09f5af0494077826faa9c0c24"
+          }
+        ]
+      }
+    ]
+  },
+  "historicalComparison": {
+    "passed": false,
+    "queries": [
+      {
+        "queryId": "job-01",
+        "beforeIds": [
+          41002,
+          41013,
+          41001
+        ],
+        "afterIds": [
+          41002,
+          41013,
+          41001
+        ],
+        "beforeNdcgAt5": 0.8810783669439536,
+        "afterNdcgAt5": 0.8810783669439536,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-02",
+        "beforeIds": [
+          41003,
+          41004,
+          41014
+        ],
+        "afterIds": [
+          41003,
+          41014,
+          41004
+        ],
+        "beforeNdcgAt5": 0.9260446319296772,
+        "afterNdcgAt5": 0.8810783669439536,
+        "sameIdsAndOrder": false,
+        "sameNdcgAt5": false
+      },
+      {
+        "queryId": "job-03",
+        "beforeIds": [
+          41005,
+          41006,
+          41015,
+          41003,
+          41009
+        ],
+        "afterIds": [
+          41005,
+          41006,
+          41015,
+          41003,
+          41009
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-04",
+        "beforeIds": [
+          41007,
+          41008,
+          41016
+        ],
+        "afterIds": [
+          41007,
+          41008,
+          41016
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-05",
+        "beforeIds": [
+          41009,
+          41017
+        ],
+        "afterIds": [
+          41009,
+          41017
+        ],
+        "beforeNdcgAt5": 0.6732934624429354,
+        "afterNdcgAt5": 0.6732934624429354,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-06",
+        "beforeIds": [
+          41023,
+          41001,
+          41007,
+          41013,
+          41019
+        ],
+        "afterIds": [
+          41023,
+          41001,
+          41007,
+          41013,
+          41019
+        ],
+        "beforeNdcgAt5": 0.8420809200104147,
+        "afterNdcgAt5": 0.8420809200104147,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-07",
+        "beforeIds": [
+          41011,
+          41021
+        ],
+        "afterIds": [
+          41011,
+          41021
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-08",
+        "beforeIds": [
+          41009,
+          41012,
+          41022,
+          41005,
+          41011
+        ],
+        "afterIds": [
+          41009,
+          41012,
+          41022,
+          41005,
+          41011
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-09",
+        "beforeIds": [
+          41018,
+          41019,
+          41004,
+          41010,
+          41016
+        ],
+        "afterIds": [
+          41018,
+          41019,
+          41004,
+          41010,
+          41016
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "job-10",
+        "beforeIds": [
+          41010,
+          41020
+        ],
+        "afterIds": [
+          41010,
+          41020
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-01",
+        "beforeIds": [
+          42002,
+          42013,
+          42001
+        ],
+        "afterIds": [
+          42002,
+          42013,
+          42001
+        ],
+        "beforeNdcgAt5": 0.8810783669439536,
+        "afterNdcgAt5": 0.8810783669439536,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-02",
+        "beforeIds": [
+          42003,
+          42004,
+          42014
+        ],
+        "afterIds": [
+          42003,
+          42014,
+          42004
+        ],
+        "beforeNdcgAt5": 0.9260446319296772,
+        "afterNdcgAt5": 0.8810783669439536,
+        "sameIdsAndOrder": false,
+        "sameNdcgAt5": false
+      },
+      {
+        "queryId": "news-03",
+        "beforeIds": [
+          42005,
+          42006,
+          42015,
+          42003,
+          42009
+        ],
+        "afterIds": [
+          42005,
+          42006,
+          42015,
+          42003,
+          42009
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-04",
+        "beforeIds": [
+          42007,
+          42008,
+          42016
+        ],
+        "afterIds": [
+          42007,
+          42008,
+          42016
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-05",
+        "beforeIds": [
+          42009,
+          42017
+        ],
+        "afterIds": [
+          42009,
+          42017
+        ],
+        "beforeNdcgAt5": 0.6732934624429354,
+        "afterNdcgAt5": 0.6732934624429354,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-06",
+        "beforeIds": [
+          42023,
+          42001,
+          42007,
+          42013,
+          42019
+        ],
+        "afterIds": [
+          42023,
+          42001,
+          42007,
+          42013,
+          42019
+        ],
+        "beforeNdcgAt5": 0.8420809200104147,
+        "afterNdcgAt5": 0.8420809200104147,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-07",
+        "beforeIds": [
+          42011,
+          42021
+        ],
+        "afterIds": [
+          42011,
+          42021
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-08",
+        "beforeIds": [
+          42009,
+          42012,
+          42022,
+          42005,
+          42011
+        ],
+        "afterIds": [
+          42009,
+          42012,
+          42022,
+          42005,
+          42011
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-09",
+        "beforeIds": [
+          42019,
+          42018,
+          42004,
+          42010,
+          42016
+        ],
+        "afterIds": [
+          42019,
+          42018,
+          42004,
+          42010,
+          42016
+        ],
+        "beforeNdcgAt5": 0.7967075809905066,
+        "afterNdcgAt5": 0.7967075809905066,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "news-10",
+        "beforeIds": [
+          42010,
+          42020
+        ],
+        "afterIds": [
+          42010,
+          42020
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-01",
+        "beforeIds": [
+          43013,
+          43012,
+          43002,
+          43001
+        ],
+        "afterIds": [
+          43013,
+          43012,
+          43002,
+          43001
+        ],
+        "beforeNdcgAt5": 0.7595063773744855,
+        "afterNdcgAt5": 0.7595063773744855,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-02",
+        "beforeIds": [
+          43020,
+          43014,
+          43004,
+          43003
+        ],
+        "afterIds": [
+          43020,
+          43014,
+          43004,
+          43003
+        ],
+        "beforeNdcgAt5": 0.7595063773744855,
+        "afterNdcgAt5": 0.7595063773744855,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-03",
+        "beforeIds": [
+          43015,
+          43006,
+          43005
+        ],
+        "afterIds": [
+          43015,
+          43006,
+          43005
+        ],
+        "beforeNdcgAt5": 0.8145672023038535,
+        "afterNdcgAt5": 0.8145672023038535,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-04",
+        "beforeIds": [
+          43016,
+          43008,
+          43007
+        ],
+        "afterIds": [
+          43016,
+          43008,
+          43007
+        ],
+        "beforeNdcgAt5": 0.8145672023038535,
+        "afterNdcgAt5": 0.8145672023038535,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-05",
+        "beforeIds": [
+          43017,
+          43009
+        ],
+        "afterIds": [
+          43017,
+          43009
+        ],
+        "beforeNdcgAt5": 0.5364180057596336,
+        "afterNdcgAt5": 0.5364180057596336,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-06",
+        "beforeIds": [
+          43021,
+          43019,
+          43017,
+          43015,
+          43013
+        ],
+        "afterIds": [
+          43021,
+          43019,
+          43017,
+          43015,
+          43013
+        ],
+        "beforeNdcgAt5": 0.0,
+        "afterNdcgAt5": 0.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-07",
+        "beforeIds": [
+          43021,
+          43011
+        ],
+        "afterIds": [
+          43021,
+          43011
+        ],
+        "beforeNdcgAt5": 0.7967075809905066,
+        "afterNdcgAt5": 0.7967075809905066,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-08",
+        "beforeIds": [
+          43012,
+          43009
+        ],
+        "afterIds": [
+          43012,
+          43009
+        ],
+        "beforeNdcgAt5": 1.0,
+        "afterNdcgAt5": 1.0,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-09",
+        "beforeIds": [
+          43019,
+          43018
+        ],
+        "afterIds": [
+          43019,
+          43018
+        ],
+        "beforeNdcgAt5": 0.7967075809905066,
+        "afterNdcgAt5": 0.7967075809905066,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      },
+      {
+        "queryId": "project-10",
+        "beforeIds": [
+          43020,
+          43010
+        ],
+        "afterIds": [
+          43020,
+          43010
+        ],
+        "beforeNdcgAt5": 0.7967075809905066,
+        "afterNdcgAt5": 0.7967075809905066,
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true
+      }
+    ],
+    "rawScoreQueries": [
+      {
+        "queryId": "job-01",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41002,
+            "score": 1.999222,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 1.8946381,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 1.8004522,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41002,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 1.8049891,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41001,
+            "before": 1.8004522,
+            "after": 1.8049891
+          },
+          {
+            "id": 41002,
+            "before": 1.999222,
+            "after": 2.0035713
+          },
+          {
+            "id": 41013,
+            "before": 1.8946381,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-02",
+        "sameIdsAndOrder": false,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41003,
+            "score": 1.8946381,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.8946381,
+            "sort": null
+          },
+          {
+            "id": 41014,
+            "score": 1.8946381,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41003,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41014,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.8049891,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41003,
+            "before": 1.8946381,
+            "after": 1.8991032
+          },
+          {
+            "id": 41004,
+            "before": 1.8946381,
+            "after": 1.8049891
+          },
+          {
+            "id": 41014,
+            "before": 1.8946381,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-03",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41005,
+            "score": 4.3478365,
+            "sort": null
+          },
+          {
+            "id": 41006,
+            "score": 4.3478365,
+            "sort": null
+          },
+          {
+            "id": 41015,
+            "score": 1.999222,
+            "sort": null
+          },
+          {
+            "id": 41003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41005,
+            "score": 4.357295,
+            "sort": null
+          },
+          {
+            "id": 41006,
+            "score": 4.357295,
+            "sort": null
+          },
+          {
+            "id": 41015,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41003,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41005,
+            "before": 4.3478365,
+            "after": 4.357295
+          },
+          {
+            "id": 41006,
+            "before": 4.3478365,
+            "after": 4.357295
+          },
+          {
+            "id": 41009,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41015,
+            "before": 1.999222,
+            "after": 2.0035713
+          }
+        ]
+      },
+      {
+        "queryId": "job-04",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41007,
+            "score": 1.999222,
+            "sort": null
+          },
+          {
+            "id": 41008,
+            "score": 1.999222,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.8946381,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41007,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41008,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.8991032,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41007,
+            "before": 1.999222,
+            "after": 2.0035713
+          },
+          {
+            "id": 41008,
+            "before": 1.999222,
+            "after": 2.0035713
+          },
+          {
+            "id": 41016,
+            "before": 1.8946381,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-05",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41009,
+            "score": 2.3486147,
+            "sort": null
+          },
+          {
+            "id": 41017,
+            "score": 2.3486147,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41009,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41017,
+            "score": 2.353724,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41009,
+            "before": 2.3486147,
+            "after": 2.353724
+          },
+          {
+            "id": 41017,
+            "before": 2.3486147,
+            "after": 2.353724
+          }
+        ]
+      },
+      {
+        "queryId": "job-06",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41023,
+            "score": 7.77843,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41023,
+            "score": 7.798031,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41001,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41007,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41013,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41019,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41023,
+            "before": 7.77843,
+            "after": 7.798031
+          }
+        ]
+      },
+      {
+        "queryId": "job-07",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41011,
+            "score": 2.3486147,
+            "sort": null
+          },
+          {
+            "id": 41021,
+            "score": 2.225753,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41011,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41021,
+            "score": 2.2309985,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41011,
+            "before": 2.3486147,
+            "after": 2.353724
+          },
+          {
+            "id": 41021,
+            "before": 2.225753,
+            "after": 2.2309985
+          }
+        ]
+      },
+      {
+        "queryId": "job-08",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41009,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41012,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41022,
+            "score": 1.8946381,
+            "sort": null
+          },
+          {
+            "id": 41005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41009,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41012,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41022,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41005,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41009,
+            "before": 2.697338,
+            "after": 2.697338
+          },
+          {
+            "id": 41011,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41012,
+            "before": 2.697338,
+            "after": 2.697338
+          },
+          {
+            "id": 41022,
+            "before": 1.8946381,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-09",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41018,
+            "score": 2.552736,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 2.225753,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41018,
+            "score": 2.552736,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 2.2309985,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41004,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41010,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41016,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41018,
+            "before": 2.552736,
+            "after": 2.552736
+          },
+          {
+            "id": 41019,
+            "before": 2.225753,
+            "after": 2.2309985
+          }
+        ]
+      },
+      {
+        "queryId": "job-10",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41010,
+            "score": 2.3486147,
+            "sort": null
+          },
+          {
+            "id": 41020,
+            "score": 2.225753,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41010,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41020,
+            "score": 2.2309985,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41010,
+            "before": 2.3486147,
+            "after": 2.353724
+          },
+          {
+            "id": 41020,
+            "before": 2.225753,
+            "after": 2.2309985
+          }
+        ]
+      },
+      {
+        "queryId": "news-01",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42002,
+            "score": 4.0215077,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 3.7802873,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 3.5663671,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42002,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 3.5768137,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42001,
+            "before": 3.5663671,
+            "after": 3.5768137
+          },
+          {
+            "id": 42002,
+            "before": 4.0215077,
+            "after": 4.0314655
+          },
+          {
+            "id": 42013,
+            "before": 3.7802873,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-02",
+        "sameIdsAndOrder": false,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42003,
+            "score": 3.7802873,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 3.7802873,
+            "sort": null
+          },
+          {
+            "id": 42014,
+            "score": 3.7802873,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42003,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42014,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 3.5768137,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42003,
+            "before": 3.7802873,
+            "after": 3.7905555
+          },
+          {
+            "id": 42004,
+            "before": 3.7802873,
+            "after": 3.5768137
+          },
+          {
+            "id": 42014,
+            "before": 3.7802873,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-03",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42005,
+            "score": 8.7458315,
+            "sort": null
+          },
+          {
+            "id": 42006,
+            "score": 8.7458315,
+            "sort": null
+          },
+          {
+            "id": 42015,
+            "score": 4.0215077,
+            "sort": null
+          },
+          {
+            "id": 42003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42005,
+            "score": 8.767488,
+            "sort": null
+          },
+          {
+            "id": 42006,
+            "score": 8.767488,
+            "sort": null
+          },
+          {
+            "id": 42015,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42003,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42005,
+            "before": 8.7458315,
+            "after": 8.767488
+          },
+          {
+            "id": 42006,
+            "before": 8.7458315,
+            "after": 8.767488
+          },
+          {
+            "id": 42009,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42015,
+            "before": 4.0215077,
+            "after": 4.0314655
+          }
+        ]
+      },
+      {
+        "queryId": "news-04",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42007,
+            "score": 4.0215077,
+            "sort": null
+          },
+          {
+            "id": 42008,
+            "score": 4.0215077,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 3.7802873,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42007,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42008,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 3.7905555,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42007,
+            "before": 4.0215077,
+            "after": 4.0314655
+          },
+          {
+            "id": 42008,
+            "before": 4.0215077,
+            "after": 4.0314655
+          },
+          {
+            "id": 42016,
+            "before": 3.7802873,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-05",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42009,
+            "score": 4.7243237,
+            "sort": null
+          },
+          {
+            "id": 42017,
+            "score": 4.7243237,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42009,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42017,
+            "score": 4.736022,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42009,
+            "before": 4.7243237,
+            "after": 4.736022
+          },
+          {
+            "id": 42017,
+            "before": 4.7243237,
+            "after": 4.736022
+          }
+        ]
+      },
+      {
+        "queryId": "news-06",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42023,
+            "score": 15.40765,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42023,
+            "score": 15.452782,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42001,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42007,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42013,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42019,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42023,
+            "before": 15.40765,
+            "after": 15.452782
+          }
+        ]
+      },
+      {
+        "queryId": "news-07",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42011,
+            "score": 4.7243237,
+            "sort": null
+          },
+          {
+            "id": 42021,
+            "score": 4.4409466,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42011,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42021,
+            "score": 4.453009,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42011,
+            "before": 4.7243237,
+            "after": 4.736022
+          },
+          {
+            "id": 42021,
+            "before": 4.4409466,
+            "after": 4.453009
+          }
+        ]
+      },
+      {
+        "queryId": "news-08",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42009,
+            "score": 4.0215077,
+            "sort": null
+          },
+          {
+            "id": 42012,
+            "score": 3.7802873,
+            "sort": null
+          },
+          {
+            "id": 42022,
+            "score": 3.7802873,
+            "sort": null
+          },
+          {
+            "id": 42005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42009,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42012,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42022,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42005,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42009,
+            "before": 4.0215077,
+            "after": 4.0314655
+          },
+          {
+            "id": 42011,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42012,
+            "before": 3.7802873,
+            "after": 3.7905555
+          },
+          {
+            "id": 42022,
+            "before": 3.7802873,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-09",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42019,
+            "score": 4.4409466,
+            "sort": null
+          },
+          {
+            "id": 42018,
+            "score": 4.189641,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42019,
+            "score": 4.453009,
+            "sort": null
+          },
+          {
+            "id": 42018,
+            "score": 4.201913,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42004,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42010,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42016,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42018,
+            "before": 4.189641,
+            "after": 4.201913
+          },
+          {
+            "id": 42019,
+            "before": 4.4409466,
+            "after": 4.453009
+          }
+        ]
+      },
+      {
+        "queryId": "news-10",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42010,
+            "score": 4.7243237,
+            "sort": null
+          },
+          {
+            "id": 42020,
+            "score": 4.4409466,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42010,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42020,
+            "score": 4.453009,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42010,
+            "before": 4.7243237,
+            "after": 4.736022
+          },
+          {
+            "id": 42020,
+            "before": 4.4409466,
+            "after": 4.453009
+          }
+        ]
+      },
+      {
+        "queryId": "project-01",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43013,
+            "score": 5.3465896,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          },
+          {
+            "id": 43012,
+            "score": 1.6992497,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43002,
+            "score": 5.7563643,
+            "sort": [
+              1785628800000,
+              43002
+            ]
+          },
+          {
+            "id": 43001,
+            "score": 4.991278,
+            "sort": [
+              1785542400000,
+              43001
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43013,
+            "score": 5.3660126,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          },
+          {
+            "id": 43012,
+            "score": 1.6992497,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43002,
+            "score": 5.7751193,
+            "sort": [
+              1785628800000,
+              43002
+            ]
+          },
+          {
+            "id": 43001,
+            "score": 5.011033,
+            "sort": [
+              1785542400000,
+              43001
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43001,
+            "before": 4.991278,
+            "after": 5.011033
+          },
+          {
+            "id": 43002,
+            "before": 5.7563643,
+            "after": 5.7751193
+          },
+          {
+            "id": 43012,
+            "before": 1.6992497,
+            "after": 1.6992497
+          },
+          {
+            "id": 43013,
+            "before": 5.3465896,
+            "after": 5.3660126
+          }
+        ]
+      },
+      {
+        "queryId": "project-02",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43020,
+            "score": 1.8974581,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43014,
+            "score": 5.3465896,
+            "sort": [
+              1786665600000,
+              43014
+            ]
+          },
+          {
+            "id": 43004,
+            "score": 5.3465896,
+            "sort": [
+              1785801600000,
+              43004
+            ]
+          },
+          {
+            "id": 43003,
+            "score": 5.3465896,
+            "sort": [
+              1785715200000,
+              43003
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43020,
+            "score": 1.8974581,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43014,
+            "score": 5.3660126,
+            "sort": [
+              1786665600000,
+              43014
+            ]
+          },
+          {
+            "id": 43004,
+            "score": 5.011033,
+            "sort": [
+              1785801600000,
+              43004
+            ]
+          },
+          {
+            "id": 43003,
+            "score": 5.3660126,
+            "sort": [
+              1785715200000,
+              43003
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43003,
+            "before": 5.3465896,
+            "after": 5.3660126
+          },
+          {
+            "id": 43004,
+            "before": 5.3465896,
+            "after": 5.011033
+          },
+          {
+            "id": 43014,
+            "before": 5.3465896,
+            "after": 5.3660126
+          },
+          {
+            "id": 43020,
+            "before": 1.8974581,
+            "after": 1.8974581
+          }
+        ]
+      },
+      {
+        "queryId": "project-03",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43015,
+            "score": 5.7563643,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43006,
+            "score": 12.566353,
+            "sort": [
+              1785974400000,
+              43006
+            ]
+          },
+          {
+            "id": 43005,
+            "score": 12.566353,
+            "sort": [
+              1785888000000,
+              43005
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43015,
+            "score": 5.7751193,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43006,
+            "score": 12.607296,
+            "sort": [
+              1785974400000,
+              43006
+            ]
+          },
+          {
+            "id": 43005,
+            "score": 12.607296,
+            "sort": [
+              1785888000000,
+              43005
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43005,
+            "before": 12.566353,
+            "after": 12.607296
+          },
+          {
+            "id": 43006,
+            "before": 12.566353,
+            "after": 12.607296
+          },
+          {
+            "id": 43015,
+            "before": 5.7563643,
+            "after": 5.7751193
+          }
+        ]
+      },
+      {
+        "queryId": "project-04",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43016,
+            "score": 5.7563643,
+            "sort": [
+              1786838400000,
+              43016
+            ]
+          },
+          {
+            "id": 43008,
+            "score": 5.7563643,
+            "sort": [
+              1786147200000,
+              43008
+            ]
+          },
+          {
+            "id": 43007,
+            "score": 5.7563643,
+            "sort": [
+              1786060800000,
+              43007
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43016,
+            "score": 5.7751193,
+            "sort": [
+              1786838400000,
+              43016
+            ]
+          },
+          {
+            "id": 43008,
+            "score": 5.7751193,
+            "sort": [
+              1786147200000,
+              43008
+            ]
+          },
+          {
+            "id": 43007,
+            "score": 5.7751193,
+            "sort": [
+              1786060800000,
+              43007
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43007,
+            "before": 5.7563643,
+            "after": 5.7751193
+          },
+          {
+            "id": 43008,
+            "before": 5.7563643,
+            "after": 5.7751193
+          },
+          {
+            "id": 43016,
+            "before": 5.7563643,
+            "after": 5.7751193
+          }
+        ]
+      },
+      {
+        "queryId": "project-05",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43017,
+            "score": 6.809989,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.809989,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43017,
+            "score": 6.8321767,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.8321767,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43009,
+            "before": 6.809989,
+            "after": 6.8321767
+          },
+          {
+            "id": 43017,
+            "before": 6.809989,
+            "after": 6.8321767
+          }
+        ]
+      },
+      {
+        "queryId": "project-06",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43021,
+            "score": 1.2973908,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43019,
+            "score": 1.2973908,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43017,
+            "score": 1.2973908,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43015,
+            "score": 1.2973908,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43013,
+            "score": 1.2973908,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43021,
+            "score": 1.2973908,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43019,
+            "score": 1.2973908,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43017,
+            "score": 1.2973908,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43015,
+            "score": 1.2973908,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43013,
+            "score": 1.2973908,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43013,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43015,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43017,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43019,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43021,
+            "before": 1.2973908,
+            "after": 1.2973908
+          }
+        ]
+      },
+      {
+        "queryId": "project-07",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43021,
+            "score": 6.3252106,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43011,
+            "score": 6.809989,
+            "sort": [
+              1786406400000,
+              43011
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43021,
+            "score": 6.3481884,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43011,
+            "score": 6.8321767,
+            "sort": [
+              1786406400000,
+              43011
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43011,
+            "before": 6.809989,
+            "after": 6.8321767
+          },
+          {
+            "id": 43021,
+            "before": 6.3252106,
+            "after": 6.3481884
+          }
+        ]
+      },
+      {
+        "queryId": "project-08",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43012,
+            "score": 6.3252106,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.809989,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43012,
+            "score": 6.3481884,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.8321767,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43009,
+            "before": 6.809989,
+            "after": 6.8321767
+          },
+          {
+            "id": 43012,
+            "before": 6.3252106,
+            "after": 6.3481884
+          }
+        ]
+      },
+      {
+        "queryId": "project-09",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43019,
+            "score": 6.3252106,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43018,
+            "score": 5.9048634,
+            "sort": [
+              1787011200000,
+              43018
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43019,
+            "score": 6.3481884,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43018,
+            "score": 5.928234,
+            "sort": [
+              1787011200000,
+              43018
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43018,
+            "before": 5.9048634,
+            "after": 5.928234
+          },
+          {
+            "id": 43019,
+            "before": 6.3252106,
+            "after": 6.3481884
+          }
+        ]
+      },
+      {
+        "queryId": "project-10",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": false,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43020,
+            "score": 6.3252106,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43010,
+            "score": 6.809989,
+            "sort": [
+              1786320000000,
+              43010
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43020,
+            "score": 6.3481884,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43010,
+            "score": 6.8321767,
+            "sort": [
+              1786320000000,
+              43010
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43010,
+            "before": 6.809989,
+            "after": 6.8321767
+          },
+          {
+            "id": 43020,
+            "before": 6.3252106,
+            "after": 6.3481884
+          }
+        ]
+      }
+    ],
+    "rankingDifferenceCount": 2,
+    "rawScoreDifferenceCount": 29,
+    "rawScoreIncomparableQueryCount": 0,
+    "scope": "Original engine comparison is retained; raw score change is diagnostic, not nDCG or blanket functional failure.",
+    "apiEvidence": {
+      "file": "docs/portfolio/evidence/phase6/evaluation-os-final/summary.json",
+      "sha256": "09bde8ff3945150852b527b75b928f92ea87c44475fb07142212df37d4135005"
+    }
+  },
+  "currentBaselineRegression": {
+    "passed": true,
+    "queries": [
+      {
+        "queryId": "job-01",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-02",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-03",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-04",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-05",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-06",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-07",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-08",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-09",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "job-10",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-01",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-02",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-03",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-04",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-05",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-06",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-07",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-08",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-09",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "news-10",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-01",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-02",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-03",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-04",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-05",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-06",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-07",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-08",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-09",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      },
+      {
+        "queryId": "project-10",
+        "sameIdsAndOrder": true,
+        "sameNdcgAt5": true,
+        "sameSort": true
+      }
+    ],
+    "rawScoreQueries": [
+      {
+        "queryId": "job-01",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41002,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 1.8049891,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41002,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 1.8049891,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41001,
+            "before": 1.8049891,
+            "after": 1.8049891
+          },
+          {
+            "id": 41002,
+            "before": 2.0035713,
+            "after": 2.0035713
+          },
+          {
+            "id": 41013,
+            "before": 1.8991032,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-02",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41003,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41014,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.8049891,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41003,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41014,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.8049891,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41003,
+            "before": 1.8991032,
+            "after": 1.8991032
+          },
+          {
+            "id": 41004,
+            "before": 1.8049891,
+            "after": 1.8049891
+          },
+          {
+            "id": 41014,
+            "before": 1.8991032,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-03",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41005,
+            "score": 4.357295,
+            "sort": null
+          },
+          {
+            "id": 41006,
+            "score": 4.357295,
+            "sort": null
+          },
+          {
+            "id": 41015,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41005,
+            "score": 4.357295,
+            "sort": null
+          },
+          {
+            "id": 41006,
+            "score": 4.357295,
+            "sort": null
+          },
+          {
+            "id": 41015,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41003,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41005,
+            "before": 4.357295,
+            "after": 4.357295
+          },
+          {
+            "id": 41006,
+            "before": 4.357295,
+            "after": 4.357295
+          },
+          {
+            "id": 41009,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41015,
+            "before": 2.0035713,
+            "after": 2.0035713
+          }
+        ]
+      },
+      {
+        "queryId": "job-04",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41007,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41008,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.8991032,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41007,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41008,
+            "score": 2.0035713,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.8991032,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41007,
+            "before": 2.0035713,
+            "after": 2.0035713
+          },
+          {
+            "id": 41008,
+            "before": 2.0035713,
+            "after": 2.0035713
+          },
+          {
+            "id": 41016,
+            "before": 1.8991032,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-05",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41009,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41017,
+            "score": 2.353724,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41009,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41017,
+            "score": 2.353724,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41009,
+            "before": 2.353724,
+            "after": 2.353724
+          },
+          {
+            "id": 41017,
+            "before": 2.353724,
+            "after": 2.353724
+          }
+        ]
+      },
+      {
+        "queryId": "job-06",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41023,
+            "score": 7.798031,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41023,
+            "score": 7.798031,
+            "sort": null
+          },
+          {
+            "id": 41001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41001,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41007,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41013,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41019,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 41023,
+            "before": 7.798031,
+            "after": 7.798031
+          }
+        ]
+      },
+      {
+        "queryId": "job-07",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41011,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41021,
+            "score": 2.2309985,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41011,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41021,
+            "score": 2.2309985,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41011,
+            "before": 2.353724,
+            "after": 2.353724
+          },
+          {
+            "id": 41021,
+            "before": 2.2309985,
+            "after": 2.2309985
+          }
+        ]
+      },
+      {
+        "queryId": "job-08",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41009,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41012,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41022,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41009,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41012,
+            "score": 2.697338,
+            "sort": null
+          },
+          {
+            "id": 41022,
+            "score": 1.8991032,
+            "sort": null
+          },
+          {
+            "id": 41005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41005,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41009,
+            "before": 2.697338,
+            "after": 2.697338
+          },
+          {
+            "id": 41011,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41012,
+            "before": 2.697338,
+            "after": 2.697338
+          },
+          {
+            "id": 41022,
+            "before": 1.8991032,
+            "after": 1.8991032
+          }
+        ]
+      },
+      {
+        "queryId": "job-09",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41018,
+            "score": 2.552736,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 2.2309985,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41018,
+            "score": 2.552736,
+            "sort": null
+          },
+          {
+            "id": 41019,
+            "score": 2.2309985,
+            "sort": null
+          },
+          {
+            "id": 41004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 41016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41004,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41010,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41016,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 41018,
+            "before": 2.552736,
+            "after": 2.552736
+          },
+          {
+            "id": 41019,
+            "before": 2.2309985,
+            "after": 2.2309985
+          }
+        ]
+      },
+      {
+        "queryId": "job-10",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 41010,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41020,
+            "score": 2.2309985,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 41010,
+            "score": 2.353724,
+            "sort": null
+          },
+          {
+            "id": 41020,
+            "score": 2.2309985,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 41010,
+            "before": 2.353724,
+            "after": 2.353724
+          },
+          {
+            "id": 41020,
+            "before": 2.2309985,
+            "after": 2.2309985
+          }
+        ]
+      },
+      {
+        "queryId": "news-01",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42002,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 3.5768137,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42002,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 3.5768137,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42001,
+            "before": 3.5768137,
+            "after": 3.5768137
+          },
+          {
+            "id": 42002,
+            "before": 4.0314655,
+            "after": 4.0314655
+          },
+          {
+            "id": 42013,
+            "before": 3.7905555,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-02",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42003,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42014,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 3.5768137,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42003,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42014,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 3.5768137,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42003,
+            "before": 3.7905555,
+            "after": 3.7905555
+          },
+          {
+            "id": 42004,
+            "before": 3.5768137,
+            "after": 3.5768137
+          },
+          {
+            "id": 42014,
+            "before": 3.7905555,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-03",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42005,
+            "score": 8.767488,
+            "sort": null
+          },
+          {
+            "id": 42006,
+            "score": 8.767488,
+            "sort": null
+          },
+          {
+            "id": 42015,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42005,
+            "score": 8.767488,
+            "sort": null
+          },
+          {
+            "id": 42006,
+            "score": 8.767488,
+            "sort": null
+          },
+          {
+            "id": 42015,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42003,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42009,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42003,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42005,
+            "before": 8.767488,
+            "after": 8.767488
+          },
+          {
+            "id": 42006,
+            "before": 8.767488,
+            "after": 8.767488
+          },
+          {
+            "id": 42009,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42015,
+            "before": 4.0314655,
+            "after": 4.0314655
+          }
+        ]
+      },
+      {
+        "queryId": "news-04",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42007,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42008,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 3.7905555,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42007,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42008,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 3.7905555,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42007,
+            "before": 4.0314655,
+            "after": 4.0314655
+          },
+          {
+            "id": 42008,
+            "before": 4.0314655,
+            "after": 4.0314655
+          },
+          {
+            "id": 42016,
+            "before": 3.7905555,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-05",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42009,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42017,
+            "score": 4.736022,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42009,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42017,
+            "score": 4.736022,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42009,
+            "before": 4.736022,
+            "after": 4.736022
+          },
+          {
+            "id": 42017,
+            "before": 4.736022,
+            "after": 4.736022
+          }
+        ]
+      },
+      {
+        "queryId": "news-06",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42023,
+            "score": 15.452782,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42023,
+            "score": 15.452782,
+            "sort": null
+          },
+          {
+            "id": 42001,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42007,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42013,
+            "score": 4.5386715,
+            "sort": null
+          },
+          {
+            "id": 42019,
+            "score": 4.5386715,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42001,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42007,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42013,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42019,
+            "before": 4.5386715,
+            "after": 4.5386715
+          },
+          {
+            "id": 42023,
+            "before": 15.452782,
+            "after": 15.452782
+          }
+        ]
+      },
+      {
+        "queryId": "news-07",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42011,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42021,
+            "score": 4.453009,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42011,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42021,
+            "score": 4.453009,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42011,
+            "before": 4.736022,
+            "after": 4.736022
+          },
+          {
+            "id": 42021,
+            "before": 4.453009,
+            "after": 4.453009
+          }
+        ]
+      },
+      {
+        "queryId": "news-08",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42009,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42012,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42022,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42009,
+            "score": 4.0314655,
+            "sort": null
+          },
+          {
+            "id": 42012,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42022,
+            "score": 3.7905555,
+            "sort": null
+          },
+          {
+            "id": 42005,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42011,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42005,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42009,
+            "before": 4.0314655,
+            "after": 4.0314655
+          },
+          {
+            "id": 42011,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42012,
+            "before": 3.7905555,
+            "after": 3.7905555
+          },
+          {
+            "id": 42022,
+            "before": 3.7905555,
+            "after": 3.7905555
+          }
+        ]
+      },
+      {
+        "queryId": "news-09",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42019,
+            "score": 4.453009,
+            "sort": null
+          },
+          {
+            "id": 42018,
+            "score": 4.201913,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42019,
+            "score": 4.453009,
+            "sort": null
+          },
+          {
+            "id": 42018,
+            "score": 4.201913,
+            "sort": null
+          },
+          {
+            "id": 42004,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42010,
+            "score": 1.7123606,
+            "sort": null
+          },
+          {
+            "id": 42016,
+            "score": 1.7123606,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42004,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42010,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42016,
+            "before": 1.7123606,
+            "after": 1.7123606
+          },
+          {
+            "id": 42018,
+            "before": 4.201913,
+            "after": 4.201913
+          },
+          {
+            "id": 42019,
+            "before": 4.453009,
+            "after": 4.453009
+          }
+        ]
+      },
+      {
+        "queryId": "news-10",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 42010,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42020,
+            "score": 4.453009,
+            "sort": null
+          }
+        ],
+        "after": [
+          {
+            "id": 42010,
+            "score": 4.736022,
+            "sort": null
+          },
+          {
+            "id": 42020,
+            "score": 4.453009,
+            "sort": null
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 42010,
+            "before": 4.736022,
+            "after": 4.736022
+          },
+          {
+            "id": 42020,
+            "before": 4.453009,
+            "after": 4.453009
+          }
+        ]
+      },
+      {
+        "queryId": "project-01",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43013,
+            "score": 5.3660126,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          },
+          {
+            "id": 43012,
+            "score": 1.6992497,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43002,
+            "score": 5.7751193,
+            "sort": [
+              1785628800000,
+              43002
+            ]
+          },
+          {
+            "id": 43001,
+            "score": 5.011033,
+            "sort": [
+              1785542400000,
+              43001
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43013,
+            "score": 5.3660126,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          },
+          {
+            "id": 43012,
+            "score": 1.6992497,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43002,
+            "score": 5.7751193,
+            "sort": [
+              1785628800000,
+              43002
+            ]
+          },
+          {
+            "id": 43001,
+            "score": 5.011033,
+            "sort": [
+              1785542400000,
+              43001
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43001,
+            "before": 5.011033,
+            "after": 5.011033
+          },
+          {
+            "id": 43002,
+            "before": 5.7751193,
+            "after": 5.7751193
+          },
+          {
+            "id": 43012,
+            "before": 1.6992497,
+            "after": 1.6992497
+          },
+          {
+            "id": 43013,
+            "before": 5.3660126,
+            "after": 5.3660126
+          }
+        ]
+      },
+      {
+        "queryId": "project-02",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43020,
+            "score": 1.8974581,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43014,
+            "score": 5.3660126,
+            "sort": [
+              1786665600000,
+              43014
+            ]
+          },
+          {
+            "id": 43004,
+            "score": 5.011033,
+            "sort": [
+              1785801600000,
+              43004
+            ]
+          },
+          {
+            "id": 43003,
+            "score": 5.3660126,
+            "sort": [
+              1785715200000,
+              43003
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43020,
+            "score": 1.8974581,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43014,
+            "score": 5.3660126,
+            "sort": [
+              1786665600000,
+              43014
+            ]
+          },
+          {
+            "id": 43004,
+            "score": 5.011033,
+            "sort": [
+              1785801600000,
+              43004
+            ]
+          },
+          {
+            "id": 43003,
+            "score": 5.3660126,
+            "sort": [
+              1785715200000,
+              43003
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43003,
+            "before": 5.3660126,
+            "after": 5.3660126
+          },
+          {
+            "id": 43004,
+            "before": 5.011033,
+            "after": 5.011033
+          },
+          {
+            "id": 43014,
+            "before": 5.3660126,
+            "after": 5.3660126
+          },
+          {
+            "id": 43020,
+            "before": 1.8974581,
+            "after": 1.8974581
+          }
+        ]
+      },
+      {
+        "queryId": "project-03",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43015,
+            "score": 5.7751193,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43006,
+            "score": 12.607296,
+            "sort": [
+              1785974400000,
+              43006
+            ]
+          },
+          {
+            "id": 43005,
+            "score": 12.607296,
+            "sort": [
+              1785888000000,
+              43005
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43015,
+            "score": 5.7751193,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43006,
+            "score": 12.607296,
+            "sort": [
+              1785974400000,
+              43006
+            ]
+          },
+          {
+            "id": 43005,
+            "score": 12.607296,
+            "sort": [
+              1785888000000,
+              43005
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43005,
+            "before": 12.607296,
+            "after": 12.607296
+          },
+          {
+            "id": 43006,
+            "before": 12.607296,
+            "after": 12.607296
+          },
+          {
+            "id": 43015,
+            "before": 5.7751193,
+            "after": 5.7751193
+          }
+        ]
+      },
+      {
+        "queryId": "project-04",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43016,
+            "score": 5.7751193,
+            "sort": [
+              1786838400000,
+              43016
+            ]
+          },
+          {
+            "id": 43008,
+            "score": 5.7751193,
+            "sort": [
+              1786147200000,
+              43008
+            ]
+          },
+          {
+            "id": 43007,
+            "score": 5.7751193,
+            "sort": [
+              1786060800000,
+              43007
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43016,
+            "score": 5.7751193,
+            "sort": [
+              1786838400000,
+              43016
+            ]
+          },
+          {
+            "id": 43008,
+            "score": 5.7751193,
+            "sort": [
+              1786147200000,
+              43008
+            ]
+          },
+          {
+            "id": 43007,
+            "score": 5.7751193,
+            "sort": [
+              1786060800000,
+              43007
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43007,
+            "before": 5.7751193,
+            "after": 5.7751193
+          },
+          {
+            "id": 43008,
+            "before": 5.7751193,
+            "after": 5.7751193
+          },
+          {
+            "id": 43016,
+            "before": 5.7751193,
+            "after": 5.7751193
+          }
+        ]
+      },
+      {
+        "queryId": "project-05",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43017,
+            "score": 6.8321767,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.8321767,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43017,
+            "score": 6.8321767,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.8321767,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43009,
+            "before": 6.8321767,
+            "after": 6.8321767
+          },
+          {
+            "id": 43017,
+            "before": 6.8321767,
+            "after": 6.8321767
+          }
+        ]
+      },
+      {
+        "queryId": "project-06",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43021,
+            "score": 1.2973908,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43019,
+            "score": 1.2973908,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43017,
+            "score": 1.2973908,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43015,
+            "score": 1.2973908,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43013,
+            "score": 1.2973908,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43021,
+            "score": 1.2973908,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43019,
+            "score": 1.2973908,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43017,
+            "score": 1.2973908,
+            "sort": [
+              1786924800000,
+              43017
+            ]
+          },
+          {
+            "id": 43015,
+            "score": 1.2973908,
+            "sort": [
+              1786752000000,
+              43015
+            ]
+          },
+          {
+            "id": 43013,
+            "score": 1.2973908,
+            "sort": [
+              1786579200000,
+              43013
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43013,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43015,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43017,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43019,
+            "before": 1.2973908,
+            "after": 1.2973908
+          },
+          {
+            "id": 43021,
+            "before": 1.2973908,
+            "after": 1.2973908
+          }
+        ]
+      },
+      {
+        "queryId": "project-07",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43021,
+            "score": 6.3481884,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43011,
+            "score": 6.8321767,
+            "sort": [
+              1786406400000,
+              43011
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43021,
+            "score": 6.3481884,
+            "sort": [
+              1787270400000,
+              43021
+            ]
+          },
+          {
+            "id": 43011,
+            "score": 6.8321767,
+            "sort": [
+              1786406400000,
+              43011
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43011,
+            "before": 6.8321767,
+            "after": 6.8321767
+          },
+          {
+            "id": 43021,
+            "before": 6.3481884,
+            "after": 6.3481884
+          }
+        ]
+      },
+      {
+        "queryId": "project-08",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43012,
+            "score": 6.3481884,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.8321767,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43012,
+            "score": 6.3481884,
+            "sort": [
+              1786492800000,
+              43012
+            ]
+          },
+          {
+            "id": 43009,
+            "score": 6.8321767,
+            "sort": [
+              1786233600000,
+              43009
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43009,
+            "before": 6.8321767,
+            "after": 6.8321767
+          },
+          {
+            "id": 43012,
+            "before": 6.3481884,
+            "after": 6.3481884
+          }
+        ]
+      },
+      {
+        "queryId": "project-09",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43019,
+            "score": 6.3481884,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43018,
+            "score": 5.928234,
+            "sort": [
+              1787011200000,
+              43018
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43019,
+            "score": 6.3481884,
+            "sort": [
+              1787097600000,
+              43019
+            ]
+          },
+          {
+            "id": 43018,
+            "score": 5.928234,
+            "sort": [
+              1787011200000,
+              43018
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43018,
+            "before": 5.928234,
+            "after": 5.928234
+          },
+          {
+            "id": 43019,
+            "before": 6.3481884,
+            "after": 6.3481884
+          }
+        ]
+      },
+      {
+        "queryId": "project-10",
+        "sameIdsAndOrder": true,
+        "sameIdSet": true,
+        "sameRawScores": true,
+        "sameSortValues": true,
+        "before": [
+          {
+            "id": 43020,
+            "score": 6.3481884,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43010,
+            "score": 6.8321767,
+            "sort": [
+              1786320000000,
+              43010
+            ]
+          }
+        ],
+        "after": [
+          {
+            "id": 43020,
+            "score": 6.3481884,
+            "sort": [
+              1787184000000,
+              43020
+            ]
+          },
+          {
+            "id": 43010,
+            "score": 6.8321767,
+            "sort": [
+              1786320000000,
+              43010
+            ]
+          }
+        ],
+        "scoresById": [
+          {
+            "id": 43010,
+            "before": 6.8321767,
+            "after": 6.8321767
+          },
+          {
+            "id": 43020,
+            "before": 6.3481884,
+            "after": 6.3481884
+          }
+        ]
+      }
+    ],
+    "scope": "Compare current observations with the immutable accepted PHASE8 candidate; never replace it with this run.",
+    "sameApiResponsesExcludingTiming": true,
+    "baselineCandidateId": "docs/portfolio/evidence/phase8/es947-final/summary.json#candidate",
+    "baselineSummarySha256": "3e9907971785afe20b156754ec6d855e48ef1a4ed559b7ccb9d8728ae9216c95",
+    "approvalStatus": "APPROVED_BY_USER_FOR_SEARCH_BASELINE_ONLY"
+  },
+  "evaluationProvenance": {
+    "evaluationCodeCommit": "4fe89c6553f3492a4713f9dbcb1bec44fb352dde",
+    "evaluationCodeFiles": {
+      "deploy/rc/evaluate.py": "bd34c4cc925944cc3febd8f396a9441ea6092cb2bdfd17c5f50f6d1a119b26e3",
+      "deploy/rc/evaluation_decisions.py": "c593ae8fc6492f19a12fe41925a3ce1aae5e671cb25dd2da00f6500984fe9fef"
+    },
+    "runningBackend": {
+      "imageId": "sha256:aed43c0b95ce8f7f07e45a5d47867de507670bc814edf55241df92659ab623dd",
+      "jarSha256": "2eda8d842f08590dfb8c9a0e4521ef19b744a4009efbce5639e16e8ffc304070",
+      "actualBuildCommit": null,
+      "artifactInspectionReportedHead": "ebec8c37e27fb5f72a91dacca824b79955f49ea1",
+      "equivalentCommittedSourceTree": "bdf40dc741274c1f6942750a803bad2b8c3b2a16",
+      "basis": "Image has no revision label; exact inspected JAR and current backend source tree match recorded artifacts/committed tree. Inspection HEAD included uncommitted work and is not claimed as the build commit."
+    },
+    "evidence": [
+      {
+        "file": "docs/portfolio/evidence/phase7/candidate-image-inventory-final4.json",
+        "sha256": "c430befbf5f959f5c28120c953eb078cec5c34643deb51439858acc2dd35fb6d"
+      },
+      {
+        "file": "docs/portfolio/evidence/phase7/backend-image-artifacts-final4.json",
+        "sha256": "a37d1829cd108dbd90cd0c0f9a7644e0e16c1ad894ed4121445f86ae0fb09630"
+      },
+      {
+        "file": "docs/portfolio/evidence/phase7/backend-public-runtime.json",
+        "sha256": "64b9e836a42e617cd5b251b498152857d94be9f09f5af0494077826faa9c0c24"
+      }
+    ]
+  },
+  "acceptedBaseline": {
+    "pointer": {
+      "schemaVersion": 1,
+      "status": "ACTIVE",
+      "candidateId": "docs/portfolio/evidence/phase8/es947-final/summary.json#candidate",
+      "summarySha256": "3e9907971785afe20b156754ec6d855e48ef1a4ed559b7ccb9d8728ae9216c95",
+      "candidateSha256": "d1f4c74ab24fc3c484b8525447f9a46e4abe7a03b940938cb3e84effde01a05a",
+      "approval": {
+        "file": "docs/portfolio/evidence/phase8/search-baseline-approval.json",
+        "sha256": "86c218fb8353df68b9280415680550dc67a78ee43b6b182ccfb6288166a0e86d"
+      },
+      "engineFingerprint": "d7ceca2bbcfffa4b4e7cf69a1a8c298fa3b7d38a2fe9577904d879e5ce1ad5a6",
+      "scope": "SEARCH_EVALUATION_BASELINE_ONLY",
+      "excludedApprovals": {
+        "securityResidualRisk": false,
+        "rubyzipMitigationException": false,
+        "credentialActions": false,
+        "sourceAndAssetPublication": false,
+        "remotePush": false,
+        "merge": false,
+        "externalDeployment": false
+      }
+    },
+    "approvalStatus": "APPROVED_BY_USER_FOR_SEARCH_BASELINE_ONLY",
+    "activationRequested": false,
+    "active": true,
+    "publicReleaseApproved": false,
+    "originalCandidateEvidenceUnchanged": true
+  },
+  "exitPolicy": "Current mode exits on functional contracts and approved-baseline regression only; historical FAIL remains diagnostic and unchanged."
+}

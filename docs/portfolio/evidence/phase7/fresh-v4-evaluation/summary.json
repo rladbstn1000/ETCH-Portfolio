@@ -1,0 +1,788 @@
+{
+  "baselineCommit": "a5a4d8397660ac454b761391841480fd58a0c8cc",
+  "startCommit": "22109569f45055d09b0b0b8c642257eba52bd759",
+  "target": "fresh",
+  "project": "etch-phase7-fresh-v4",
+  "manifest": {
+    "version": "etch-synthetic-search-v1",
+    "baselineCommit": "a5a4d8397660ac454b761391841480fd58a0c8cc",
+    "frozenAtUtc": "2026-09-29T01:05:51.624552+00:00",
+    "beforeAnyEvaluationSearch": true,
+    "dataHashes": {
+      "corpus.json": "d4d611c7873ef5dfb55eefa5e776bb5d051368eedc9f99c36625ceccd1797d52",
+      "queries.json": "74292436394f887000a5b190bd17e836ef672b170649c2ec9cc01608f5e5356c"
+    },
+    "baselineFileHashes": {
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/JobSearchController.java": "07c104ca3619654b5049a580bacc55078b7dbb43b356ba653741d85d23a3078e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/NewsSearchController.java": "7837e78ab8b8c6a138386f268c564685c7720f698bea3cd1cbbc6c91a96ef4af",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/ProjectSearchController.java": "d8ac472f56d16fc95a13e35a87c92d6b54eb57603a1c445fb4b581c2b6688a41",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/SearchController.java": "4577eb91cad19bf4e997fad68a2436764073544336e3dfe7065d004b26290469",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/JobDocument.java": "bf78a25f8fbb023013ff53397b6cef1f5dda4d93c16bfc723c670059fb0baa11",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/NewsDocument.java": "4b5f4166818b857b33c19eec74de7f45b4eb07db392436060a73e60be7c2627e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/ProjectDocument.java": "a758ac4570ee885c33704035d8091a26f4f53fcedf68da70a898078e6183b540",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/JobSearchResponseDTO.java": "d429d29d928145bed29e3baf47e8e9b9b2d6c1c53265626ec40f3b66b53fa653",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/NewsSearchResponseDTO.java": "0d73d928f956bc9f832015815343692bcd94d9fb20b90845bdb9ac0b9485619c",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/ProjectSearchPage.java": "31503e64f0efba458f06df7b576f4b9a3897627871987fb62199f7f6ae4404ca",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/ProjectSearchResponseDTO.java": "9dfcef4f3803aa8f297af950e6f661ea43b00d5d1e75e3c1402c9d144f3cf238",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/SearchResponseDTO.java": "bfa547854507005621866d70e88318e7f43e0a5f5ad87ba5c0d8f6b12ddc4037",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/enumeration/ProjectSort.java": "b13dc43e09f16bf179ea53c36c071f8c1791b427c99d7ec0954ed9b54b5b782e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexOutbox.java": "c6bc0adf35137b5517fdf93c2e13c6b0bdde4fd7227bcfcc88292e3bc467d3a0",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexStore.java": "ce46542607fb2203a052a0495e05cc3ff44ac149bc59bdbe6adbfe808e78dcb6",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWorker.java": "3b1fc4ce2e57d1877e4c8a5f6c75d9de3b73a2a777f09032ebfbbd79c275593f",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWriter.java": "8f318c0b73c369dbb53f70ce636d0ea854bae14c601fa7cd7e5b8fdb24da9d47",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectLikeCountSync.java": "3a6d3d2176f364d155f88409a724b02732d30ad489264dffad62b634bc73e82d",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectSearchSync.java": "a1955e3daaf984fe533db383b8da5b48a308f118c6f408425dcfec11ae1df4a2",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectViewCountSync.java": "2ff17ad34ece10b906cecbd0eed97bdf0051db42a8b2e9e9779c3dd75928d557",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/JobDocumentRepository.java": "473bb3b5442da0ac183517343c1e6a24c5ba4cdb093e4a134cb4d628d1342e44",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/NewsDocumentRepository.java": "dc099046e29fcd8182776eb68da188d72d95f37d4c75e2127124ae12073480df",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/ProjectDocumentRepository.java": "41c9a49df256ce4f59d9ccc04469c62140f95a88a0bb69d145a4d80f19ed8180",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/JobSearchService.java": "1d7fa7511c8c3e43d428fd14e34e0b152d2f59a10623161d37a324bd12762acd",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/NewsSearchService.java": "342769e9e40cfb73fd239947e0fdf1289febdf26d86403f227cc6173e25131f2",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/ProjectSearchService.java": "4539fa872344f5069290726d597345a8c1c7a77d0cb4bd10b48d27d4aa2f7cc5",
+      "etch/backend/business-server/src/main/resources/es/job-mappings.json": "6d616f4dedb6147d2d53da22faa7ff631284b0725d3ed2b9ed615133caf440df",
+      "etch/backend/business-server/src/main/resources/es/job-settings.json": "7b608967a79c88343763289374ecad4fe5a919eded96144fc0425f847d6fb587",
+      "etch/backend/business-server/src/main/resources/es/news-mappings.json": "6598f6377b045de8a01cf97fdc376de3398f1383d9ffc49b9cd3c9ab47c971b0",
+      "etch/backend/business-server/src/main/resources/es/news-settings.json": "df3910e160c1b4fdb5860897ab2c07fcba3c8f077acac8e1eca3d32a367699bc",
+      "etch/backend/business-server/src/main/resources/es/project-mappings.json": "785c55fb3fb711891da678cc0816cd603586c621980bb47c6b231d3f8971653b",
+      "etch/backend/business-server/src/main/resources/es/project-settings.json": "df3910e160c1b4fdb5860897ab2c07fcba3c8f077acac8e1eca3d32a367699bc"
+    },
+    "policy": "라벨은 결과 확인 전에 고정. 평가 실행은 hash 불일치 시 거부하며 사후 성적 튜닝 금지.",
+    "compatibilityAdjustments": [
+      {
+        "file": "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWriter.java",
+        "frozenSha256": "8f318c0b73c369dbb53f70ce636d0ea854bae14c601fa7cd7e5b8fdb24da9d47",
+        "currentSha256": "e36e602b13c7605d45e9996e8d293bf20e51d9ff102365e77bedcf27e401895d",
+        "change": "Only ObjectMapper import moves from Jackson2 to Jackson3; all other bytes equal Phase4 freeze."
+      }
+    ],
+    "corpusLabelsMappingsAndSearchPolicyUnchanged": true
+  },
+  "runningImageIds": {
+    "mysql": "sha256:ccbf152841ff331161b37aeb0f77a015e114245038c724a5a252482fd902c07f",
+    "backend": "sha256:aed43c0b95ce8f7f07e45a5d47867de507670bc814edf55241df92659ab623dd",
+    "elasticsearch": "sha256:24c66d1ebb69726bb0593c6073123265a7e0be473ab4eff5af5d027bbbc81a40",
+    "web": "sha256:41870cec177ede9f1cf659d4ffc4967ea3ae849e191676f11f2cf1c977947e3e"
+  },
+  "source": {
+    "sourceMatch": true,
+    "sourceCounts": {
+      "job": 23,
+      "news": 23,
+      "project": 24
+    },
+    "trackingCounts": {
+      "states": 48,
+      "projects": 24,
+      "tombstones": 2
+    }
+  },
+  "sync": {
+    "job": {
+      "checkedAt": "2026-09-29T14:42:49.393258+00:00",
+      "kind": "job",
+      "scope": "FULL source/state/ES comparison (not incremental polling)",
+      "sourceCount": 23,
+      "stateCount": 24,
+      "esCount": 24,
+      "checkedIds": 24,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "news": {
+      "checkedAt": "2026-09-29T14:42:49.871861+00:00",
+      "kind": "news",
+      "scope": "FULL source/state/ES comparison (not incremental polling)",
+      "sourceCount": 23,
+      "stateCount": 24,
+      "esCount": 24,
+      "checkedIds": 24,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "project": {
+      "checked": 24,
+      "differences": 0,
+      "unfinishedOutbox": 0
+    }
+  },
+  "metricChecks": {
+    "passed": 6,
+    "knownSwapScore": 0.7967075809905066,
+    "perfect": 1,
+    "emptyWithRelevant": 0,
+    "noRelevant": "excluded from mean",
+    "unjudged": "invalid query score, explicit error; never silently grade 0",
+    "duplicate": "invalid query score"
+  },
+  "queries": [
+    {
+      "queryId": "job-01",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41002,
+        41013,
+        41001
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        41002,
+        41013,
+        41001
+      ],
+      "baselineNdcgAt5": 0.8810783669439536,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-02",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41003,
+        41014,
+        41004
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        41003,
+        41004,
+        41014
+      ],
+      "baselineNdcgAt5": 0.9260446319296772,
+      "sameIds": false,
+      "sameScore": false
+    },
+    {
+      "queryId": "job-03",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41005,
+        41006,
+        41015,
+        41003,
+        41009
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41005,
+        41006,
+        41015,
+        41003,
+        41009
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-04",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41007,
+        41008,
+        41016
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41007,
+        41008,
+        41016
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-05",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41009,
+        41017
+      ],
+      "ndcgAt5": 0.6732934624429354,
+      "baselineReturnedIds": [
+        41009,
+        41017
+      ],
+      "baselineNdcgAt5": 0.6732934624429354,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-06",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41023,
+        41001,
+        41007,
+        41013,
+        41019
+      ],
+      "ndcgAt5": 0.8420809200104147,
+      "baselineReturnedIds": [
+        41023,
+        41001,
+        41007,
+        41013,
+        41019
+      ],
+      "baselineNdcgAt5": 0.8420809200104147,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-07",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41011,
+        41021
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41011,
+        41021
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-08",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41009,
+        41012,
+        41022,
+        41005,
+        41011
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41009,
+        41012,
+        41022,
+        41005,
+        41011
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-09",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41018,
+        41019,
+        41004,
+        41010,
+        41016
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41018,
+        41019,
+        41004,
+        41010,
+        41016
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "job-10",
+      "kind": "job",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        41010,
+        41020
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        41010,
+        41020
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-01",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42002,
+        42013,
+        42001
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        42002,
+        42013,
+        42001
+      ],
+      "baselineNdcgAt5": 0.8810783669439536,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-02",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42003,
+        42014,
+        42004
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "baselineReturnedIds": [
+        42003,
+        42004,
+        42014
+      ],
+      "baselineNdcgAt5": 0.9260446319296772,
+      "sameIds": false,
+      "sameScore": false
+    },
+    {
+      "queryId": "news-03",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42005,
+        42006,
+        42015,
+        42003,
+        42009
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42005,
+        42006,
+        42015,
+        42003,
+        42009
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-04",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42007,
+        42008,
+        42016
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42007,
+        42008,
+        42016
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-05",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42009,
+        42017
+      ],
+      "ndcgAt5": 0.6732934624429354,
+      "baselineReturnedIds": [
+        42009,
+        42017
+      ],
+      "baselineNdcgAt5": 0.6732934624429354,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-06",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42023,
+        42001,
+        42007,
+        42013,
+        42019
+      ],
+      "ndcgAt5": 0.8420809200104147,
+      "baselineReturnedIds": [
+        42023,
+        42001,
+        42007,
+        42013,
+        42019
+      ],
+      "baselineNdcgAt5": 0.8420809200104147,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-07",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42011,
+        42021
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42011,
+        42021
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-08",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42009,
+        42012,
+        42022,
+        42005,
+        42011
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42009,
+        42012,
+        42022,
+        42005,
+        42011
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-09",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42019,
+        42018,
+        42004,
+        42010,
+        42016
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        42019,
+        42018,
+        42004,
+        42010,
+        42016
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "news-10",
+      "kind": "news",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "returnedIds": [
+        42010,
+        42020
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        42010,
+        42020
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-01",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43013,
+        43012,
+        43002,
+        43001
+      ],
+      "ndcgAt5": 0.7595063773744855,
+      "baselineReturnedIds": [
+        43013,
+        43012,
+        43002,
+        43001
+      ],
+      "baselineNdcgAt5": 0.7595063773744855,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-02",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43020,
+        43014,
+        43004,
+        43003
+      ],
+      "ndcgAt5": 0.7595063773744855,
+      "baselineReturnedIds": [
+        43020,
+        43014,
+        43004,
+        43003
+      ],
+      "baselineNdcgAt5": 0.7595063773744855,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-03",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43015,
+        43006,
+        43005
+      ],
+      "ndcgAt5": 0.8145672023038535,
+      "baselineReturnedIds": [
+        43015,
+        43006,
+        43005
+      ],
+      "baselineNdcgAt5": 0.8145672023038535,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-04",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43016,
+        43008,
+        43007
+      ],
+      "ndcgAt5": 0.8145672023038535,
+      "baselineReturnedIds": [
+        43016,
+        43008,
+        43007
+      ],
+      "baselineNdcgAt5": 0.8145672023038535,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-05",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43017,
+        43009
+      ],
+      "ndcgAt5": 0.5364180057596336,
+      "baselineReturnedIds": [
+        43017,
+        43009
+      ],
+      "baselineNdcgAt5": 0.5364180057596336,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-06",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43021,
+        43019,
+        43017,
+        43015,
+        43013
+      ],
+      "ndcgAt5": 0.0,
+      "baselineReturnedIds": [
+        43021,
+        43019,
+        43017,
+        43015,
+        43013
+      ],
+      "baselineNdcgAt5": 0.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-07",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43021,
+        43011
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        43021,
+        43011
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-08",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43012,
+        43009
+      ],
+      "ndcgAt5": 1.0,
+      "baselineReturnedIds": [
+        43012,
+        43009
+      ],
+      "baselineNdcgAt5": 1.0,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-09",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43019,
+        43018
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        43019,
+        43018
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    },
+    {
+      "queryId": "project-10",
+      "kind": "project",
+      "sort": "LATEST",
+      "returnedIds": [
+        43020,
+        43010
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "baselineReturnedIds": [
+        43020,
+        43010
+      ],
+      "baselineNdcgAt5": 0.7967075809905066,
+      "sameIds": true,
+      "sameScore": true
+    }
+  ],
+  "meanByKind": {
+    "job": 0.9277531116341258,
+    "news": 0.9074238697331763,
+    "project": 0.7074687908087831
+  },
+  "unifiedChecks": [
+    {
+      "name": "unified-Spring",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [
+          41002,
+          41013,
+          41001
+        ],
+        "news": [
+          42002,
+          42013,
+          42001
+        ],
+        "projects": [
+          43013,
+          43012,
+          43002,
+          43001
+        ]
+      }
+    },
+    {
+      "name": "unified-React",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [
+          41003,
+          41014,
+          41004
+        ],
+        "news": [
+          42003,
+          42014,
+          42004
+        ],
+        "projects": [
+          43020,
+          43014,
+          43004,
+          43003
+        ]
+      }
+    },
+    {
+      "name": "unified-검색",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [
+          41010,
+          41020
+        ],
+        "news": [
+          42010,
+          42020
+        ],
+        "projects": [
+          43020,
+          43010
+        ]
+      }
+    },
+    {
+      "name": "unified-\"",
+      "passed": true,
+      "expectedIdsByKind": {
+        "jobs": [],
+        "news": [],
+        "projects": []
+      }
+    }
+  ],
+  "allSameIdsAndScores": false,
+  "allChecksPassed": true,
+  "note": "4차와 동일 데이터·라벨·검색 경로·정렬·계산. 공개 정책 HTTP/권한 검사는 check-public.py로 별도. 70ms pacing 포함, 새로운 응답시간 벤치마크가 아니다."
+}

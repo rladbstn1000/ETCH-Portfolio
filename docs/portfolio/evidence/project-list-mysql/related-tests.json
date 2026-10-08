@@ -1,0 +1,101 @@
+{
+  "suites": [
+    {
+      "name": "com.ssafy.etch.demo.PublicDemoIntegrationTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:33.501Z",
+      "time": "0.537"
+    },
+    {
+      "name": "com.ssafy.etch.global.json.JsonContractTest",
+      "tests": "6",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:34.049Z",
+      "time": "0.411"
+    },
+    {
+      "name": "com.ssafy.etch.project.service.ProjectListMysqlAuthorizationIntegrationTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:37.617Z",
+      "time": "0.421"
+    },
+    {
+      "name": "com.ssafy.etch.project.service.ProjectListMysqlPublicDemoAuthorizationIntegrationTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:38.689Z",
+      "time": "0.109"
+    },
+    {
+      "name": "com.ssafy.etch.project.service.ProjectListQueryIntegrationTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:39.718Z",
+      "time": "0.105"
+    },
+    {
+      "name": "com.ssafy.etch.search.indexing.ProjectIndexWorkerTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:39.871Z",
+      "time": "0.011"
+    },
+    {
+      "name": "com.ssafy.etch.search.indexing.ProjectIndexWriterTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:40.056Z",
+      "time": "0.007"
+    },
+    {
+      "name": "com.ssafy.etch.search.indexing.ProjectLikeLockOrderTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:40.168Z",
+      "time": "0.004"
+    },
+    {
+      "name": "com.ssafy.etch.search.indexing.ProjectMemberLockOrderTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:40.173Z",
+      "time": "0.026"
+    },
+    {
+      "name": "com.ssafy.etch.security.AuthorizationIntegrationTest",
+      "tests": "18",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-30T16:36:40.645Z",
+      "time": "0.312"
+    }
+  ],
+  "tests": 50,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "rawLog": ".local/project-list-mysql/runner-improved-20260930T163641332633Z.log",
+  "buildTask": "bootJar",
+  "scope": "5 new MySQL MockMvc/security/snapshot tests plus existing H2/mocked-unit regressions; no real ES request; SQL comparison ran separately"
+}

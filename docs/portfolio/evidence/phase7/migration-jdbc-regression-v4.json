@@ -1,0 +1,570 @@
+{
+  "startedAt": "2026-09-29T14:33:31.306416+00:00",
+  "project": "etch-phase7-migration",
+  "target": "migration",
+  "schema": "phase7_verify",
+  "es": "http://verify-elasticsearch:9200",
+  "passed": true,
+  "checks": [
+    {
+      "name": "isolated new fixture IDs created",
+      "passed": true,
+      "jobs": 120,
+      "news": 120,
+      "companyId": 46009
+    },
+    {
+      "name": "same-timestamp 120-row inputs cross 50-row JDBC fetch boundaries",
+      "passed": true,
+      "cursorFetchCalls": 8
+    },
+    {
+      "name": "same timestamps preserved through fetch boundaries",
+      "passed": true
+    },
+    {
+      "name": "actual collector duplicate SQL preserves revision and changed_at",
+      "passed": true
+    },
+    {
+      "name": "external ID / SHA-256 repeat collection does not duplicate source rows",
+      "passed": true
+    },
+    {
+      "name": "same IDs remain exactly one ES document per source",
+      "passed": true,
+      "jobs": 120,
+      "news": 120
+    },
+    {
+      "name": "updated title/deadline preserve date mapping format",
+      "passed": true
+    },
+    {
+      "name": "actual normal-profile date binding and inclusive day boundary match MySQL",
+      "passed": true,
+      "expectedIds": [
+        41026,
+        41028,
+        41148,
+        41150,
+        41270,
+        41272
+      ]
+    },
+    {
+      "name": "actual ES date range matches source day boundary",
+      "passed": true,
+      "expectedIds": [
+        41026,
+        41028,
+        41148,
+        41150,
+        41270,
+        41272
+      ]
+    },
+    {
+      "name": "job outage IDs are outside restart JDBC overlap: recovery must come from persisted queue",
+      "passed": true,
+      "queryReturned": 0
+    },
+    {
+      "name": "news outage IDs are outside restart JDBC overlap: recovery must come from persisted queue",
+      "passed": true,
+      "queryReturned": 0
+    },
+    {
+      "name": "ES outage search returns HTTP503 instead of empty success",
+      "passed": true
+    },
+    {
+      "name": "persistent PQ + checkpoints restore all current fixture documents and actual search without repair/seed/reindex",
+      "passed": true,
+      "recoverySeconds": 13.971
+    },
+    {
+      "name": "mapping error stays distinguishable while healthy row is indexed",
+      "passed": true,
+      "dlqBytesBefore": 3090,
+      "dlqBytesAfter": 4633
+    },
+    {
+      "name": "latest source restored while original failure remains inspectable in DLQ",
+      "passed": true
+    },
+    {
+      "name": "job deletion persists minimal tombstone",
+      "passed": true
+    },
+    {
+      "name": "job stale revision rejected by actual ES",
+      "passed": true,
+      "http": 409
+    },
+    {
+      "name": "job 409 preserves tombstone content/version",
+      "passed": true
+    },
+    {
+      "name": "news deletion persists minimal tombstone",
+      "passed": true
+    },
+    {
+      "name": "news stale revision rejected by actual ES",
+      "passed": true,
+      "http": 409
+    },
+    {
+      "name": "news 409 preserves tombstone content/version",
+      "passed": true
+    },
+    {
+      "name": "checkpoint does not regress after clean recreation",
+      "passed": true
+    },
+    {
+      "name": "mapping error DLQ evidence survives container recreation",
+      "passed": true,
+      "bytesBefore": 6176,
+      "bytesAfter": 6176
+    },
+    {
+      "name": "pre-existing fixture source/project state preserved",
+      "passed": true
+    }
+  ],
+  "fixture": {
+    "marker": "synckcxkmamdfaxokjda",
+    "companyId": 46009,
+    "ids": {
+      "job": [
+        41269,
+        41270,
+        41271,
+        41272,
+        41273,
+        41274,
+        41275,
+        41276,
+        41277,
+        41278,
+        41279,
+        41280,
+        41281,
+        41282,
+        41283,
+        41284,
+        41285,
+        41286,
+        41287,
+        41288,
+        41289,
+        41290,
+        41291,
+        41292,
+        41293,
+        41294,
+        41295,
+        41296,
+        41297,
+        41298,
+        41299,
+        41300,
+        41301,
+        41302,
+        41303,
+        41304,
+        41305,
+        41306,
+        41307,
+        41308,
+        41309,
+        41310,
+        41311,
+        41312,
+        41313,
+        41314,
+        41315,
+        41316,
+        41317,
+        41318,
+        41319,
+        41320,
+        41321,
+        41322,
+        41323,
+        41324,
+        41325,
+        41326,
+        41327,
+        41328,
+        41329,
+        41330,
+        41331,
+        41332,
+        41333,
+        41334,
+        41335,
+        41336,
+        41337,
+        41338,
+        41339,
+        41340,
+        41341,
+        41342,
+        41343,
+        41344,
+        41345,
+        41346,
+        41347,
+        41348,
+        41349,
+        41350,
+        41351,
+        41352,
+        41353,
+        41354,
+        41355,
+        41356,
+        41357,
+        41358,
+        41359,
+        41360,
+        41361,
+        41362,
+        41363,
+        41364,
+        41365,
+        41366,
+        41367,
+        41368,
+        41369,
+        41370,
+        41371,
+        41372,
+        41373,
+        41374,
+        41375,
+        41376,
+        41377,
+        41378,
+        41379,
+        41380,
+        41381,
+        41382,
+        41383,
+        41384,
+        41385,
+        41386,
+        41387,
+        41388
+      ],
+      "news": [
+        42267,
+        42268,
+        42269,
+        42270,
+        42271,
+        42272,
+        42273,
+        42274,
+        42275,
+        42276,
+        42277,
+        42278,
+        42279,
+        42280,
+        42281,
+        42282,
+        42283,
+        42284,
+        42285,
+        42286,
+        42287,
+        42288,
+        42289,
+        42290,
+        42291,
+        42292,
+        42293,
+        42294,
+        42295,
+        42296,
+        42297,
+        42298,
+        42299,
+        42300,
+        42301,
+        42302,
+        42303,
+        42304,
+        42305,
+        42306,
+        42307,
+        42308,
+        42309,
+        42310,
+        42311,
+        42312,
+        42313,
+        42314,
+        42315,
+        42316,
+        42317,
+        42318,
+        42319,
+        42320,
+        42321,
+        42322,
+        42323,
+        42324,
+        42325,
+        42326,
+        42327,
+        42328,
+        42329,
+        42330,
+        42331,
+        42332,
+        42333,
+        42334,
+        42335,
+        42336,
+        42337,
+        42338,
+        42339,
+        42340,
+        42341,
+        42342,
+        42343,
+        42344,
+        42345,
+        42346,
+        42347,
+        42348,
+        42349,
+        42350,
+        42351,
+        42352,
+        42353,
+        42354,
+        42355,
+        42356,
+        42357,
+        42358,
+        42359,
+        42360,
+        42361,
+        42362,
+        42363,
+        42364,
+        42365,
+        42366,
+        42367,
+        42368,
+        42369,
+        42370,
+        42371,
+        42372,
+        42373,
+        42374,
+        42375,
+        42376,
+        42377,
+        42378,
+        42379,
+        42380,
+        42381,
+        42382,
+        42383,
+        42384,
+        42385,
+        42386
+      ]
+    },
+    "pollSeconds": 2,
+    "overlapSeconds": 20,
+    "fetchSize": 50
+  },
+  "events": [
+    {
+      "name": "ACTION stop ETCH Elasticsearch"
+    },
+    {
+      "name": "PQ_BEFORE_KILL",
+      "pipelines": {
+        "news": {
+          "events": {
+            "duration_in_millis": 28214,
+            "out": 840,
+            "queue_push_duration_in_millis": 3781,
+            "in": 1478,
+            "filtered": 840
+          },
+          "queue": {
+            "data": {
+              "free_space_in_bytes": 1007243112448,
+              "path": "/usr/share/logstash/data/queue/news",
+              "storage_type": "ext4"
+            },
+            "events": 588,
+            "capacity": {
+              "max_queue_size_in_bytes": 67108864,
+              "page_capacity_in_bytes": 16777216,
+              "queue_size_in_bytes": 813289,
+              "max_unread_events": 0
+            },
+            "type": "persisted",
+            "compression": {
+              "decode": {
+                "ratio": {
+                  "lifetime": 1.0
+                },
+                "spend": {
+                  "lifetime": 0.0
+                }
+              }
+            },
+            "events_count": 588,
+            "queue_size_in_bytes": 813289,
+            "max_queue_size_in_bytes": 67108864
+          }
+        },
+        "jobs": {
+          "events": {
+            "duration_in_millis": 28298,
+            "out": 840,
+            "queue_push_duration_in_millis": 3776,
+            "in": 1489,
+            "filtered": 840
+          },
+          "queue": {
+            "data": {
+              "free_space_in_bytes": 1007243112448,
+              "path": "/usr/share/logstash/data/queue/jobs",
+              "storage_type": "ext4"
+            },
+            "events": 599,
+            "capacity": {
+              "max_queue_size_in_bytes": 67108864,
+              "page_capacity_in_bytes": 16777216,
+              "queue_size_in_bytes": 932545,
+              "max_unread_events": 0
+            },
+            "type": "persisted",
+            "compression": {
+              "decode": {
+                "ratio": {
+                  "lifetime": 1.0
+                },
+                "spend": {
+                  "lifetime": 0.0
+                }
+              }
+            },
+            "events_count": 599,
+            "queue_size_in_bytes": 932545,
+            "max_queue_size_in_bytes": 67108864
+          }
+        }
+      }
+    },
+    {
+      "name": "ACTION actual Logstash SIGKILL with advanced checkpoints and queued events"
+    },
+    {
+      "name": "OPERATOR mapping-failure repair: current source reread, old DLQ JSON never replayed"
+    }
+  ],
+  "automaticRecoveryCompletedBeforeOperatorRepair": true,
+  "operatorRepairSeparateFromAutomaticPQRecovery": true,
+  "finalComparison": {
+    "job": {
+      "checkedAt": "2026-09-29T14:34:47.835964+00:00",
+      "kind": "job",
+      "scope": "explicit IDs",
+      "sourceCount": 119,
+      "stateCount": 120,
+      "esCount": 120,
+      "checkedIds": 120,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "news": {
+      "checkedAt": "2026-09-29T14:34:48.130941+00:00",
+      "kind": "news",
+      "scope": "explicit IDs",
+      "sourceCount": 119,
+      "stateCount": 120,
+      "esCount": 120,
+      "checkedIds": 120,
+      "differenceCount": 0,
+      "differences": []
+    }
+  },
+  "finalCheckpoints": {
+    "job": "2026-09-29T14:34:38.368215+00:00",
+    "news": "2026-09-29T14:34:38.368272+00:00"
+  },
+  "finalPipelineQueues": {
+    "jobs": {
+      "type": "persisted",
+      "events": 0,
+      "data": {
+        "storage_type": "ext4",
+        "path": "/usr/share/logstash/data/queue/jobs",
+        "free_space_in_bytes": 1007243710464
+      },
+      "capacity": {
+        "max_queue_size_in_bytes": 67108864,
+        "queue_size_in_bytes": 1,
+        "max_unread_events": 0,
+        "page_capacity_in_bytes": 16777216
+      },
+      "compression": {
+        "decode": {
+          "spend": {
+            "lifetime": 0.0
+          },
+          "ratio": {
+            "lifetime": "NaN"
+          }
+        }
+      },
+      "events_count": 0,
+      "queue_size_in_bytes": 1,
+      "max_queue_size_in_bytes": 67108864
+    },
+    "news": {
+      "type": "persisted",
+      "events": 0,
+      "data": {
+        "storage_type": "ext4",
+        "path": "/usr/share/logstash/data/queue/news",
+        "free_space_in_bytes": 1007243710464
+      },
+      "capacity": {
+        "max_queue_size_in_bytes": 67108864,
+        "queue_size_in_bytes": 1,
+        "max_unread_events": 0,
+        "page_capacity_in_bytes": 16777216
+      },
+      "compression": {
+        "decode": {
+          "spend": {
+            "lifetime": 0.0
+          },
+          "ratio": {
+            "lifetime": "NaN"
+          }
+        }
+      },
+      "events_count": 0,
+      "queue_size_in_bytes": 1,
+      "max_queue_size_in_bytes": 67108864
+    }
+  },
+  "faultInjectionRemaining": 0,
+  "finishedAt": "2026-09-29T14:34:48.908873+00:00"
+}

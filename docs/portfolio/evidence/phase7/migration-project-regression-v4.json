@@ -1,0 +1,125 @@
+{
+  "startedAt": "2026-09-29T14:32:04.530738+00:00",
+  "project": "etch-phase7-migration",
+  "target": "migration",
+  "schema": "phase7_verify",
+  "es": "http://verify-elasticsearch:9200",
+  "passed": true,
+  "checks": [
+    {
+      "name": "BEFORE outbox fault rolls back project and work",
+      "passed": true,
+      "http": 500
+    },
+    {
+      "name": "AFTER outbox fault rolls back project and work",
+      "passed": true,
+      "http": 500
+    },
+    {
+      "name": "BEFORE update fault rolls back dirty entity, revision and outbox",
+      "passed": true,
+      "http": 500
+    },
+    {
+      "name": "AFTER update fault rolls back dirty entity, revision and outbox",
+      "passed": true,
+      "http": 500
+    },
+    {
+      "name": "normal profile detail preserves view/revision/outbox mutation contract",
+      "passed": true
+    },
+    {
+      "name": "ES down create/update commits with durable work",
+      "passed": true
+    },
+    {
+      "name": "backend process restart preserves pending outbox",
+      "passed": true
+    },
+    {
+      "name": "ES outage is HTTP503",
+      "passed": true,
+      "http": 503
+    },
+    {
+      "name": "automatic replay after ES recovery without seed or repair",
+      "passed": true,
+      "state": {
+        "id": 43035,
+        "title": "rcprojectgehqefbhwzebniwd latest outage",
+        "views": 0,
+        "content": "7차 격리 합성 회귀 본문",
+        "deleted": 0,
+        "visible": 1,
+        "category": "WEB",
+        "revision": 2
+      },
+      "esVersion": 2
+    },
+    {
+      "name": "old work replay resolves current state without content/version regression",
+      "passed": true
+    },
+    {
+      "name": "normal profile anonymous and other user writes denied without mutation",
+      "passed": true
+    },
+    {
+      "name": "paused worker retains stale public ES fixtures",
+      "passed": true
+    },
+    {
+      "name": "project search DB filter removes stale private/deleted metadata",
+      "passed": true
+    },
+    {
+      "name": "unified search DB filter removes stale private/deleted metadata",
+      "passed": true
+    },
+    {
+      "name": "normal profile private detail author only; owner read/write kept",
+      "passed": true
+    },
+    {
+      "name": "minimal private/deleted tombstone",
+      "passed": true,
+      "projectId": 43036
+    },
+    {
+      "name": "minimal private/deleted tombstone",
+      "passed": true,
+      "projectId": 43038
+    },
+    {
+      "name": "actual ES rejects delayed old project revision",
+      "passed": true,
+      "http": 409
+    },
+    {
+      "name": "409 leaves current content/revision intact",
+      "passed": true
+    },
+    {
+      "name": "healthy zero result /projects/search",
+      "passed": true
+    },
+    {
+      "name": "healthy zero result /search",
+      "passed": true
+    },
+    {
+      "name": "service restart preserves project content/revision/tombstone",
+      "passed": true
+    }
+  ],
+  "outageProjectId": 43035,
+  "visibilityProjectIds": [
+    43036,
+    43037,
+    43038
+  ],
+  "faultTriggersRemaining": 0,
+  "finishedAt": "2026-09-29T14:33:20.170527+00:00"
+}

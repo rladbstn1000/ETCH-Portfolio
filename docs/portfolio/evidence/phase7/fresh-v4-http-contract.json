@@ -1,0 +1,2009 @@
+{
+  "at": "2026-09-29T14:42:57.718259+00:00",
+  "project": "etch-phase7-fresh-v4",
+  "target": "fresh",
+  "inputProject": "etch-phase7-fresh-v4",
+  "baseline": "docs/portfolio/evidence/phase6/public-policy-os-final.json",
+  "current": "docs/portfolio/evidence/phase7/fresh-v4-public-policy.json",
+  "inputSha256": {
+    "docs/portfolio/evidence/phase6/public-policy-os-final.json": "26b18a37f028c09604c0ca1e62b476fe22612f9b52884829d85d73c199e552d9",
+    "docs/portfolio/evidence/phase7/fresh-v4-public-policy.json": "0759e4f526dd0a1ae8b8482fb5dc13180364343d7fff9c5836bddc94ae21dd83"
+  },
+  "checks": {
+    "sameRequests": true,
+    "noDuplicateRequests": true,
+    "allContractsMatch": true
+  },
+  "passed": true,
+  "records": [
+    {
+      "route": "backend-direct",
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/health",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/search?keyword=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/search?page=-1",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/search?page=20",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/search?size=0",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/jobs/search?size=101",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/search?category=INVALID",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/projects/search?sort=INVALID",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/health",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "HEAD",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/members",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/members",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/projects",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/projects",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "backend-direct",
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/health",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/search?keyword=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/search?page=-1",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/search?page=20",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/search?size=0",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/jobs/search?size=101",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/search?category=INVALID",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/projects/search?sort=INVALID",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/health",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "HEAD",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/members",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/members",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/projects",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/projects",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    },
+    {
+      "route": "proxy",
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "checks": {
+        "sameStatus": true,
+        "sameContentType": true,
+        "sameJsonFieldsTypesAndValues": true,
+        "noSetCookie": true,
+        "headBodyEmpty": true
+      },
+      "differences": []
+    }
+  ],
+  "scope": "Real proxy/direct-backend JSON, fields, null, scalar types, dates, enums, list order and error payloads. No timestamp, missing field, or DTO normalization."
+}

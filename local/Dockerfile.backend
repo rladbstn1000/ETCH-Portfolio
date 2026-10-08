@@ -1,0 +1,22 @@
+ARG BUILD_IMAGE=gradle:8.14.4-jdk17-noble@sha256:7be9e75385877e513e1150a37c5b9bb33115d0b4b5681e300c88648ebc859a63
+ARG RUNTIME_IMAGE=eclipse-temurin:17-jre-noble@sha256:81287ecb479e1e4e93cf95abfa0aba034bc4465399324b646b753615abeffe2a
+FROM ${BUILD_IMAGE} AS builder
+ARG ARTIFACT_FLAVOR=full
+WORKDIR /workspace
+COPY etch/backend/business-server/ .
+RUN case "$ARTIFACT_FLAVOR" in \
+      public-demo) gradle --no-daemon --max-workers=1 -Dorg.gradle.jvmargs="-Xmx384m -XX:MaxMetaspaceSize=256m" -PpublicDemoArtifact bootJar runtimeInventory && cp build/public-demo/libs/*-SNAPSHOT.jar /app.jar && cp build/public-demo/reports/runtime-inventory.json /runtime-inventory.json ;; \
+      full) gradle --no-daemon --max-workers=1 -Dorg.gradle.jvmargs="-Xmx384m -XX:MaxMetaspaceSize=256m" bootJar runtimeInventory && cp build/libs/*-SNAPSHOT.jar /app.jar && cp build/reports/runtime-inventory.json /runtime-inventory.json ;; \
+      *) exit 2 ;; \
+    esac
+FROM ${RUNTIME_IMAGE}
+# Official Ubuntu Noble security package; application JAR stays byte-identical.
+RUN apt-get update && apt-get install -y --only-upgrade --no-install-recommends perl-base=5.38.2-3.2ubuntu0.6 \
+    && rm -rf /var/lib/apt/lists/*
+ARG ARTIFACT_FLAVOR=full
+LABEL org.etch.artifact-flavor=$ARTIFACT_FLAVOR
+WORKDIR /app
+COPY --from=builder /app.jar app.jar
+COPY --from=builder /runtime-inventory.json runtime-inventory.json
+USER 10001:10001
+ENTRYPOINT ["java", "-jar", "app.jar"]

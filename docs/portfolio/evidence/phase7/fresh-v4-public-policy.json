@@ -1,0 +1,3188 @@
+{
+  "at": "2026-09-29T14:42:26.542493+00:00",
+  "project": "etch-phase7-fresh-v4",
+  "before": {
+    "applied_job": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chat_message": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chat_participant": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chat_read_status": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "company": {
+      "rows": 6,
+      "dataSha256": "ce1e713d34b57553a3e07f07cad069c52c87e1b8521d44ee35143a38865658a6"
+    },
+    "cover_letter": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "follow": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "job": {
+      "rows": 23,
+      "dataSha256": "cd3501de9faee7c19c52fec340fa958f81ca5dde58b9b5a06f53d1f34644aa16"
+    },
+    "liked_content": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "member": {
+      "rows": 2,
+      "dataSha256": "2fcf246b8816ed8a0d562ed20c95be4af22cae28818e21a595b4dc63e26da1dd"
+    },
+    "news": {
+      "rows": 23,
+      "dataSha256": "e9765c17cd3ed9c0f9fc3fe8dab02f04213d2703a8bae8cc734a9a36de7d4bb0"
+    },
+    "portfolio": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "portfolio_project": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project_comment": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project_file": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project_index_outbox": {
+      "rows": 24,
+      "dataSha256": "7fc9e77bfa67e9783861b4fae8517ab0ab7c2bdabc55f2d862d86871af2b316d"
+    },
+    "project_post": {
+      "rows": 24,
+      "dataSha256": "fed518efed4f52f52830e7a3dd52861f67b00d951ed28d91beb90bb1477ed667"
+    },
+    "project_tech": {
+      "rows": 39,
+      "dataSha256": "42d193b22010c025888437032f29d02aa54e67d4ee6698c52dbcbca5f05bef9d"
+    },
+    "project_tech_stack": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "search_sync_state": {
+      "rows": 48,
+      "dataSha256": "ccb7a24a540b2dd29629c1b0c05b74c99d720e5be7b3835b74b4ab135e0d6673"
+    },
+    "tech_code": {
+      "rows": 16,
+      "dataSha256": "e5ac5b695f9689dff8167928ac77d870f112348ead4072a891bf8e4dd8c198f4"
+    }
+  },
+  "after": {
+    "applied_job": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chat_message": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chat_participant": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chat_read_status": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "company": {
+      "rows": 6,
+      "dataSha256": "ce1e713d34b57553a3e07f07cad069c52c87e1b8521d44ee35143a38865658a6"
+    },
+    "cover_letter": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "follow": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "job": {
+      "rows": 23,
+      "dataSha256": "cd3501de9faee7c19c52fec340fa958f81ca5dde58b9b5a06f53d1f34644aa16"
+    },
+    "liked_content": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "member": {
+      "rows": 2,
+      "dataSha256": "2fcf246b8816ed8a0d562ed20c95be4af22cae28818e21a595b4dc63e26da1dd"
+    },
+    "news": {
+      "rows": 23,
+      "dataSha256": "e9765c17cd3ed9c0f9fc3fe8dab02f04213d2703a8bae8cc734a9a36de7d4bb0"
+    },
+    "portfolio": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "portfolio_project": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project_comment": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project_file": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "project_index_outbox": {
+      "rows": 24,
+      "dataSha256": "7fc9e77bfa67e9783861b4fae8517ab0ab7c2bdabc55f2d862d86871af2b316d"
+    },
+    "project_post": {
+      "rows": 24,
+      "dataSha256": "fed518efed4f52f52830e7a3dd52861f67b00d951ed28d91beb90bb1477ed667"
+    },
+    "project_tech": {
+      "rows": 39,
+      "dataSha256": "42d193b22010c025888437032f29d02aa54e67d4ee6698c52dbcbca5f05bef9d"
+    },
+    "project_tech_stack": {
+      "rows": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "search_sync_state": {
+      "rows": 48,
+      "dataSha256": "ccb7a24a540b2dd29629c1b0c05b74c99d720e5be7b3835b74b4ab135e0d6673"
+    },
+    "tech_code": {
+      "rows": 16,
+      "dataSha256": "e5ac5b695f9689dff8167928ac77d870f112348ead4072a891bf8e4dd8c198f4"
+    }
+  },
+  "changedTables": [],
+  "requests": 142,
+  "records": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "status": "UP"
+      },
+      "contentType": "application/json",
+      "bodyBytes": 15,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/health",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "jobs": {
+            "content": [
+              {
+                "companyName": "가상 모래금융",
+                "educationLevel": "학력무관",
+                "expirationDate": "2026-09-07T23:59:59",
+                "id": 41002,
+                "industries": [
+                  "IT"
+                ],
+                "jobCategories": [
+                  "백엔드"
+                ],
+                "openingDate": "2026-08-02T09:00:00",
+                "regions": [
+                  "서울",
+                  "경기"
+                ],
+                "title": "[합성] Spring 결제 서버 담당자 모집",
+                "workType": "정규직"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "educationLevel": "학력무관",
+                "expirationDate": "2026-08-31T23:59:59",
+                "id": 41013,
+                "industries": [
+                  "IT"
+                ],
+                "jobCategories": [
+                  "교육운영"
+                ],
+                "openingDate": "2026-08-13T09:00:00",
+                "regions": [
+                  "서울"
+                ],
+                "title": "[합성] Spring 사내 교육 운영 담당자 모집",
+                "workType": "정규직"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "educationLevel": "학력무관",
+                "expirationDate": "2026-09-06T23:59:59",
+                "id": 41001,
+                "industries": [
+                  "IT"
+                ],
+                "jobCategories": [
+                  "백엔드"
+                ],
+                "openingDate": "2026-08-01T09:00:00",
+                "regions": [
+                  "서울"
+                ],
+                "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+                "workType": "정규직"
+              }
+            ],
+            "page": {
+              "size": 3,
+              "number": 0,
+              "totalElements": 3,
+              "totalPages": 1
+            }
+          },
+          "news": {
+            "content": [
+              {
+                "companyName": "가상 모래금융",
+                "id": 42002,
+                "link": "https://example.invalid/evaluation/news/42002",
+                "publishedAt": "2026-08-02T09:00:00",
+                "summary": "결제 중복 요청과 서버 처리 상태를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+                "thumbnailUrl": null,
+                "title": "[합성 기사] Spring 결제 서버 이야기"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "id": 42013,
+                "link": "https://example.invalid/evaluation/news/42013",
+                "publishedAt": "2026-08-13T09:00:00",
+                "summary": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+                "thumbnailUrl": null,
+                "title": "[합성 기사] Spring 사내 교육 운영 이야기"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "id": 42001,
+                "link": "https://example.invalid/evaluation/news/42001",
+                "publishedAt": "2026-08-01T09:00:00",
+                "summary": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+                "thumbnailUrl": null,
+                "title": "[합성 기사] Spring Java 백엔드 API 이야기"
+              }
+            ],
+            "page": {
+              "size": 3,
+              "number": 0,
+              "totalElements": 3,
+              "totalPages": 1
+            }
+          },
+          "projects": {
+            "content": [
+              {
+                "likeCount": 0,
+                "memberName": "가상 개발자 하늘",
+                "projectId": 43013,
+                "thumbnailUrl": null,
+                "title": "[합성 프로젝트] Spring 사내 교육 운영",
+                "viewCount": 39
+              },
+              {
+                "likeCount": 0,
+                "memberName": "가상 개발자 모래",
+                "projectId": 43012,
+                "thumbnailUrl": null,
+                "title": "[합성 프로젝트] 보안 인증 접근 제어",
+                "viewCount": 36
+              },
+              {
+                "likeCount": 0,
+                "memberName": "가상 개발자 모래",
+                "projectId": 43002,
+                "thumbnailUrl": null,
+                "title": "[합성 프로젝트] Spring 결제 서버",
+                "viewCount": 6
+              }
+            ],
+            "page": {
+              "number": 0,
+              "size": 3,
+              "totalElements": null,
+              "totalPages": null,
+              "totalExact": false,
+              "hasNext": true,
+              "hasPrevious": false,
+              "nextPage": 1
+            }
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 2898,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "companyName": "가상 모래금융",
+              "educationLevel": "학력무관",
+              "expirationDate": "2026-09-07T23:59:59",
+              "id": 41002,
+              "industries": [
+                "IT"
+              ],
+              "jobCategories": [
+                "백엔드"
+              ],
+              "openingDate": "2026-08-02T09:00:00",
+              "regions": [
+                "서울",
+                "경기"
+              ],
+              "title": "[합성] Spring 결제 서버 담당자 모집",
+              "workType": "정규직"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "educationLevel": "학력무관",
+              "expirationDate": "2026-08-31T23:59:59",
+              "id": 41013,
+              "industries": [
+                "IT"
+              ],
+              "jobCategories": [
+                "교육운영"
+              ],
+              "openingDate": "2026-08-13T09:00:00",
+              "regions": [
+                "서울"
+              ],
+              "title": "[합성] Spring 사내 교육 운영 담당자 모집",
+              "workType": "정규직"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "educationLevel": "학력무관",
+              "expirationDate": "2026-09-06T23:59:59",
+              "id": 41001,
+              "industries": [
+                "IT"
+              ],
+              "jobCategories": [
+                "백엔드"
+              ],
+              "openingDate": "2026-08-01T09:00:00",
+              "regions": [
+                "서울"
+              ],
+              "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+              "workType": "정규직"
+            }
+          ],
+          "page": {
+            "size": 10,
+            "number": 0,
+            "totalElements": 3,
+            "totalPages": 1
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 1066,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "companyName": "가상 모래금융",
+              "id": 42002,
+              "link": "https://example.invalid/evaluation/news/42002",
+              "publishedAt": "2026-08-02T09:00:00",
+              "summary": "결제 중복 요청과 서버 처리 상태를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring 결제 서버 이야기"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "id": 42013,
+              "link": "https://example.invalid/evaluation/news/42013",
+              "publishedAt": "2026-08-13T09:00:00",
+              "summary": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring 사내 교육 운영 이야기"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "id": 42001,
+              "link": "https://example.invalid/evaluation/news/42001",
+              "publishedAt": "2026-08-01T09:00:00",
+              "summary": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring Java 백엔드 API 이야기"
+            }
+          ],
+          "page": {
+            "size": 10,
+            "number": 0,
+            "totalElements": 3,
+            "totalPages": 1
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 1200,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 하늘",
+              "projectId": 43013,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] Spring 사내 교육 운영",
+              "viewCount": 39
+            },
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 모래",
+              "projectId": 43012,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] 보안 인증 접근 제어",
+              "viewCount": 36
+            },
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 모래",
+              "projectId": 43002,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] Spring 결제 서버",
+              "viewCount": 6
+            },
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 하늘",
+              "projectId": 43001,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] Spring Java 백엔드 API",
+              "viewCount": 3
+            }
+          ],
+          "page": {
+            "number": 0,
+            "size": 12,
+            "totalElements": null,
+            "totalPages": null,
+            "totalExact": false,
+            "hasNext": false,
+            "hasPrevious": false,
+            "nextPage": null
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 853,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "companyId": 46001,
+          "companyName": "가상 하늘연구소",
+          "educationLevel": "학력무관",
+          "expirationDate": "2026-09-06T23:59:59",
+          "id": 41001,
+          "industries": [
+            "IT"
+          ],
+          "jobCategories": [
+            "백엔드"
+          ],
+          "openingDate": "2026-08-01T09:00:00",
+          "regions": [
+            "서울"
+          ],
+          "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+          "workType": "정규직"
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 371,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": 46001,
+          "name": "가상 하늘연구소",
+          "industry": "IT",
+          "mainProducts": null,
+          "ceoName": null,
+          "summary": "고정 합성 데모의 가상 기업",
+          "foundedDate": null,
+          "totalEmployees": null,
+          "salary": null,
+          "serviceYear": null
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 258,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "description": "게임 개발이 아닌 취업 행사 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42019,
+              "publishedAt": "2026-08-19T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] 게임 채용 행사 안내 이야기",
+              "url": "https://example.invalid/evaluation/news/42019"
+            },
+            {
+              "description": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42013,
+              "publishedAt": "2026-08-13T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring 사내 교육 운영 이야기",
+              "url": "https://example.invalid/evaluation/news/42013"
+            },
+            {
+              "description": "컨테이너 롤링 배포와 환경 구성을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42007,
+              "publishedAt": "2026-08-07T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Kubernetes 클라우드 배포 이야기",
+              "url": "https://example.invalid/evaluation/news/42007"
+            },
+            {
+              "description": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42001,
+              "publishedAt": "2026-08-01T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring Java 백엔드 API 이야기",
+              "url": "https://example.invalid/evaluation/news/42001"
+            }
+          ],
+          "currentPage": 1,
+          "last": true,
+          "totalElements": 4,
+          "totalPages": 1
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 1429,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": 43001,
+          "title": "[합성 프로젝트] Spring Java 백엔드 API",
+          "content": "<h2>Spring Java 백엔드 API</h2><p>REST API와 트랜잭션 구현을 다룬다.</p><p>2026-09-01 기준 합성 데모입니다. 실제 사용자 작업이나 운영 성과가 아닙니다.</p>",
+          "thumbnailUrl": null,
+          "viewCount": 3,
+          "likeCount": 0,
+          "nickname": "가상 개발자 하늘",
+          "createdAt": "2026-08-01T09:00:00",
+          "updatedAt": "2026-08-01T09:00:00",
+          "projectCategory": "SERVER",
+          "techCategories": [
+            "DEMO"
+          ],
+          "techCodes": [
+            "Java",
+            "Spring"
+          ],
+          "fileUrls": [],
+          "isPublic": true
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 583,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/projects",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "text/html",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/members",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/projects",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "text/html",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/members",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 403,
+      "response": {
+        "message": "데모에서 허용되지 않은 요청입니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 63,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "signed-synthetic-user",
+      "route": "proxy",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?size=101",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?page=-1",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?page=20",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/projects/search?sort=INVALID",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/projects/search?category=INVALID",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?size=0",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?keyword=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "identity": "anonymous",
+      "route": "proxy",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/health",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "status": "UP"
+      },
+      "contentType": "application/json",
+      "bodyBytes": 15,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/health",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "jobs": {
+            "content": [
+              {
+                "companyName": "가상 모래금융",
+                "educationLevel": "학력무관",
+                "expirationDate": "2026-09-07T23:59:59",
+                "id": 41002,
+                "industries": [
+                  "IT"
+                ],
+                "jobCategories": [
+                  "백엔드"
+                ],
+                "openingDate": "2026-08-02T09:00:00",
+                "regions": [
+                  "서울",
+                  "경기"
+                ],
+                "title": "[합성] Spring 결제 서버 담당자 모집",
+                "workType": "정규직"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "educationLevel": "학력무관",
+                "expirationDate": "2026-08-31T23:59:59",
+                "id": 41013,
+                "industries": [
+                  "IT"
+                ],
+                "jobCategories": [
+                  "교육운영"
+                ],
+                "openingDate": "2026-08-13T09:00:00",
+                "regions": [
+                  "서울"
+                ],
+                "title": "[합성] Spring 사내 교육 운영 담당자 모집",
+                "workType": "정규직"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "educationLevel": "학력무관",
+                "expirationDate": "2026-09-06T23:59:59",
+                "id": 41001,
+                "industries": [
+                  "IT"
+                ],
+                "jobCategories": [
+                  "백엔드"
+                ],
+                "openingDate": "2026-08-01T09:00:00",
+                "regions": [
+                  "서울"
+                ],
+                "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+                "workType": "정규직"
+              }
+            ],
+            "page": {
+              "size": 3,
+              "number": 0,
+              "totalElements": 3,
+              "totalPages": 1
+            }
+          },
+          "news": {
+            "content": [
+              {
+                "companyName": "가상 모래금융",
+                "id": 42002,
+                "link": "https://example.invalid/evaluation/news/42002",
+                "publishedAt": "2026-08-02T09:00:00",
+                "summary": "결제 중복 요청과 서버 처리 상태를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+                "thumbnailUrl": null,
+                "title": "[합성 기사] Spring 결제 서버 이야기"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "id": 42013,
+                "link": "https://example.invalid/evaluation/news/42013",
+                "publishedAt": "2026-08-13T09:00:00",
+                "summary": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+                "thumbnailUrl": null,
+                "title": "[합성 기사] Spring 사내 교육 운영 이야기"
+              },
+              {
+                "companyName": "가상 하늘연구소",
+                "id": 42001,
+                "link": "https://example.invalid/evaluation/news/42001",
+                "publishedAt": "2026-08-01T09:00:00",
+                "summary": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+                "thumbnailUrl": null,
+                "title": "[합성 기사] Spring Java 백엔드 API 이야기"
+              }
+            ],
+            "page": {
+              "size": 3,
+              "number": 0,
+              "totalElements": 3,
+              "totalPages": 1
+            }
+          },
+          "projects": {
+            "content": [
+              {
+                "likeCount": 0,
+                "memberName": "가상 개발자 하늘",
+                "projectId": 43013,
+                "thumbnailUrl": null,
+                "title": "[합성 프로젝트] Spring 사내 교육 운영",
+                "viewCount": 39
+              },
+              {
+                "likeCount": 0,
+                "memberName": "가상 개발자 모래",
+                "projectId": 43012,
+                "thumbnailUrl": null,
+                "title": "[합성 프로젝트] 보안 인증 접근 제어",
+                "viewCount": 36
+              },
+              {
+                "likeCount": 0,
+                "memberName": "가상 개발자 모래",
+                "projectId": 43002,
+                "thumbnailUrl": null,
+                "title": "[합성 프로젝트] Spring 결제 서버",
+                "viewCount": 6
+              }
+            ],
+            "page": {
+              "number": 0,
+              "size": 3,
+              "totalElements": null,
+              "totalPages": null,
+              "totalExact": false,
+              "hasNext": true,
+              "hasPrevious": false,
+              "nextPage": 1
+            }
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 2898,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "companyName": "가상 모래금융",
+              "educationLevel": "학력무관",
+              "expirationDate": "2026-09-07T23:59:59",
+              "id": 41002,
+              "industries": [
+                "IT"
+              ],
+              "jobCategories": [
+                "백엔드"
+              ],
+              "openingDate": "2026-08-02T09:00:00",
+              "regions": [
+                "서울",
+                "경기"
+              ],
+              "title": "[합성] Spring 결제 서버 담당자 모집",
+              "workType": "정규직"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "educationLevel": "학력무관",
+              "expirationDate": "2026-08-31T23:59:59",
+              "id": 41013,
+              "industries": [
+                "IT"
+              ],
+              "jobCategories": [
+                "교육운영"
+              ],
+              "openingDate": "2026-08-13T09:00:00",
+              "regions": [
+                "서울"
+              ],
+              "title": "[합성] Spring 사내 교육 운영 담당자 모집",
+              "workType": "정규직"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "educationLevel": "학력무관",
+              "expirationDate": "2026-09-06T23:59:59",
+              "id": 41001,
+              "industries": [
+                "IT"
+              ],
+              "jobCategories": [
+                "백엔드"
+              ],
+              "openingDate": "2026-08-01T09:00:00",
+              "regions": [
+                "서울"
+              ],
+              "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+              "workType": "정규직"
+            }
+          ],
+          "page": {
+            "size": 10,
+            "number": 0,
+            "totalElements": 3,
+            "totalPages": 1
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 1066,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/jobs/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "companyName": "가상 모래금융",
+              "id": 42002,
+              "link": "https://example.invalid/evaluation/news/42002",
+              "publishedAt": "2026-08-02T09:00:00",
+              "summary": "결제 중복 요청과 서버 처리 상태를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring 결제 서버 이야기"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "id": 42013,
+              "link": "https://example.invalid/evaluation/news/42013",
+              "publishedAt": "2026-08-13T09:00:00",
+              "summary": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring 사내 교육 운영 이야기"
+            },
+            {
+              "companyName": "가상 하늘연구소",
+              "id": 42001,
+              "link": "https://example.invalid/evaluation/news/42001",
+              "publishedAt": "2026-08-01T09:00:00",
+              "summary": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring Java 백엔드 API 이야기"
+            }
+          ],
+          "page": {
+            "size": 10,
+            "number": 0,
+            "totalElements": 3,
+            "totalPages": 1
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 1200,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/news/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 하늘",
+              "projectId": 43013,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] Spring 사내 교육 운영",
+              "viewCount": 39
+            },
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 모래",
+              "projectId": 43012,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] 보안 인증 접근 제어",
+              "viewCount": 36
+            },
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 모래",
+              "projectId": 43002,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] Spring 결제 서버",
+              "viewCount": 6
+            },
+            {
+              "likeCount": 0,
+              "memberName": "가상 개발자 하늘",
+              "projectId": 43001,
+              "thumbnailUrl": null,
+              "title": "[합성 프로젝트] Spring Java 백엔드 API",
+              "viewCount": 3
+            }
+          ],
+          "page": {
+            "number": 0,
+            "size": 12,
+            "totalElements": null,
+            "totalPages": null,
+            "totalExact": false,
+            "hasNext": false,
+            "hasPrevious": false,
+            "nextPage": null
+          }
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 853,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/projects/search?keyword=Spring",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "companyId": 46001,
+          "companyName": "가상 하늘연구소",
+          "educationLevel": "학력무관",
+          "expirationDate": "2026-09-06T23:59:59",
+          "id": 41001,
+          "industries": [
+            "IT"
+          ],
+          "jobCategories": [
+            "백엔드"
+          ],
+          "openingDate": "2026-08-01T09:00:00",
+          "regions": [
+            "서울"
+          ],
+          "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+          "workType": "정규직"
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 371,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/jobs/41001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": 46001,
+          "name": "가상 하늘연구소",
+          "industry": "IT",
+          "mainProducts": null,
+          "ceoName": null,
+          "summary": "고정 합성 데모의 가상 기업",
+          "foundedDate": null,
+          "totalEmployees": null,
+          "salary": null,
+          "serviceYear": null
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 258,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/companies/46001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "content": [
+            {
+              "description": "게임 개발이 아닌 취업 행사 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42019,
+              "publishedAt": "2026-08-19T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] 게임 채용 행사 안내 이야기",
+              "url": "https://example.invalid/evaluation/news/42019"
+            },
+            {
+              "description": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42013,
+              "publishedAt": "2026-08-13T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring 사내 교육 운영 이야기",
+              "url": "https://example.invalid/evaluation/news/42013"
+            },
+            {
+              "description": "컨테이너 롤링 배포와 환경 구성을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42007,
+              "publishedAt": "2026-08-07T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Kubernetes 클라우드 배포 이야기",
+              "url": "https://example.invalid/evaluation/news/42007"
+            },
+            {
+              "description": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+              "id": 42001,
+              "publishedAt": "2026-08-01T09:00:00",
+              "thumbnailUrl": null,
+              "title": "[합성 기사] Spring Java 백엔드 API 이야기",
+              "url": "https://example.invalid/evaluation/news/42001"
+            }
+          ],
+          "currentPage": 1,
+          "last": true,
+          "totalElements": 4,
+          "totalPages": 1
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 1429,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/news/companies/46001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": {
+        "success": true,
+        "data": {
+          "id": 43001,
+          "title": "[합성 프로젝트] Spring Java 백엔드 API",
+          "content": "<h2>Spring Java 백엔드 API</h2><p>REST API와 트랜잭션 구현을 다룬다.</p><p>2026-09-01 기준 합성 데모입니다. 실제 사용자 작업이나 운영 성과가 아닙니다.</p>",
+          "thumbnailUrl": null,
+          "viewCount": 3,
+          "likeCount": 0,
+          "nickname": "가상 개발자 하늘",
+          "createdAt": "2026-08-01T09:00:00",
+          "updatedAt": "2026-08-01T09:00:00",
+          "projectCategory": "SERVER",
+          "techCategories": [
+            "DEMO"
+          ],
+          "techCodes": [
+            "Java",
+            "Spring"
+          ],
+          "fileUrls": [],
+          "isPublic": true
+        },
+        "message": null
+      },
+      "contentType": "application/json",
+      "bodyBytes": 583,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 200,
+      "response": null,
+      "contentType": "application/json",
+      "bodyBytes": 0,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/projects",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/members",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/projects",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects/43001",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/projects",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/auth/reissue",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/projects",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/portfolios/list",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/swagger-ui/index.html",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/actuator/health",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/oauth2/authorization/google",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/admin/repair",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/members",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/likes/jobs",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/likes/news",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/appliedJobs/list",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/members/me/recommend-news",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/stats/rates",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "POST",
+      "path": "/projects/43001/comments",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/follows/followers",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 403,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "공개 데모에서 허용하지 않는 요청입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 98,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 403
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43022",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43023",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/projects/43024",
+      "identity": "signed-synthetic-user",
+      "route": "backend-direct",
+      "status": 404,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "조회한 결과가 없습니다."
+      },
+      "contentType": "application/json",
+      "bodyBytes": 75,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 404
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?size=101",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?page=-1",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?page=20",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/projects/search?sort=INVALID",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/projects/search?category=INVALID",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?size=0",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/search?keyword=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "identity": "anonymous",
+      "route": "backend-direct",
+      "status": 400,
+      "response": {
+        "success": false,
+        "data": null,
+        "message": "잘못된 입력입니다."
+      },
+      "contentType": "application/json;charset=UTF-8",
+      "bodyBytes": 68,
+      "setCookiePresent": false,
+      "retryAfter": null,
+      "expectedStatus": 400
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

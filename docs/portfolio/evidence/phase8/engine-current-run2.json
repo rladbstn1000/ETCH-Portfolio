@@ -1,0 +1,3839 @@
+{
+  "observedAtUtc": "2026-09-29T15:50:13.510325+00:00",
+  "environment": "rc",
+  "project": "etch-phase7-fresh-v4",
+  "queriesSha256": "74292436394f887000a5b190bd17e836ef672b170649c2ec9cc01608f5e5356c",
+  "server": {
+    "name": "5977254717d6",
+    "cluster_name": "docker-cluster",
+    "cluster_uuid": "680W2tnPTvO0PxniocOwVQ",
+    "version": {
+      "number": "9.4.7",
+      "build_flavor": "default",
+      "build_type": "docker",
+      "build_hash": "9093bd876e86f531329aad3704ec9ab607c909c8",
+      "build_date": "2026-09-09T22:41:14.293156395Z",
+      "build_snapshot": false,
+      "lucene_version": "10.4.0",
+      "minimum_wire_compatibility_version": "8.19.0",
+      "minimum_index_compatibility_version": "8.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "indices": {
+    "job": {
+      "mapping": {
+        "job-v3": {
+          "mappings": {
+            "properties": {
+              "companyName": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "educationLevel": {
+                "type": "keyword"
+              },
+              "expirationDate": {
+                "type": "date"
+              },
+              "industries": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "jobCategories": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
+                },
+                "analyzer": "my_nori_analyzer"
+              },
+              "jobId": {
+                "type": "long"
+              },
+              "openingDate": {
+                "type": "date"
+              },
+              "regions": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword"
+                  }
+                },
+                "analyzer": "my_nori_analyzer"
+              },
+              "syncRevision": {
+                "type": "long"
+              },
+              "title": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "workType": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "settings": {
+        "job-v3": {
+          "settings": {
+            "index": {
+              "routing": {
+                "allocation": {
+                  "include": {
+                    "_tier_preference": "data_content"
+                  }
+                }
+              },
+              "number_of_shards": "1",
+              "provided_name": "job-v3",
+              "creation_date": "1790692739408",
+              "analysis": {
+                "analyzer": {
+                  "my_nori_analyzer": {
+                    "type": "nori"
+                  }
+                }
+              },
+              "number_of_replicas": "1",
+              "uuid": "3sGUn65lQkaNy8RRiEKqjg",
+              "version": {
+                "created": "9094000"
+              }
+            }
+          }
+        }
+      },
+      "documents": [
+        {
+          "id": "41001",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "백엔드"
+            ],
+            "title": "[합성] Spring Java 백엔드 API 담당자 모집",
+            "jobId": 41001,
+            "workType": "정규직",
+            "companyName": "가상 하늘연구소",
+            "openingDate": "2026-08-01T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-06T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41002",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울",
+              "경기"
+            ],
+            "jobCategories": [
+              "백엔드"
+            ],
+            "title": "[합성] Spring 결제 서버 담당자 모집",
+            "jobId": 41002,
+            "workType": "정규직",
+            "companyName": "가상 모래금융",
+            "openingDate": "2026-08-02T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-07T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41003",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "프론트엔드"
+            ],
+            "title": "[합성] React TypeScript 웹 화면 담당자 모집",
+            "jobId": 41003,
+            "workType": "정규직",
+            "companyName": "가상 새벽데이터",
+            "openingDate": "2026-08-03T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-08T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41004",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "프론트엔드"
+            ],
+            "title": "[합성] React 접근성 디자인 시스템 담당자 모집",
+            "jobId": 41004,
+            "workType": "계약직",
+            "companyName": "가상 파도게임",
+            "openingDate": "2026-08-04T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-09T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41005",
+          "version": 1,
+          "source": {
+            "regions": [
+              "대전"
+            ],
+            "jobCategories": [
+              "데이터엔지니어"
+            ],
+            "title": "[합성] Python 데이터 파이프라인 담당자 모집",
+            "jobId": 41005,
+            "workType": "정규직",
+            "companyName": "가상 숲보안",
+            "openingDate": "2026-08-05T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-10T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41006",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "데이터분석가"
+            ],
+            "title": "[합성] Python 데이터 분석 담당자 모집",
+            "jobId": 41006,
+            "workType": "정규직",
+            "companyName": "가상 별모바일",
+            "openingDate": "2026-08-06T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-11T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41007",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "DevOps/클라우드"
+            ],
+            "title": "[합성] Kubernetes 클라우드 배포 담당자 모집",
+            "jobId": 41007,
+            "workType": "정규직",
+            "companyName": "가상 하늘연구소",
+            "openingDate": "2026-08-07T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-12T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41008",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울",
+              "경기"
+            ],
+            "jobCategories": [
+              "DevOps/클라우드"
+            ],
+            "title": "[합성] Kubernetes 장애 관측 담당자 모집",
+            "jobId": 41008,
+            "workType": "계약직",
+            "companyName": "가상 모래금융",
+            "openingDate": "2026-08-08T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-13T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41009",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "보안"
+            ],
+            "title": "[합성] 핀테크 결제 보안 담당자 모집",
+            "jobId": 41009,
+            "workType": "정규직",
+            "companyName": "가상 새벽데이터",
+            "openingDate": "2026-08-09T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-14T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41010",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "백엔드"
+            ],
+            "title": "[합성] 검색 Elasticsearch 색인 담당자 모집",
+            "jobId": 41010,
+            "workType": "정규직",
+            "companyName": "가상 파도게임",
+            "openingDate": "2026-08-10T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-15T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41011",
+          "version": 1,
+          "source": {
+            "regions": [
+              "대전"
+            ],
+            "jobCategories": [
+              "앱개발"
+            ],
+            "title": "[합성] Android Kotlin 모바일 담당자 모집",
+            "jobId": 41011,
+            "workType": "정규직",
+            "companyName": "가상 숲보안",
+            "openingDate": "2026-08-11T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-16T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41012",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "보안"
+            ],
+            "title": "[합성] 보안 인증 접근 제어 담당자 모집",
+            "jobId": 41012,
+            "workType": "계약직",
+            "companyName": "가상 별모바일",
+            "openingDate": "2026-08-12T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-17T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41013",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "교육운영"
+            ],
+            "title": "[합성] Spring 사내 교육 운영 담당자 모집",
+            "jobId": 41013,
+            "workType": "정규직",
+            "companyName": "가상 하늘연구소",
+            "openingDate": "2026-08-13T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-08-31T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41014",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울",
+              "경기"
+            ],
+            "jobCategories": [
+              "웹디자인"
+            ],
+            "title": "[합성] React 마케팅 소개 화면 담당자 모집",
+            "jobId": 41014,
+            "workType": "정규직",
+            "companyName": "가상 모래금융",
+            "openingDate": "2026-08-14T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-19T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41015",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "교육운영"
+            ],
+            "title": "[합성] Python 학습 노트 담당자 모집",
+            "jobId": 41015,
+            "workType": "정규직",
+            "companyName": "가상 새벽데이터",
+            "openingDate": "2026-08-15T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-20T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41016",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "기획"
+            ],
+            "title": "[합성] Kubernetes 비용 보고서 담당자 모집",
+            "jobId": 41016,
+            "workType": "계약직",
+            "companyName": "가상 파도게임",
+            "openingDate": "2026-08-16T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-21T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41017",
+          "version": 1,
+          "source": {
+            "regions": [
+              "대전"
+            ],
+            "jobCategories": [
+              "마케팅"
+            ],
+            "title": "[합성] 핀테크 기업 홍보 담당자 모집",
+            "jobId": 41017,
+            "workType": "정규직",
+            "companyName": "가상 숲보안",
+            "openingDate": "2026-08-17T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-22T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41018",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "게임개발"
+            ],
+            "title": "[합성] 게임 Unity 실시간 서버 담당자 모집",
+            "jobId": 41018,
+            "workType": "정규직",
+            "companyName": "가상 별모바일",
+            "openingDate": "2026-08-18T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-23T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41019",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "교육운영"
+            ],
+            "title": "[합성] 게임 채용 행사 안내 담당자 모집",
+            "jobId": 41019,
+            "workType": "정규직",
+            "companyName": "가상 하늘연구소",
+            "openingDate": "2026-08-19T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-08-31T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41020",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울",
+              "경기"
+            ],
+            "jobCategories": [
+              "프론트엔드"
+            ],
+            "title": "[합성] 검색 사용자 설문 화면 담당자 모집",
+            "jobId": 41020,
+            "workType": "계약직",
+            "companyName": "가상 모래금융",
+            "openingDate": "2026-08-20T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-25T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41021",
+          "version": 1,
+          "source": {
+            "regions": [
+              "부산"
+            ],
+            "jobCategories": [
+              "기획"
+            ],
+            "title": "[합성] Android 기기 구매 관리 담당자 모집",
+            "jobId": 41021,
+            "workType": "정규직",
+            "companyName": "가상 새벽데이터",
+            "openingDate": "2026-08-21T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-26T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41022",
+          "version": 1,
+          "source": {
+            "regions": [
+              "서울"
+            ],
+            "jobCategories": [
+              "교육운영"
+            ],
+            "title": "[합성] 보안 사내 교육 안내 담당자 모집",
+            "jobId": 41022,
+            "workType": "정규직",
+            "companyName": "가상 파도게임",
+            "openingDate": "2026-08-22T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-27T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41023",
+          "version": 1,
+          "source": {
+            "regions": [
+              "대전"
+            ],
+            "jobCategories": [
+              "총무"
+            ],
+            "title": "[합성] 하늘연구소 지역 봉사 담당자 모집",
+            "jobId": 41023,
+            "workType": "정규직",
+            "companyName": "가상 숲보안",
+            "openingDate": "2026-08-23T09:00:00",
+            "educationLevel": "학력무관",
+            "syncRevision": 1,
+            "expirationDate": "2026-09-28T23:59:59",
+            "industries": [
+              "IT"
+            ],
+            "deleted": false
+          }
+        },
+        {
+          "id": "41024",
+          "version": 2,
+          "source": {
+            "jobId": 41024,
+            "syncRevision": 2,
+            "deleted": true
+          }
+        }
+      ],
+      "analysis": [
+        {
+          "text": "Spring Java 백엔드 API",
+          "tokens": [
+            {
+              "token": "spring",
+              "start_offset": 0,
+              "end_offset": 6,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "java",
+              "start_offset": 7,
+              "end_offset": 11,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "백",
+              "start_offset": 12,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "엔드",
+              "start_offset": 13,
+              "end_offset": 15,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "api",
+              "start_offset": 16,
+              "end_offset": 19,
+              "type": "word",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "text": "서울 데이터엔지니어",
+          "tokens": [
+            {
+              "token": "서울",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "데이터",
+              "start_offset": 3,
+              "end_offset": 6,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "엔지니어",
+              "start_offset": 6,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        },
+        {
+          "text": "React TypeScript 웹 화면",
+          "tokens": [
+            {
+              "token": "react",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "typescript",
+              "start_offset": 6,
+              "end_offset": 16,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "웹",
+              "start_offset": 17,
+              "end_offset": 18,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "화면",
+              "start_offset": 19,
+              "end_offset": 21,
+              "type": "word",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "text": "\"검색\" 장애 복구",
+          "tokens": [
+            {
+              "token": "검색",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "장애",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "복구",
+              "start_offset": 8,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        }
+      ]
+    },
+    "news": {
+      "mapping": {
+        "news-v3": {
+          "mappings": {
+            "properties": {
+              "companyName": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "link": {
+                "type": "keyword"
+              },
+              "newsId": {
+                "type": "long"
+              },
+              "publishedAt": {
+                "type": "date"
+              },
+              "summary": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "syncRevision": {
+                "type": "long"
+              },
+              "thumbnailUrl": {
+                "type": "keyword"
+              },
+              "title": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              }
+            }
+          }
+        }
+      },
+      "settings": {
+        "news-v3": {
+          "settings": {
+            "index": {
+              "routing": {
+                "allocation": {
+                  "include": {
+                    "_tier_preference": "data_content"
+                  }
+                }
+              },
+              "number_of_shards": "1",
+              "provided_name": "news-v3",
+              "creation_date": "1790692739639",
+              "analysis": {
+                "analyzer": {
+                  "my_nori_analyzer": {
+                    "type": "nori"
+                  }
+                }
+              },
+              "number_of_replicas": "1",
+              "uuid": "yPrtBCC7SFKQ5U0BOrj_wg",
+              "version": {
+                "created": "9094000"
+              }
+            }
+          }
+        }
+      },
+      "documents": [
+        {
+          "id": "42001",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42001",
+            "publishedAt": "2026-08-01T09:00:00",
+            "title": "[합성 기사] Spring Java 백엔드 API 이야기",
+            "newsId": 42001,
+            "summary": "REST API와 트랜잭션 구현을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 하늘연구소",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42002",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42002",
+            "publishedAt": "2026-08-02T09:00:00",
+            "title": "[합성 기사] Spring 결제 서버 이야기",
+            "newsId": 42002,
+            "summary": "결제 중복 요청과 서버 처리 상태를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 모래금융",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42003",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42003",
+            "publishedAt": "2026-08-03T09:00:00",
+            "title": "[합성 기사] React TypeScript 웹 화면 이야기",
+            "newsId": 42003,
+            "summary": "컴포넌트 상태와 TypeScript 인터페이스를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 새벽데이터",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42004",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42004",
+            "publishedAt": "2026-08-04T09:00:00",
+            "title": "[합성 기사] React 접근성 디자인 시스템 이야기",
+            "newsId": 42004,
+            "summary": "키보드 이동과 화면 읽기 순서를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 파도게임",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42005",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42005",
+            "publishedAt": "2026-08-05T09:00:00",
+            "title": "[합성 기사] Python 데이터 파이프라인 이야기",
+            "newsId": 42005,
+            "summary": "배치 입력의 검증과 데이터 변환을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 숲보안",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42006",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42006",
+            "publishedAt": "2026-08-06T09:00:00",
+            "title": "[합성 기사] Python 데이터 분석 이야기",
+            "newsId": 42006,
+            "summary": "집계와 통계 보고서를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 별모바일",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42007",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42007",
+            "publishedAt": "2026-08-07T09:00:00",
+            "title": "[합성 기사] Kubernetes 클라우드 배포 이야기",
+            "newsId": 42007,
+            "summary": "컨테이너 롤링 배포와 환경 구성을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 하늘연구소",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42008",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42008",
+            "publishedAt": "2026-08-08T09:00:00",
+            "title": "[합성 기사] Kubernetes 장애 관측 이야기",
+            "newsId": 42008,
+            "summary": "실패 로그와 서비스 상태 관측을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 모래금융",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42009",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42009",
+            "publishedAt": "2026-08-09T09:00:00",
+            "title": "[합성 기사] 핀테크 결제 보안 이야기",
+            "newsId": 42009,
+            "summary": "결제 접근 권한과 민감한 요청 보호를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 새벽데이터",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42010",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42010",
+            "publishedAt": "2026-08-10T09:00:00",
+            "title": "[합성 기사] 검색 Elasticsearch 색인 이야기",
+            "newsId": 42010,
+            "summary": "문서 색인과 한국어 검색 필터를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 파도게임",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42011",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42011",
+            "publishedAt": "2026-08-11T09:00:00",
+            "title": "[합성 기사] Android Kotlin 모바일 이야기",
+            "newsId": 42011,
+            "summary": "모바일 앱 화면과 기기 상태를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 숲보안",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42012",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42012",
+            "publishedAt": "2026-08-12T09:00:00",
+            "title": "[합성 기사] 보안 인증 접근 제어 이야기",
+            "newsId": 42012,
+            "summary": "사용자 권한과 인증 경계를 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 별모바일",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42013",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42013",
+            "publishedAt": "2026-08-13T09:00:00",
+            "title": "[합성 기사] Spring 사내 교육 운영 이야기",
+            "newsId": 42013,
+            "summary": "서버 개발 업무가 아닌 교육 일정 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 하늘연구소",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42014",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42014",
+            "publishedAt": "2026-08-14T09:00:00",
+            "title": "[합성 기사] React 마케팅 소개 화면 이야기",
+            "newsId": 42014,
+            "summary": "제품 구현보다 홍보 화면 제작에 초점을 둔다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 모래금융",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42015",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42015",
+            "publishedAt": "2026-08-15T09:00:00",
+            "title": "[합성 기사] Python 학습 노트 이야기",
+            "newsId": 42015,
+            "summary": "운영 파이프라인이 아닌 입문 학습 기록이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 새벽데이터",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42016",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42016",
+            "publishedAt": "2026-08-16T09:00:00",
+            "title": "[합성 기사] Kubernetes 비용 보고서 이야기",
+            "newsId": 42016,
+            "summary": "클러스터 구축이 아닌 비용 집계 보고이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 파도게임",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42017",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42017",
+            "publishedAt": "2026-08-17T09:00:00",
+            "title": "[합성 기사] 핀테크 기업 홍보 이야기",
+            "newsId": 42017,
+            "summary": "결제 구현이 아닌 기업 이미지 홍보다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 숲보안",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42018",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42018",
+            "publishedAt": "2026-08-18T09:00:00",
+            "title": "[합성 기사] 게임 Unity 실시간 서버 이야기",
+            "newsId": 42018,
+            "summary": "실시간 게임 상태 전달을 다룬다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 별모바일",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42019",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42019",
+            "publishedAt": "2026-08-19T09:00:00",
+            "title": "[합성 기사] 게임 채용 행사 안내 이야기",
+            "newsId": 42019,
+            "summary": "게임 개발이 아닌 취업 행사 운영이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 하늘연구소",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42020",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42020",
+            "publishedAt": "2026-08-20T09:00:00",
+            "title": "[합성 기사] 검색 사용자 설문 화면 이야기",
+            "newsId": 42020,
+            "summary": "색인 구현이 아닌 검색 만족도 설문이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 모래금융",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42021",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42021",
+            "publishedAt": "2026-08-21T09:00:00",
+            "title": "[합성 기사] Android 기기 구매 관리 이야기",
+            "newsId": 42021,
+            "summary": "앱 개발이 아닌 기기 자산 구매 관리다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 새벽데이터",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42022",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42022",
+            "publishedAt": "2026-08-22T09:00:00",
+            "title": "[합성 기사] 보안 사내 교육 안내 이야기",
+            "newsId": 42022,
+            "summary": "인증 구현이 아닌 교육 일정 안내다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 파도게임",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42023",
+          "version": 1,
+          "source": {
+            "link": "https://example.invalid/evaluation/news/42023",
+            "publishedAt": "2026-08-23T09:00:00",
+            "title": "[합성 기사] 하늘연구소 지역 봉사 이야기",
+            "newsId": 42023,
+            "summary": "기술 직무가 아닌 지역 사회활동이다. 실제 기사나 기업 발표가 아닌 고정 데모 자료입니다.",
+            "companyName": "가상 숲보안",
+            "thumbnailUrl": null,
+            "syncRevision": 1,
+            "deleted": false
+          }
+        },
+        {
+          "id": "42024",
+          "version": 2,
+          "source": {
+            "newsId": 42024,
+            "syncRevision": 2,
+            "deleted": true
+          }
+        }
+      ],
+      "analysis": [
+        {
+          "text": "Spring Java 백엔드 API",
+          "tokens": [
+            {
+              "token": "spring",
+              "start_offset": 0,
+              "end_offset": 6,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "java",
+              "start_offset": 7,
+              "end_offset": 11,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "백",
+              "start_offset": 12,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "엔드",
+              "start_offset": 13,
+              "end_offset": 15,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "api",
+              "start_offset": 16,
+              "end_offset": 19,
+              "type": "word",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "text": "서울 데이터엔지니어",
+          "tokens": [
+            {
+              "token": "서울",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "데이터",
+              "start_offset": 3,
+              "end_offset": 6,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "엔지니어",
+              "start_offset": 6,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        },
+        {
+          "text": "React TypeScript 웹 화면",
+          "tokens": [
+            {
+              "token": "react",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "typescript",
+              "start_offset": 6,
+              "end_offset": 16,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "웹",
+              "start_offset": 17,
+              "end_offset": 18,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "화면",
+              "start_offset": 19,
+              "end_offset": 21,
+              "type": "word",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "text": "\"검색\" 장애 복구",
+          "tokens": [
+            {
+              "token": "검색",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "장애",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "복구",
+              "start_offset": 8,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        }
+      ]
+    },
+    "project": {
+      "mapping": {
+        "project-v2": {
+          "mappings": {
+            "properties": {
+              "createdAt": {
+                "type": "date",
+                "format": "yyyy-MM-dd"
+              },
+              "likeCount": {
+                "type": "integer"
+              },
+              "memberName": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "projectCategory": {
+                "type": "keyword"
+              },
+              "projectId": {
+                "type": "long"
+              },
+              "projectTechs": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "searchRevision": {
+                "type": "long"
+              },
+              "thumbnailUrl": {
+                "type": "keyword"
+              },
+              "title": {
+                "type": "text",
+                "analyzer": "my_nori_analyzer"
+              },
+              "updatedAt": {
+                "type": "date",
+                "format": "yyyy-MM-dd"
+              },
+              "viewCount": {
+                "type": "long"
+              },
+              "visible": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
+      "settings": {
+        "project-v2": {
+          "settings": {
+            "index": {
+              "routing": {
+                "allocation": {
+                  "include": {
+                    "_tier_preference": "data_content"
+                  }
+                }
+              },
+              "number_of_shards": "1",
+              "provided_name": "project-v2",
+              "creation_date": "1790692739860",
+              "analysis": {
+                "analyzer": {
+                  "my_nori_analyzer": {
+                    "type": "nori"
+                  }
+                }
+              },
+              "number_of_replicas": "1",
+              "uuid": "uHMe6snuQ5CeYKMOOFWtyQ",
+              "version": {
+                "created": "9094000"
+              }
+            }
+          }
+        }
+      },
+      "documents": [
+        {
+          "id": "43001",
+          "version": 1,
+          "source": {
+            "projectId": 43001,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Spring Java 백엔드 API",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "SERVER",
+            "likeCount": 0,
+            "viewCount": 3,
+            "createdAt": "2026-08-01",
+            "updatedAt": "2026-08-01",
+            "projectTechs": [
+              "Java",
+              "Spring"
+            ]
+          }
+        },
+        {
+          "id": "43002",
+          "version": 1,
+          "source": {
+            "projectId": 43002,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Spring 결제 서버",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "SERVER",
+            "likeCount": 0,
+            "viewCount": 6,
+            "createdAt": "2026-08-02",
+            "updatedAt": "2026-08-02",
+            "projectTechs": [
+              "Java",
+              "MySQL",
+              "Spring"
+            ]
+          }
+        },
+        {
+          "id": "43003",
+          "version": 1,
+          "source": {
+            "projectId": 43003,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] React TypeScript 웹 화면",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 9,
+            "createdAt": "2026-08-03",
+            "updatedAt": "2026-08-03",
+            "projectTechs": [
+              "React",
+              "TypeScript"
+            ]
+          }
+        },
+        {
+          "id": "43004",
+          "version": 1,
+          "source": {
+            "projectId": 43004,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] React 접근성 디자인 시스템",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 12,
+            "createdAt": "2026-08-04",
+            "updatedAt": "2026-08-04",
+            "projectTechs": [
+              "CSS",
+              "React"
+            ]
+          }
+        },
+        {
+          "id": "43005",
+          "version": 1,
+          "source": {
+            "projectId": 43005,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Python 데이터 파이프라인",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "DATABASE",
+            "likeCount": 0,
+            "viewCount": 15,
+            "createdAt": "2026-08-05",
+            "updatedAt": "2026-08-05",
+            "projectTechs": [
+              "Python",
+              "SQL"
+            ]
+          }
+        },
+        {
+          "id": "43006",
+          "version": 1,
+          "source": {
+            "projectId": 43006,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Python 데이터 분석",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "DATABASE",
+            "likeCount": 0,
+            "viewCount": 18,
+            "createdAt": "2026-08-06",
+            "updatedAt": "2026-08-06",
+            "projectTechs": [
+              "Python",
+              "SQL"
+            ]
+          }
+        },
+        {
+          "id": "43007",
+          "version": 1,
+          "source": {
+            "projectId": 43007,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Kubernetes 클라우드 배포",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "DEVOPS",
+            "likeCount": 0,
+            "viewCount": 21,
+            "createdAt": "2026-08-07",
+            "updatedAt": "2026-08-07",
+            "projectTechs": [
+              "Docker",
+              "Kubernetes"
+            ]
+          }
+        },
+        {
+          "id": "43008",
+          "version": 1,
+          "source": {
+            "projectId": 43008,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Kubernetes 장애 관측",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "DEVOPS",
+            "likeCount": 0,
+            "viewCount": 24,
+            "createdAt": "2026-08-08",
+            "updatedAt": "2026-08-08",
+            "projectTechs": [
+              "Kubernetes",
+              "Redis"
+            ]
+          }
+        },
+        {
+          "id": "43009",
+          "version": 1,
+          "source": {
+            "projectId": 43009,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 핀테크 결제 보안",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "SECURITY",
+            "likeCount": 0,
+            "viewCount": 27,
+            "createdAt": "2026-08-09",
+            "updatedAt": "2026-08-09",
+            "projectTechs": [
+              "Java",
+              "Redis"
+            ]
+          }
+        },
+        {
+          "id": "43010",
+          "version": 1,
+          "source": {
+            "projectId": 43010,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 검색 Elasticsearch 색인",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "SERVER",
+            "likeCount": 0,
+            "viewCount": 30,
+            "createdAt": "2026-08-10",
+            "updatedAt": "2026-08-10",
+            "projectTechs": [
+              "Elasticsearch",
+              "Java"
+            ]
+          }
+        },
+        {
+          "id": "43011",
+          "version": 1,
+          "source": {
+            "projectId": 43011,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Android Kotlin 모바일",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "MOBILE",
+            "likeCount": 0,
+            "viewCount": 33,
+            "createdAt": "2026-08-11",
+            "updatedAt": "2026-08-11",
+            "projectTechs": [
+              "Android",
+              "Kotlin"
+            ]
+          }
+        },
+        {
+          "id": "43012",
+          "version": 1,
+          "source": {
+            "projectId": 43012,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 보안 인증 접근 제어",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "SECURITY",
+            "likeCount": 0,
+            "viewCount": 36,
+            "createdAt": "2026-08-12",
+            "updatedAt": "2026-08-12",
+            "projectTechs": [
+              "Java",
+              "Spring"
+            ]
+          }
+        },
+        {
+          "id": "43013",
+          "version": 1,
+          "source": {
+            "projectId": 43013,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Spring 사내 교육 운영",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 39,
+            "createdAt": "2026-08-13",
+            "updatedAt": "2026-08-13",
+            "projectTechs": [
+              "Java"
+            ]
+          }
+        },
+        {
+          "id": "43014",
+          "version": 1,
+          "source": {
+            "projectId": 43014,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] React 마케팅 소개 화면",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 42,
+            "createdAt": "2026-08-14",
+            "updatedAt": "2026-08-14",
+            "projectTechs": [
+              "React"
+            ]
+          }
+        },
+        {
+          "id": "43015",
+          "version": 1,
+          "source": {
+            "projectId": 43015,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Python 학습 노트",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 45,
+            "createdAt": "2026-08-15",
+            "updatedAt": "2026-08-15",
+            "projectTechs": [
+              "Python"
+            ]
+          }
+        },
+        {
+          "id": "43016",
+          "version": 1,
+          "source": {
+            "projectId": 43016,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Kubernetes 비용 보고서",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "DATABASE",
+            "likeCount": 0,
+            "viewCount": 48,
+            "createdAt": "2026-08-16",
+            "updatedAt": "2026-08-16",
+            "projectTechs": [
+              "SQL"
+            ]
+          }
+        },
+        {
+          "id": "43017",
+          "version": 1,
+          "source": {
+            "projectId": 43017,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 핀테크 기업 홍보",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 51,
+            "createdAt": "2026-08-17",
+            "updatedAt": "2026-08-17",
+            "projectTechs": [
+              "HTML"
+            ]
+          }
+        },
+        {
+          "id": "43018",
+          "version": 1,
+          "source": {
+            "projectId": 43018,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 게임 Unity 실시간 서버",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "SERVER",
+            "likeCount": 0,
+            "viewCount": 54,
+            "createdAt": "2026-08-18",
+            "updatedAt": "2026-08-18",
+            "projectTechs": [
+              "Redis",
+              "Unity"
+            ]
+          }
+        },
+        {
+          "id": "43019",
+          "version": 1,
+          "source": {
+            "projectId": 43019,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 게임 채용 행사 안내",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 57,
+            "createdAt": "2026-08-19",
+            "updatedAt": "2026-08-19",
+            "projectTechs": [
+              "HTML"
+            ]
+          }
+        },
+        {
+          "id": "43020",
+          "version": 1,
+          "source": {
+            "projectId": 43020,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] 검색 사용자 설문 화면",
+            "memberName": "가상 개발자 모래",
+            "projectCategory": "WEB",
+            "likeCount": 0,
+            "viewCount": 60,
+            "createdAt": "2026-08-20",
+            "updatedAt": "2026-08-20",
+            "projectTechs": [
+              "React"
+            ]
+          }
+        },
+        {
+          "id": "43021",
+          "version": 1,
+          "source": {
+            "projectId": 43021,
+            "searchRevision": 1,
+            "visible": true,
+            "title": "[합성 프로젝트] Android 기기 구매 관리",
+            "memberName": "가상 개발자 하늘",
+            "projectCategory": "DATABASE",
+            "likeCount": 0,
+            "viewCount": 63,
+            "createdAt": "2026-08-21",
+            "updatedAt": "2026-08-21",
+            "projectTechs": [
+              "SQL"
+            ]
+          }
+        },
+        {
+          "id": "43022",
+          "version": 1,
+          "source": {
+            "projectId": 43022,
+            "searchRevision": 1,
+            "visible": false
+          }
+        },
+        {
+          "id": "43023",
+          "version": 1,
+          "source": {
+            "projectId": 43023,
+            "searchRevision": 1,
+            "visible": false
+          }
+        },
+        {
+          "id": "43024",
+          "version": 1,
+          "source": {
+            "projectId": 43024,
+            "searchRevision": 1,
+            "visible": false
+          }
+        }
+      ],
+      "analysis": [
+        {
+          "text": "Spring Java 백엔드 API",
+          "tokens": [
+            {
+              "token": "spring",
+              "start_offset": 0,
+              "end_offset": 6,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "java",
+              "start_offset": 7,
+              "end_offset": 11,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "백",
+              "start_offset": 12,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "엔드",
+              "start_offset": 13,
+              "end_offset": 15,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "api",
+              "start_offset": 16,
+              "end_offset": 19,
+              "type": "word",
+              "position": 4
+            }
+          ]
+        },
+        {
+          "text": "서울 데이터엔지니어",
+          "tokens": [
+            {
+              "token": "서울",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "데이터",
+              "start_offset": 3,
+              "end_offset": 6,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "엔지니어",
+              "start_offset": 6,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        },
+        {
+          "text": "React TypeScript 웹 화면",
+          "tokens": [
+            {
+              "token": "react",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "typescript",
+              "start_offset": 6,
+              "end_offset": 16,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "웹",
+              "start_offset": 17,
+              "end_offset": 18,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "화면",
+              "start_offset": 19,
+              "end_offset": 21,
+              "type": "word",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "text": "\"검색\" 장애 복구",
+          "tokens": [
+            {
+              "token": "검색",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "장애",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "복구",
+              "start_offset": 8,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "queries": [
+    {
+      "queryId": "job-01",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Spring",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41002,
+          "score": 2.0035713,
+          "sort": null
+        },
+        {
+          "id": 41013,
+          "score": 1.8991032,
+          "sort": null
+        },
+        {
+          "id": 41001,
+          "score": 1.8049891,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-02",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "React",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41003,
+          "score": 1.8991032,
+          "sort": null
+        },
+        {
+          "id": 41014,
+          "score": 1.8991032,
+          "sort": null
+        },
+        {
+          "id": 41004,
+          "score": 1.8049891,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-03",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Python 데이터",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 6,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41005,
+          "score": 4.357295,
+          "sort": null
+        },
+        {
+          "id": 41006,
+          "score": 4.357295,
+          "sort": null
+        },
+        {
+          "id": 41015,
+          "score": 2.0035713,
+          "sort": null
+        },
+        {
+          "id": 41003,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 41009,
+          "score": 1.7123606,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-04",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Kubernetes",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41007,
+          "score": 2.0035713,
+          "sort": null
+        },
+        {
+          "id": 41008,
+          "score": 2.0035713,
+          "sort": null
+        },
+        {
+          "id": 41016,
+          "score": 1.8991032,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-05",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "핀테크",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41009,
+          "score": 2.353724,
+          "sort": null
+        },
+        {
+          "id": 41017,
+          "score": 2.353724,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-06",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "하늘연구소",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 5,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41023,
+          "score": 7.798031,
+          "sort": null
+        },
+        {
+          "id": 41001,
+          "score": 4.5386715,
+          "sort": null
+        },
+        {
+          "id": 41007,
+          "score": 4.5386715,
+          "sort": null
+        },
+        {
+          "id": 41013,
+          "score": 4.5386715,
+          "sort": null
+        },
+        {
+          "id": 41019,
+          "score": 4.5386715,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-07",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Android",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41011,
+          "score": 2.353724,
+          "sort": null
+        },
+        {
+          "id": 41021,
+          "score": 2.2309985,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-08",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "보안",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 7,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41009,
+          "score": 2.697338,
+          "sort": null
+        },
+        {
+          "id": 41012,
+          "score": 2.697338,
+          "sort": null
+        },
+        {
+          "id": 41022,
+          "score": 1.8991032,
+          "sort": null
+        },
+        {
+          "id": 41005,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 41011,
+          "score": 1.7123606,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-09",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "게임",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 6,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41018,
+          "score": 2.552736,
+          "sort": null
+        },
+        {
+          "id": 41019,
+          "score": 2.2309985,
+          "sort": null
+        },
+        {
+          "id": 41004,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 41010,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 41016,
+          "score": 1.7123606,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "job-10",
+      "kind": "job",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "검색",
+                  "fields": [
+                    "title",
+                    "companyName",
+                    "regions",
+                    "jobCategories"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 41010,
+          "score": 2.353724,
+          "sort": null
+        },
+        {
+          "id": 41020,
+          "score": 2.2309985,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-01",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Spring",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42002,
+          "score": 4.0314655,
+          "sort": null
+        },
+        {
+          "id": 42013,
+          "score": 3.7905555,
+          "sort": null
+        },
+        {
+          "id": 42001,
+          "score": 3.5768137,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-02",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "React",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42003,
+          "score": 3.7905555,
+          "sort": null
+        },
+        {
+          "id": 42014,
+          "score": 3.7905555,
+          "sort": null
+        },
+        {
+          "id": 42004,
+          "score": 3.5768137,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-03",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Python 데이터",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 6,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42005,
+          "score": 8.767488,
+          "sort": null
+        },
+        {
+          "id": 42006,
+          "score": 8.767488,
+          "sort": null
+        },
+        {
+          "id": 42015,
+          "score": 4.0314655,
+          "sort": null
+        },
+        {
+          "id": 42003,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 42009,
+          "score": 1.7123606,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-04",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Kubernetes",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42007,
+          "score": 4.0314655,
+          "sort": null
+        },
+        {
+          "id": 42008,
+          "score": 4.0314655,
+          "sort": null
+        },
+        {
+          "id": 42016,
+          "score": 3.7905555,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-05",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "핀테크",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42009,
+          "score": 4.736022,
+          "sort": null
+        },
+        {
+          "id": 42017,
+          "score": 4.736022,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-06",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "하늘연구소",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 5,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42023,
+          "score": 15.452782,
+          "sort": null
+        },
+        {
+          "id": 42001,
+          "score": 4.5386715,
+          "sort": null
+        },
+        {
+          "id": 42007,
+          "score": 4.5386715,
+          "sort": null
+        },
+        {
+          "id": 42013,
+          "score": 4.5386715,
+          "sort": null
+        },
+        {
+          "id": 42019,
+          "score": 4.5386715,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-07",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Android",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42011,
+          "score": 4.736022,
+          "sort": null
+        },
+        {
+          "id": 42021,
+          "score": 4.453009,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-08",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "보안",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 7,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42009,
+          "score": 4.0314655,
+          "sort": null
+        },
+        {
+          "id": 42012,
+          "score": 3.7905555,
+          "sort": null
+        },
+        {
+          "id": 42022,
+          "score": 3.7905555,
+          "sort": null
+        },
+        {
+          "id": 42005,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 42011,
+          "score": 1.7123606,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-09",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "게임",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 6,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42019,
+          "score": 4.453009,
+          "sort": null
+        },
+        {
+          "id": 42018,
+          "score": 4.201913,
+          "sort": null
+        },
+        {
+          "id": 42004,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 42010,
+          "score": 1.7123606,
+          "sort": null
+        },
+        {
+          "id": 42016,
+          "score": 1.7123606,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "news-10",
+      "kind": "news",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "검색",
+                  "fields": [
+                    "title^2",
+                    "summary",
+                    "companyName"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "deleted": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 42010,
+          "score": 4.736022,
+          "sort": null
+        },
+        {
+          "id": 42020,
+          "score": 4.453009,
+          "sort": null
+        }
+      ]
+    },
+    {
+      "queryId": "project-01",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Spring",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 4,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43013,
+          "score": 5.3660126,
+          "sort": [
+            1786579200000,
+            43013
+          ]
+        },
+        {
+          "id": 43012,
+          "score": 1.6992497,
+          "sort": [
+            1786492800000,
+            43012
+          ]
+        },
+        {
+          "id": 43002,
+          "score": 5.7751193,
+          "sort": [
+            1785628800000,
+            43002
+          ]
+        },
+        {
+          "id": 43001,
+          "score": 5.011033,
+          "sort": [
+            1785542400000,
+            43001
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-02",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "React",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 4,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43020,
+          "score": 1.8974581,
+          "sort": [
+            1787184000000,
+            43020
+          ]
+        },
+        {
+          "id": 43014,
+          "score": 5.3660126,
+          "sort": [
+            1786665600000,
+            43014
+          ]
+        },
+        {
+          "id": 43004,
+          "score": 5.011033,
+          "sort": [
+            1785801600000,
+            43004
+          ]
+        },
+        {
+          "id": 43003,
+          "score": 5.3660126,
+          "sort": [
+            1785715200000,
+            43003
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-03",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Python 데이터",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43015,
+          "score": 5.7751193,
+          "sort": [
+            1786752000000,
+            43015
+          ]
+        },
+        {
+          "id": 43006,
+          "score": 12.607296,
+          "sort": [
+            1785974400000,
+            43006
+          ]
+        },
+        {
+          "id": 43005,
+          "score": 12.607296,
+          "sort": [
+            1785888000000,
+            43005
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-04",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Kubernetes",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43016,
+          "score": 5.7751193,
+          "sort": [
+            1786838400000,
+            43016
+          ]
+        },
+        {
+          "id": 43008,
+          "score": 5.7751193,
+          "sort": [
+            1786147200000,
+            43008
+          ]
+        },
+        {
+          "id": 43007,
+          "score": 5.7751193,
+          "sort": [
+            1786060800000,
+            43007
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-05",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "핀테크",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43017,
+          "score": 6.8321767,
+          "sort": [
+            1786924800000,
+            43017
+          ]
+        },
+        {
+          "id": 43009,
+          "score": 6.8321767,
+          "sort": [
+            1786233600000,
+            43009
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-06",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "하늘",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 11,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43021,
+          "score": 1.2973908,
+          "sort": [
+            1787270400000,
+            43021
+          ]
+        },
+        {
+          "id": 43019,
+          "score": 1.2973908,
+          "sort": [
+            1787097600000,
+            43019
+          ]
+        },
+        {
+          "id": 43017,
+          "score": 1.2973908,
+          "sort": [
+            1786924800000,
+            43017
+          ]
+        },
+        {
+          "id": 43015,
+          "score": 1.2973908,
+          "sort": [
+            1786752000000,
+            43015
+          ]
+        },
+        {
+          "id": 43013,
+          "score": 1.2973908,
+          "sort": [
+            1786579200000,
+            43013
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-07",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "Android",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43021,
+          "score": 6.3481884,
+          "sort": [
+            1787270400000,
+            43021
+          ]
+        },
+        {
+          "id": 43011,
+          "score": 6.8321767,
+          "sort": [
+            1786406400000,
+            43011
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-08",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "보안",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43012,
+          "score": 6.3481884,
+          "sort": [
+            1786492800000,
+            43012
+          ]
+        },
+        {
+          "id": 43009,
+          "score": 6.8321767,
+          "sort": [
+            1786233600000,
+            43009
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-09",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "게임",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43019,
+          "score": 6.3481884,
+          "sort": [
+            1787097600000,
+            43019
+          ]
+        },
+        {
+          "id": 43018,
+          "score": 5.928234,
+          "sort": [
+            1787011200000,
+            43018
+          ]
+        }
+      ]
+    },
+    {
+      "queryId": "project-10",
+      "kind": "project",
+      "dsl": {
+        "size": 5,
+        "from": 0,
+        "track_total_hits": true,
+        "query": {
+          "bool": {
+            "must": [
+              {
+                "multi_match": {
+                  "query": "검색",
+                  "fields": [
+                    "title^3",
+                    "memberName^2",
+                    "projectTechs"
+                  ]
+                }
+              }
+            ],
+            "filter": [
+              {
+                "term": {
+                  "visible": true
+                }
+              }
+            ]
+          }
+        },
+        "sort": [
+          {
+            "createdAt": "desc"
+          },
+          {
+            "projectId": "asc"
+          }
+        ],
+        "track_scores": true
+      },
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "hits": [
+        {
+          "id": 43020,
+          "score": 6.3481884,
+          "sort": [
+            1787184000000,
+            43020
+          ]
+        },
+        {
+          "id": 43010,
+          "score": 6.8321767,
+          "sort": [
+            1786320000000,
+            43010
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "검색 service의 동일 fields/filter/sort DSL을 별도로 호출한 engine 진단이다. 실제 Spring API nDCG와 별도. 프로젝트는 최신순 정책대로 정렬하며 score 수집만 track_scores=true로 추가. ES 디렉터리 백업/snapshot이 아니다.",
+  "completed": true
+}

@@ -1,0 +1,8 @@
+api.http.host: "0.0.0.0"
+path.data: /usr/share/logstash/data
+path.queue: /usr/share/logstash/data/queue
+path.dead_letter_queue: /usr/share/logstash/data/dead_letter_queue
+xpack.monitoring.enabled: false
+pipeline.ecs_compatibility: disabled
+pipeline.buffer.type: direct
+log.level: info

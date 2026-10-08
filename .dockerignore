@@ -1,0 +1,13 @@
+.git
+.local
+.env
+.env.*
+**/.env
+**/.env.*
+**/node_modules
+**/build
+**/dist
+**/.gradle
+exec
+assets
+sub_pjt_1

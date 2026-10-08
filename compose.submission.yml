@@ -1,0 +1,18 @@
+# 제출 소스에서 새로 빌드한 JAR의 로컬 검증 전용. 공개 배포 구성 아님.
+services:
+  mysql:
+    mem_limit: 768m
+  redis:
+    mem_limit: 128m
+  elasticsearch:
+    mem_limit: 2g
+  backend:
+    image: ${ETCH_SUBMISSION_JAVA_IMAGE:?Set an available Java 17 runtime image}
+    entrypoint: [java]
+    command: [-Xmx512m, -jar, /app/submission.jar]
+    working_dir: /app
+    mem_limit: 1g
+    volumes:
+      - ./etch/backend/business-server/build/project-list-mysql/libs/etch-0.0.1-SNAPSHOT.jar:/app/submission.jar:ro
+  logstash:
+    mem_limit: 1g

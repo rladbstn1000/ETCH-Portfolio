@@ -1,0 +1,116 @@
+name: ${ETCH_COMPOSE_PROJECT:-etch-submission}
+services:
+  mysql:
+    image: ${ETCH_MYSQL_IMAGE:-etch-submission-mysql}
+    build:
+      context: .
+      dockerfile: local/Dockerfile.mysql
+    environment:
+      MYSQL_DATABASE: etch_local
+      MYSQL_USER: etch
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Run scripts/local-init.sh}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Run scripts/local-init.sh}
+    ports: ["127.0.0.1:${MYSQL_PORT:-13476}:3306"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./local/mysql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_PASSWORD mysql -u etch etch_local -e 'SELECT 1' >/dev/null"]
+      interval: 5s
+      timeout: 5s
+      retries: 40
+  redis:
+    image: ${ETCH_REDIS_IMAGE:-redis:7.4-alpine}
+    ports: ["127.0.0.1:${REDIS_PORT:-16476}:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 20
+  elasticsearch:
+    image: ${ETCH_ES_IMAGE:-etch-submission-elasticsearch}
+    build: local/elasticsearch
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+    ports: ["127.0.0.1:${ES_PORT:-19476}:9200"]
+    volumes: ["es-data:/usr/share/elasticsearch/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS 'http://localhost:9200/_cluster/health?wait_for_status=yellow' >/dev/null"]
+      interval: 5s
+      timeout: 10s
+      retries: 40
+  backend:
+    image: ${ETCH_BACKEND_IMAGE:-etch-submission-backend}
+    build:
+      context: .
+      dockerfile: local/Dockerfile.backend
+    environment:
+      SPRING_PROFILES_ACTIVE: local
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/etch_local?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: etch
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD}
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_ELASTICSEARCH_URIS: http://elasticsearch:9200
+      SPRING_JWT_SECRET: ${SPRING_JWT_SECRET:?Run scripts/local-init.sh}
+      APP_AUTH_ALLOWED_ORIGINS: http://localhost:${FRONTEND_PORT:-5178},http://localhost:${PREVIEW_PORT:-5188}
+      APP_AUTH_FRONTEND_CALLBACK_URL: http://localhost:${FRONTEND_PORT:-5178}/Oauth
+      APP_PROJECT_INDEXING_ENABLED: ${APP_PROJECT_INDEXING_ENABLED:-true}
+    ports: ["127.0.0.1:${BACKEND_PORT:-18476}:8080"]
+    depends_on:
+      mysql: {condition: service_healthy}
+      redis: {condition: service_healthy}
+  frontend:
+    image: node:22-bookworm-slim
+    working_dir: /app
+    command: sh -c 'npm ci && npm run dev -- --host 0.0.0.0'
+    environment:
+      LOCAL_API_TARGET: http://backend:8080
+      VITE_ENABLE_CHAT: "false"
+      VITE_ENABLE_RECOMMENDATIONS: "false"
+      VITE_ENABLE_UPLOADS: "false"
+      VITE_ENABLE_OAUTH: "false"
+      VITE_DEMO_MODE: ${VITE_DEMO_MODE:-false}
+    ports: ["127.0.0.1:${FRONTEND_PORT:-5178}:5173"]
+    volumes:
+      - ./etch/frontend:/app
+      - frontend-deps:/app/node_modules
+    depends_on: [backend]
+  logstash:
+    profiles: [sync]
+    image: ${ETCH_LOGSTASH_IMAGE:-etch-submission-logstash}
+    build:
+      context: .
+      dockerfile: local/logstash/Dockerfile
+    command: ["sh", "-c", "mkdir -p /usr/share/logstash/data/checkpoints && exec /usr/share/logstash/bin/logstash"]
+    environment:
+      JDBC_URL: jdbc:mysql://mysql:3306/etch_local?useSSL=false&allowPublicKeyRetrieval=true&connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true&useCursorFetch=true&useServerPrepStmts=true&defaultFetchSize=50
+      JDBC_USER: etch
+      JDBC_PASSWORD: ${MYSQL_PASSWORD}
+      JDBC_DRIVER_LIBRARY: /usr/share/logstash/mysql.jar
+      ES_HOSTS: http://elasticsearch:9200
+      LS_JAVA_OPTS: -Xms256m -Xmx256m
+      LOGSTASH_SCHEDULE: ${LOGSTASH_SCHEDULE:-*/10 * * * * * UTC}
+      SYNC_OVERLAP_SECONDS: ${SYNC_OVERLAP_SECONDS:-120}
+      SYNC_FETCH_SIZE: ${SYNC_FETCH_SIZE:-50}
+    ports: ["127.0.0.1:${LOGSTASH_API_PORT:-19676}:9600"]
+    volumes:
+      - ./local/logstash/pipeline:/usr/share/logstash/pipeline:ro
+      - ./local/logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
+      - ./local/logstash/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./local/logstash/query:/usr/share/logstash/query:ro
+      - ./local/logstash/normalize.rb:/usr/share/logstash/normalize.rb:ro
+      - ./local/logstash/dlq-inspect.conf:/usr/share/logstash/dlq-inspect.conf:ro
+      - logstash-data:/usr/share/logstash/data
+    depends_on:
+      mysql: {condition: service_healthy}
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+volumes:
+  mysql-data:
+  es-data:
+  frontend-deps:
+  logstash-data:

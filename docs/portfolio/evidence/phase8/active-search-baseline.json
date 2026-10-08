@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "ACTIVE",
+  "candidateId": "docs/portfolio/evidence/phase8/es947-final/summary.json#candidate",
+  "summarySha256": "3e9907971785afe20b156754ec6d855e48ef1a4ed559b7ccb9d8728ae9216c95",
+  "candidateSha256": "d1f4c74ab24fc3c484b8525447f9a46e4abe7a03b940938cb3e84effde01a05a",
+  "approval": {
+    "file": "docs/portfolio/evidence/phase8/search-baseline-approval.json",
+    "sha256": "86c218fb8353df68b9280415680550dc67a78ee43b6b182ccfb6288166a0e86d"
+  },
+  "engineFingerprint": "d7ceca2bbcfffa4b4e7cf69a1a8c298fa3b7d38a2fe9577904d879e5ce1ad5a6",
+  "scope": "SEARCH_EVALUATION_BASELINE_ONLY",
+  "excludedApprovals": {
+    "securityResidualRisk": false,
+    "rubyzipMitigationException": false,
+    "credentialActions": false,
+    "sourceAndAssetPublication": false,
+    "remotePush": false,
+    "merge": false,
+    "externalDeployment": false
+  }
+}

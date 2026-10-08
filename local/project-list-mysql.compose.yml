@@ -1,0 +1,34 @@
+# 목록 조회 측정만 위한 단일 MySQL. 기존 compose/볼륨/스키마와 병합하지 않는다.
+name: etch-submission-project-list-mysql
+services:
+  mysql:
+    image: ${ETCH_SUBMISSION_MYSQL_IMAGE:-sha256:ccbf152841ff331161b37aeb0f77a015e114245038c724a5a252482fd902c07f}
+    pull_policy: never
+    platform: linux/arm64
+    mem_limit: 768m
+    environment:
+      MYSQL_DATABASE: etch_project_list
+      MYSQL_USER: etch_query
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Run local/project-list-mysql.py init}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Run local/project-list-mysql.py init}
+    ports:
+      - '127.0.0.1:33087:3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+    labels:
+      org.etch.validation: submission-project-list-mysql-v1
+    healthcheck:
+      test: [CMD-SHELL, 'MYSQL_PWD="$$MYSQL_PASSWORD" mysql -u"$$MYSQL_USER" "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null']
+      interval: 3s
+      timeout: 5s
+      retries: 40
+networks:
+  default:
+    internal: true
+    labels:
+      org.etch.validation: submission-project-list-mysql-v1
+volumes:
+  mysql-data:
+    name: etch-submission-project-list-mysql-data
+    labels:
+      org.etch.validation: submission-project-list-mysql-v1

@@ -1,0 +1,23 @@
+FROM container-registry.oracle.com/mysql/community-server:8.4.12-aarch64@sha256:b47aed6d0a79fbb71d55ca0d0a928bf6f9427b17310635e8c4945814559c2b06
+# Schema/data are prepared by separate fresh-install or actual migration helpers; no implicit seed.
+# ETCH-maintained derivative: Oracle does not guarantee product support for altered images.
+# Remove the independent administrative MySQL Shell RPM, not individual Python/vendor files.
+RUN microdnf remove -y mysql-shell \
+    && microdnf update -y --setopt=install_weak_deps=0 coreutils-single-8.32-41.0.1.el9_8.1 \
+       curl-7.76.1-40.el9_8.7 \
+       glib2-2.68.4-19.el9_8.10 \
+       libattr-2.6.0-1.el9_8 \
+       libcurl-7.76.1-40.el9_8.7 \
+       libevent-2.1.13-1.el9_8 \
+       libssh-0.10.4-19.el9_8 \
+       libxml2-2.9.13-14.el9_8.5 \
+       openssl-fips-provider-3.0.7-11.0.1.el9_8 \
+       openssl-fips-provider-so-3.0.7-11.0.1.el9_8 \
+       openssl-libs-3.5.8-1.0.1.el9_8 \
+       sqlite-libs-3.34.1-11.el9_8 \
+       tar-1.34-13.el9_8 \
+    && microdnf clean all \
+    && ! rpm -q mysql-shell \
+    && ! command -v mysqlsh \
+    && test "$(find /usr/lib/mysqlsh -type f 2>/dev/null | wc -l)" = 0 \
+    && command -v mysqld && command -v mysql && command -v mysqladmin && command -v mysqldump

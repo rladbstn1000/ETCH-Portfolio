@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "newsId": {
+      "type": "long"
+    },
+    "title": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer"
+    },
+    "summary": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer"
+    },
+    "companyName": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer"
+    },
+    "link": {
+      "type": "keyword"
+    },
+    "thumbnailUrl": {
+      "type": "keyword"
+    },
+    "publishedAt": {
+      "type": "date"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "syncRevision": {
+      "type": "long"
+    }
+  }
+}

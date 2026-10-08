@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "decisionId": "phase8-es947-user-acceptance-2026-09-30",
+  "approvalStatus": "APPROVED",
+  "approvedBy": {
+    "role": "user",
+    "basis": "Explicit instruction in this conversation on 2026-09-30 Asia/Seoul; recorded by Codex, not a supplier or external expert"
+  },
+  "scope": "SEARCH_EVALUATION_BASELINE_ONLY",
+  "reviewedCommit": "3e0f5b2b82980b3b4410caa995ccce2917f683be",
+  "candidateId": "docs/portfolio/evidence/phase8/es947-final/summary.json#candidate",
+  "candidateSummary": "docs/portfolio/evidence/phase8/es947-final/summary.json",
+  "summarySha256": "3e9907971785afe20b156754ec6d855e48ef1a4ed559b7ccb9d8728ae9216c95",
+  "candidateSha256": "d1f4c74ab24fc3c484b8525447f9a46e4abe7a03b940938cb3e84effde01a05a",
+  "engineIdentity": {
+    "elasticsearchVersion": "9.4.7",
+    "noriVersion": "9.4.7",
+    "clientVersion": "9.4.5",
+    "elasticsearchImageId": "sha256:24c66d1ebb69726bb0593c6073123265a7e0be473ab4eff5af5d027bbbc81a40",
+    "backendImageId": "sha256:aed43c0b95ce8f7f07e45a5d47867de507670bc814edf55241df92659ab623dd",
+    "backendJarSha256": "2eda8d842f08590dfb8c9a0e4521ef19b744a4009efbce5639e16e8ffc304070",
+    "imageLockSha256": "c430befbf5f959f5c28120c953eb078cec5c34643deb51439858acc2dd35fb6d",
+    "fingerprint": "d7ceca2bbcfffa4b4e7cf69a1a8c298fa3b7d38a2fe9577904d879e5ce1ad5a6"
+  },
+  "frozenHashes": {
+    "data": {
+      "corpus.json": "d4d611c7873ef5dfb55eefa5e776bb5d051368eedc9f99c36625ceccd1797d52",
+      "queries.json": "74292436394f887000a5b190bd17e836ef672b170649c2ec9cc01608f5e5356c"
+    },
+    "baselineFiles": {
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/JobSearchController.java": "07c104ca3619654b5049a580bacc55078b7dbb43b356ba653741d85d23a3078e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/NewsSearchController.java": "7837e78ab8b8c6a138386f268c564685c7720f698bea3cd1cbbc6c91a96ef4af",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/ProjectSearchController.java": "d8ac472f56d16fc95a13e35a87c92d6b54eb57603a1c445fb4b581c2b6688a41",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/controller/SearchController.java": "4577eb91cad19bf4e997fad68a2436764073544336e3dfe7065d004b26290469",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/JobDocument.java": "bf78a25f8fbb023013ff53397b6cef1f5dda4d93c16bfc723c670059fb0baa11",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/NewsDocument.java": "4b5f4166818b857b33c19eec74de7f45b4eb07db392436060a73e60be7c2627e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/document/ProjectDocument.java": "a758ac4570ee885c33704035d8091a26f4f53fcedf68da70a898078e6183b540",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/JobSearchResponseDTO.java": "d429d29d928145bed29e3baf47e8e9b9b2d6c1c53265626ec40f3b66b53fa653",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/NewsSearchResponseDTO.java": "0d73d928f956bc9f832015815343692bcd94d9fb20b90845bdb9ac0b9485619c",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/ProjectSearchPage.java": "31503e64f0efba458f06df7b576f4b9a3897627871987fb62199f7f6ae4404ca",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/ProjectSearchResponseDTO.java": "9dfcef4f3803aa8f297af950e6f661ea43b00d5d1e75e3c1402c9d144f3cf238",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/dto/SearchResponseDTO.java": "bfa547854507005621866d70e88318e7f43e0a5f5ad87ba5c0d8f6b12ddc4037",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/enumeration/ProjectSort.java": "b13dc43e09f16bf179ea53c36c071f8c1791b427c99d7ec0954ed9b54b5b782e",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexOutbox.java": "c6bc0adf35137b5517fdf93c2e13c6b0bdde4fd7227bcfcc88292e3bc467d3a0",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexStore.java": "ce46542607fb2203a052a0495e05cc3ff44ac149bc59bdbe6adbfe808e78dcb6",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWorker.java": "3b1fc4ce2e57d1877e4c8a5f6c75d9de3b73a2a777f09032ebfbbd79c275593f",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWriter.java": "8f318c0b73c369dbb53f70ce636d0ea854bae14c601fa7cd7e5b8fdb24da9d47",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectLikeCountSync.java": "3a6d3d2176f364d155f88409a724b02732d30ad489264dffad62b634bc73e82d",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectSearchSync.java": "a1955e3daaf984fe533db383b8da5b48a308f118c6f408425dcfec11ae1df4a2",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/listener/ProjectViewCountSync.java": "2ff17ad34ece10b906cecbd0eed97bdf0051db42a8b2e9e9779c3dd75928d557",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/JobDocumentRepository.java": "473bb3b5442da0ac183517343c1e6a24c5ba4cdb093e4a134cb4d628d1342e44",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/NewsDocumentRepository.java": "dc099046e29fcd8182776eb68da188d72d95f37d4c75e2127124ae12073480df",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/repository/ProjectDocumentRepository.java": "41c9a49df256ce4f59d9ccc04469c62140f95a88a0bb69d145a4d80f19ed8180",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/JobSearchService.java": "1d7fa7511c8c3e43d428fd14e34e0b152d2f59a10623161d37a324bd12762acd",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/NewsSearchService.java": "342769e9e40cfb73fd239947e0fdf1289febdf26d86403f227cc6173e25131f2",
+      "etch/backend/business-server/src/main/java/com/ssafy/etch/search/service/ProjectSearchService.java": "4539fa872344f5069290726d597345a8c1c7a77d0cb4bd10b48d27d4aa2f7cc5",
+      "etch/backend/business-server/src/main/resources/es/job-mappings.json": "6d616f4dedb6147d2d53da22faa7ff631284b0725d3ed2b9ed615133caf440df",
+      "etch/backend/business-server/src/main/resources/es/job-settings.json": "7b608967a79c88343763289374ecad4fe5a919eded96144fc0425f847d6fb587",
+      "etch/backend/business-server/src/main/resources/es/news-mappings.json": "6598f6377b045de8a01cf97fdc376de3398f1383d9ffc49b9cd3c9ab47c971b0",
+      "etch/backend/business-server/src/main/resources/es/news-settings.json": "df3910e160c1b4fdb5860897ab2c07fcba3c8f077acac8e1eca3d32a367699bc",
+      "etch/backend/business-server/src/main/resources/es/project-mappings.json": "785c55fb3fb711891da678cc0816cd603586c621980bb47c6b231d3f8971653b",
+      "etch/backend/business-server/src/main/resources/es/project-settings.json": "df3910e160c1b4fdb5860897ab2c07fcba3c8f077acac8e1eca3d32a367699bc"
+    },
+    "reviewedCompatibilityAdjustments": [
+      {
+        "file": "etch/backend/business-server/src/main/java/com/ssafy/etch/search/indexing/ProjectIndexWriter.java",
+        "frozenSha256": "8f318c0b73c369dbb53f70ce636d0ea854bae14c601fa7cd7e5b8fdb24da9d47",
+        "currentSha256": "e36e602b13c7605d45e9996e8d293bf20e51d9ff102365e77bedcf27e401895d",
+        "change": "Only ObjectMapper import moves from Jackson2 to Jackson3; all other bytes equal Phase4 freeze."
+      }
+    ]
+  },
+  "evidenceHashes": {
+    "docs/portfolio/evidence/phase8/es947-final/summary.json": "3e9907971785afe20b156754ec6d855e48ef1a4ed559b7ccb9d8728ae9216c95",
+    "docs/portfolio/evidence/phase8/es947-final/requests.jsonl": "8857ee9e0a01f17c92761e0672a3796c76ec5f16ff74afb5e039b6feb027e2b4",
+    "docs/portfolio/evidence/phase8/engine-current-final.json": "9c96d2bdb7636ad0e45ae10a7d1c944ba5a9345c263a340d91ae142e2a1dfd4f",
+    "docs/portfolio/evidence/phase6/evaluation-os-final/summary.json": "09bde8ff3945150852b527b75b928f92ea87c44475fb07142212df37d4135005",
+    "docs/portfolio/evidence/phase7/engine-phase6-before.json": "5d5db1b0ad383a112e8dc91a2575da26fa34fff92f73cf8abf7313a7eda0edce",
+    "docs/portfolio/evidence/phase8/es947-run2/summary.json": "d4b88d1ca4c0fedf04f6ced5de7cab7a04c55566819d2c4fb558c4f6e47a0a9d",
+    "docs/portfolio/evidence/phase8/engine-current-run2.json": "c67122f0515cb9a423153ec70ecf25513f09a2a5f752b1602cf213c4629f1651",
+    "docs/portfolio/evidence/phase7/score-cause-comparison.json": "2cb2763c289051232ae03681169f7269061e38438193647b4788988049323597",
+    "docs/portfolio/evidence/phase8/es947-run2/requests.jsonl": "df90cc514a389d8ba67d6f3168fc8d13a060666a035a6061e0907a02886e0d54",
+    "docs/portfolio/evidence/phase7/candidate-image-inventory-final4.json": "c430befbf5f959f5c28120c953eb078cec5c34643deb51439858acc2dd35fb6d",
+    "docs/portfolio/evidence/phase7/backend-image-artifacts-final4.json": "a37d1829cd108dbd90cd0c0f9a7644e0e16c1ad894ed4121445f86ae0fb09630",
+    "docs/portfolio/evidence/phase7/backend-public-runtime.json": "64b9e836a42e617cd5b251b498152857d94be9f09f5af0494077826faa9c0c24"
+  },
+  "acceptedLimitations": {
+    "queryIds": [
+      "job-02",
+      "news-02"
+    ],
+    "keyword": "React",
+    "directlyRelevantRankBefore": 2,
+    "directlyRelevantRankAfter": 3,
+    "ndcgAt5Before": 0.9260446319296772,
+    "ndcgAt5After": 0.8810783669439536,
+    "lostResults": 0,
+    "interpretation": "현재 데모의 알려진 한계로 수용. 품질 개선이나 과거 불일치 소멸을 뜻하지 않음."
+  },
+  "excludedApprovals": {
+    "securityResidualRisk": false,
+    "rubyzipMitigationException": false,
+    "credentialActions": false,
+    "sourceAndAssetPublication": false,
+    "remotePush": false,
+    "merge": false,
+    "externalDeployment": false
+  },
+  "userDecision": "PHASE8 es947-final 후보의 ES/Nori 9.4.7, Java Client 9.4.5 검색 평가 기준선만 채택한다. job-02/news-02의 직접 관련 결과 2→3위 및 각 nDCG@5 0.926045→0.881078, 결과 소실 없음과 알려진 한계를 이해하고 수용한다."
+}

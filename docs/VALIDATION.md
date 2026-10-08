@@ -1,0 +1,48 @@
+# 독립 제출 사본 검증
+
+검증일: 2026-10-08. 원본 소스 snapshot은 `7ed428f07a661724c974954d47861df35070ab5b`입니다. 이번 결과는 과거 성과 원본과 분리해 기록합니다.
+
+## 이번에 실행한 항목
+
+| 대상 | 실행 | 결과 |
+|---|---|---|
+| 일반 프런트 | `npm test` | 31개 PASS |
+| showcase 프런트 | `npm run test:showcase` | 13개 PASS |
+| 두 production 빌드 | `npm run build`, `npm run build:showcase` | 타입 검사 포함 PASS |
+| 로컬 정적 브라우저 | `SHOWCASE_TEST_RUN=submission npm run test:showcase:browser` | 설치된 Chrome, 8개 PASS |
+| 정적 산출물 | `check-showcase.mjs` | 9파일·803,586바이트, 패턴·자산·모듈·라이선스 검사 PASS |
+| MySQL 개선본 계측 | 사본 전용 합성 MySQL에서 계측 테스트 | 158조건 응답이 과거 improved 원본과 전부 일치 |
+| 관련 백엔드 | 관련 50테스트와 새 JAR 빌드 | PASS, MySQL MockMvc 5개 포함 |
+| 검색 저장근거 | `submission_search.py verify` | 승인·고정 데이터·검색/매핑 hash 및 저장 지표 재계산 PASS |
+| 사본 실행 경계 | 신규 runtime·자원 격리 도구 6검사 | PASS |
+| 평가 guard | 기존 34개와 사본 전용 12개 | PASS |
+| 순수 평가·동기화 | 원본 evaluator 및 동기화 도구 2테스트 | PASS |
+| 실제 검색 | 사본 backend에 검색 30개·통합검색 4개 GET | 34개 200, 기능 계약·저장 순위/nDCG 진단 일치 |
+| 실제 복구·권한 | 새 합성 프로젝트의 ES 중단·재개와 권한 검사 | 17항목 PASS, [상세](validation-backend.md) |
+
+브라우저 검사는 홈·검색·상세·가상 개인 화면·편집 초기화·직접 URL/새로고침/뒤로가기·잘못된 경로·키보드·모달·320/390px 표를 포함합니다. 정상 흐름의 API/OAuth/WebSocket 등 금지 호출 시도와 페이지 오류는 0개였습니다. 별도 부정 대조에서 의도한 7종 호출을 검출·차단했습니다. 정적 JS/CSS/SVG 응답의 형식과 hash를 확인했으며, SPA HTML을 정상 asset로 세지 않았습니다.
+
+새 JAR는 과거 승인 JAR와 별개입니다. 실제 검색 결과가 저장된 승인 결과와 같아도 `NOT_EVALUATED_NEW_ARTIFACT`, `activationAllowed=false`를 유지합니다. 과거 `job-02`·`news-02` 비교 FAIL은 원본 그대로입니다.
+
+## 재사용과 미실행
+
+- 과거 MySQL 변경 전/후 158조건 비교, SQL·실행계획, outbox 강제 종료·전체 이관·PQ/DLQ 장애 기록은 보존·대조했습니다. 변경 전의 느린 baseline, 전체 이관·SIGKILL 실험은 다시 실행하지 않았습니다.
+- 과거 npm 감사는 package-lock와 응답 hash가 같은 것을 확인해 재사용했습니다. 현재 최신 advisory를 조회했다고 표시하지 않습니다. 서버 이미지 전체 취약점 스캔도 미실행입니다.
+- 테스트용 Gradle 의존성 modules-2 캐시만 원래 볼륨에서 읽기 전용으로 사본 캐시에 복사했습니다. 소스·환경 파일·DB·build cache·daemon·init script는 가져오지 않았습니다. 새 시험은 사본 코드와 새 합성 데이터로 실행했습니다.
+- Chrome 자동 검사는 이번 새 실행입니다. Safari·WebKit·실물 모바일은 이번에 실행하지 않았습니다. 320/390px는 데스크톱 Chrome의 viewport 검사입니다.
+- 공개 사이트는 기존 배포 그대로이며 이번 변경은 Cloudflare에 업로드하지 않았습니다. 공개 홈의 대표 화면만 새로 캡처했습니다.
+
+## 발견한 실행 문제와 처리
+
+- 최초 npm 설치는 sandbox 네트워크·로그 경로 제약으로 끝나지 않았습니다. 사본 전용 캐시와 허용된 네트워크로 lock대로 설치해 통과했습니다. 전역 도구 버전은 변경하지 않았습니다.
+- 로컬 preview의 첫 bind는 sandbox에서 거부됐습니다. 허용된 루프백 실행으로 재시도해 통과했습니다.
+- 최초 검색 관측은 검사기가 Nginx용 `/api/v1` prefix를 직접 backend에 붙여 401이었습니다. 앱 권한을 바꾸지 않고 검사기 경로를 고친 뒤 새 파일로 재실행했습니다. 초기 실패 파일은 `.local/submission-validation/search-live.json`, 통과 파일은 `search-live-direct-backend.json`으로 분리했습니다.
+- 로컬 Docker 이미지 tag 조회 문제가 있어 확인된 이미지 ID로만 실행했습니다. 다른 이미지를 임의 채택하거나 기존 이미지에 재태깅하지 않았습니다.
+
+원본 로그·생성 자격증명·브라우저 원본은 `.local/`에 있으며 Git 밖에 둡니다. 최종 파일 허용 목록과 해시·보존 비교는 별도 개인 작업 기록에 보관합니다. 자격증명 폐기·과거 이력 정리·최종 공개 결정은 이 검증의 통과와 별개입니다.
+
+## 소스·산출물 경계
+
+알려진 원본 비밀값·회원값 29종의 정확 일치와 일반 패턴 탐지를 구분했습니다. 일반 프런트 56파일·showcase 9파일·새 backend JAR 및 중첩 라이브러리에서 알려진 값과 과거 운영 호스트는 발견되지 않았습니다. 앱 JAR에는 테스트 클래스·테스트 서명키·canary가 포함되지 않았습니다.
+
+일반 패턴 11건은 개별 검토했습니다. 공급자 코드의 PEM 프레이밍·오류 문자열 8건과 Netty 공개 기능 확인용 상수 3건이었으며 사용자 자격증명으로 분류하지 않았습니다. 값을 기록하거나 실제 접속에 사용하지 않았습니다. 공급자 라이브러리의 모든 보안 위험이 없다는 뜻은 아닙니다. 최종 Git 객체 검사와 허용 파일 manifest는 Git 밖 작업 기록에 연결합니다.

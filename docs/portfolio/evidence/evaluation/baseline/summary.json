@@ -1,0 +1,1114 @@
+{
+  "startedAtUtc": "2026-09-29T01:11:56.282754+00:00",
+  "finishedAtUtc": "2026-09-29T01:11:58.671267+00:00",
+  "environment": {
+    "composeProject": "etch-phase4-demo",
+    "apiOrigin": "http://localhost:18081",
+    "cpuHost": "MacBook Pro M4 Pro",
+    "memoryHostGiB": 48,
+    "concurrency": 1,
+    "warmupRequests": 60,
+    "measuredRequests": 150,
+    "totalHttpRequests": 278,
+    "apiTransport": "Python urllib HTTP/1.1 per request; local Docker API round trip",
+    "esTook": "not exposed by application API; not measured",
+    "syncLatency": "not measured in this benchmark",
+    "detailMutation": "excluded from relevance and latency requests"
+  },
+  "manifestHashes": {
+    "corpus.json": "d4d611c7873ef5dfb55eefa5e776bb5d051368eedc9f99c36625ceccd1797d52",
+    "queries.json": "74292436394f887000a5b190bd17e836ef672b170649c2ec9cc01608f5e5356c"
+  },
+  "baselineCommit": "a5a4d8397660ac454b761391841480fd58a0c8cc",
+  "metricUnitChecks": {
+    "passed": 6,
+    "knownSwapScore": 0.7967075809905066,
+    "perfect": 1,
+    "emptyWithRelevant": 0,
+    "noRelevant": "excluded from mean",
+    "unjudged": "invalid query score, explicit error; never silently grade 0",
+    "duplicate": "invalid query score"
+  },
+  "source": {
+    "sourceMatch": true,
+    "sourceCounts": {
+      "job": 23,
+      "news": 23,
+      "project": 24
+    },
+    "trackingCounts": {
+      "states": 48,
+      "projects": 24,
+      "tombstones": 2
+    }
+  },
+  "syncBefore": {
+    "job": {
+      "checkedAt": "2026-09-29T01:11:55.886771+00:00",
+      "kind": "job",
+      "scope": "FULL source/state/ES comparison (not incremental polling)",
+      "sourceCount": 23,
+      "stateCount": 24,
+      "esCount": 24,
+      "checkedIds": 24,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "news": {
+      "checkedAt": "2026-09-29T01:11:56.088969+00:00",
+      "kind": "news",
+      "scope": "FULL source/state/ES comparison (not incremental polling)",
+      "sourceCount": 23,
+      "stateCount": 24,
+      "esCount": 24,
+      "checkedIds": 24,
+      "differenceCount": 0,
+      "differences": []
+    },
+    "project": {
+      "checked": 24,
+      "differences": 0,
+      "unfinishedOutbox": 0
+    }
+  },
+  "ndcgAt5MeanByKind": {
+    "job": 0.9322497381326981,
+    "news": 0.9119204962317488,
+    "project": 0.7074687908087831
+  },
+  "queries": [
+    {
+      "queryId": "job-01",
+      "kind": "job",
+      "keyword": "Spring",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41002,
+        41013,
+        41001
+      ],
+      "grades": [
+        2,
+        1,
+        2
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "idcgAt5": 5.823465818787765,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-02",
+      "kind": "job",
+      "keyword": "React",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41003,
+        41004,
+        41014
+      ],
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "ndcgAt5": 0.9260446319296772,
+      "idcgAt5": 5.823465818787765,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-03",
+      "kind": "job",
+      "keyword": "Python 데이터",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41005,
+        41006,
+        41015,
+        41003,
+        41009
+      ],
+      "grades": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-04",
+      "kind": "job",
+      "keyword": "Kubernetes",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41007,
+        41008,
+        41016
+      ],
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-05",
+      "kind": "job",
+      "keyword": "핀테크",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41009,
+        41017
+      ],
+      "grades": [
+        2,
+        1
+      ],
+      "ndcgAt5": 0.6732934624429354,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-06",
+      "kind": "job",
+      "keyword": "하늘연구소",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41023,
+        41001,
+        41007,
+        41013,
+        41019
+      ],
+      "grades": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "ndcgAt5": 0.8420809200104147,
+      "idcgAt5": 7.210318626022307,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-07",
+      "kind": "job",
+      "keyword": "Android",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41011,
+        41021
+      ],
+      "grades": [
+        2,
+        1
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-08",
+      "kind": "job",
+      "keyword": "보안",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41009,
+        41012,
+        41022,
+        41005,
+        41011
+      ],
+      "grades": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-09",
+      "kind": "job",
+      "keyword": "게임",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41018,
+        41019,
+        41004,
+        41010,
+        41016
+      ],
+      "grades": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "job-10",
+      "kind": "job",
+      "keyword": "검색",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        41010,
+        41020
+      ],
+      "grades": [
+        2,
+        1
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-01",
+      "kind": "news",
+      "keyword": "Spring",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42002,
+        42013,
+        42001
+      ],
+      "grades": [
+        2,
+        1,
+        2
+      ],
+      "ndcgAt5": 0.8810783669439536,
+      "idcgAt5": 5.823465818787765,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-02",
+      "kind": "news",
+      "keyword": "React",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42003,
+        42004,
+        42014
+      ],
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "ndcgAt5": 0.9260446319296772,
+      "idcgAt5": 5.823465818787765,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-03",
+      "kind": "news",
+      "keyword": "Python 데이터",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42005,
+        42006,
+        42015,
+        42003,
+        42009
+      ],
+      "grades": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-04",
+      "kind": "news",
+      "keyword": "Kubernetes",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42007,
+        42008,
+        42016
+      ],
+      "grades": [
+        2,
+        2,
+        1
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-05",
+      "kind": "news",
+      "keyword": "핀테크",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42009,
+        42017
+      ],
+      "grades": [
+        2,
+        1
+      ],
+      "ndcgAt5": 0.6732934624429354,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-06",
+      "kind": "news",
+      "keyword": "하늘연구소",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42023,
+        42001,
+        42007,
+        42013,
+        42019
+      ],
+      "grades": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "ndcgAt5": 0.8420809200104147,
+      "idcgAt5": 7.210318626022307,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-07",
+      "kind": "news",
+      "keyword": "Android",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42011,
+        42021
+      ],
+      "grades": [
+        2,
+        1
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-08",
+      "kind": "news",
+      "keyword": "보안",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42009,
+        42012,
+        42022,
+        42005,
+        42011
+      ],
+      "grades": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-09",
+      "kind": "news",
+      "keyword": "게임",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42019,
+        42018,
+        42004,
+        42010,
+        42016
+      ],
+      "grades": [
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "news-10",
+      "kind": "news",
+      "keyword": "검색",
+      "sort": "ES relevance (_score descending; no explicit tie-breaker)",
+      "status": 200,
+      "returnedIds": [
+        42010,
+        42020
+      ],
+      "grades": [
+        2,
+        1
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-01",
+      "kind": "project",
+      "keyword": "Spring",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43013,
+        43012,
+        43002,
+        43001
+      ],
+      "grades": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ndcgAt5": 0.7595063773744855,
+      "idcgAt5": 5.823465818787765,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-02",
+      "kind": "project",
+      "keyword": "React",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43020,
+        43014,
+        43004,
+        43003
+      ],
+      "grades": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "ndcgAt5": 0.7595063773744855,
+      "idcgAt5": 5.823465818787765,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-03",
+      "kind": "project",
+      "keyword": "Python 데이터",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43015,
+        43006,
+        43005
+      ],
+      "grades": [
+        1,
+        2,
+        2
+      ],
+      "ndcgAt5": 0.8145672023038535,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-04",
+      "kind": "project",
+      "keyword": "Kubernetes",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43016,
+        43008,
+        43007
+      ],
+      "grades": [
+        1,
+        2,
+        2
+      ],
+      "ndcgAt5": 0.8145672023038535,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-05",
+      "kind": "project",
+      "keyword": "핀테크",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43017,
+        43009
+      ],
+      "grades": [
+        1,
+        2
+      ],
+      "ndcgAt5": 0.5364180057596336,
+      "idcgAt5": 5.392789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-06",
+      "kind": "project",
+      "keyword": "하늘",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43021,
+        43019,
+        43017,
+        43015,
+        43013
+      ],
+      "grades": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ndcgAt5": 0.0,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-07",
+      "kind": "project",
+      "keyword": "Android",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43021,
+        43011
+      ],
+      "grades": [
+        1,
+        2
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-08",
+      "kind": "project",
+      "keyword": "보안",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43012,
+        43009
+      ],
+      "grades": [
+        2,
+        2
+      ],
+      "ndcgAt5": 1.0,
+      "idcgAt5": 4.892789260714372,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-09",
+      "kind": "project",
+      "keyword": "게임",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43019,
+        43018
+      ],
+      "grades": [
+        1,
+        2
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    },
+    {
+      "queryId": "project-10",
+      "kind": "project",
+      "keyword": "검색",
+      "sort": "LATEST",
+      "status": 200,
+      "returnedIds": [
+        43020,
+        43010
+      ],
+      "grades": [
+        1,
+        2
+      ],
+      "ndcgAt5": 0.7967075809905066,
+      "idcgAt5": 3.6309297535714578,
+      "forbiddenReturned": []
+    }
+  ],
+  "queryErrors": [],
+  "functional": [
+    {
+      "name": "exact-filter-서울백엔드",
+      "passed": true,
+      "expectedIds": [
+        41001,
+        41002,
+        41010
+      ],
+      "returnedIds": [
+        41001,
+        41002,
+        41010
+      ],
+      "excludedIds": [
+        41003,
+        41004,
+        41005,
+        41006,
+        41007,
+        41008,
+        41009,
+        41011,
+        41012,
+        41013,
+        41014,
+        41015,
+        41016,
+        41017,
+        41018,
+        41019,
+        41020,
+        41021,
+        41022,
+        41023
+      ]
+    },
+    {
+      "name": "exact-filter-부산프론트엔드",
+      "passed": true,
+      "expectedIds": [
+        41003
+      ],
+      "returnedIds": [
+        41003
+      ],
+      "excludedIds": [
+        41001,
+        41002,
+        41004,
+        41005,
+        41006,
+        41007,
+        41008,
+        41009,
+        41010,
+        41011,
+        41012,
+        41013,
+        41014,
+        41015,
+        41016,
+        41017,
+        41018,
+        41019,
+        41020,
+        41021,
+        41022,
+        41023
+      ]
+    },
+    {
+      "name": "exact-filter-대전데이터엔지니어",
+      "passed": true,
+      "expectedIds": [
+        41005
+      ],
+      "returnedIds": [
+        41005
+      ],
+      "excludedIds": [
+        41001,
+        41002,
+        41003,
+        41004,
+        41006,
+        41007,
+        41008,
+        41009,
+        41010,
+        41011,
+        41012,
+        41013,
+        41014,
+        41015,
+        41016,
+        41017,
+        41018,
+        41019,
+        41020,
+        41021,
+        41022,
+        41023
+      ]
+    },
+    {
+      "name": "partial-region-is-not-exact",
+      "passed": true
+    },
+    {
+      "name": "job-intended-zero",
+      "passed": true
+    },
+    {
+      "name": "job-quote-http200",
+      "passed": true
+    },
+    {
+      "name": "job-pages-live-ids",
+      "passed": true,
+      "expectedIds": [
+        41001,
+        41002,
+        41003,
+        41004,
+        41005,
+        41006,
+        41007,
+        41008,
+        41009,
+        41010,
+        41011,
+        41012,
+        41013,
+        41014,
+        41015,
+        41016,
+        41017,
+        41018,
+        41019,
+        41020,
+        41021,
+        41022,
+        41023
+      ],
+      "returnedIds": [
+        41002,
+        41005,
+        41006,
+        41007,
+        41008,
+        41009,
+        41010,
+        41011,
+        41015,
+        41017,
+        41003,
+        41004,
+        41012,
+        41013,
+        41014,
+        41016,
+        41019,
+        41020,
+        41021,
+        41022,
+        41001,
+        41018,
+        41023
+      ]
+    },
+    {
+      "name": "job-exact-total",
+      "passed": true
+    },
+    {
+      "name": "news-intended-zero",
+      "passed": true
+    },
+    {
+      "name": "news-quote-http200",
+      "passed": true
+    },
+    {
+      "name": "news-pages-live-ids",
+      "passed": true,
+      "expectedIds": [
+        42001,
+        42002,
+        42003,
+        42004,
+        42005,
+        42006,
+        42007,
+        42008,
+        42009,
+        42010,
+        42011,
+        42012,
+        42013,
+        42014,
+        42015,
+        42016,
+        42017,
+        42018,
+        42019,
+        42020,
+        42021,
+        42022,
+        42023
+      ],
+      "returnedIds": [
+        42002,
+        42005,
+        42006,
+        42007,
+        42008,
+        42009,
+        42010,
+        42011,
+        42015,
+        42017,
+        42003,
+        42004,
+        42012,
+        42013,
+        42014,
+        42016,
+        42019,
+        42020,
+        42021,
+        42022,
+        42001,
+        42018,
+        42023
+      ]
+    },
+    {
+      "name": "news-exact-total",
+      "passed": true
+    },
+    {
+      "name": "project-intended-zero",
+      "passed": true
+    },
+    {
+      "name": "project-quote-http200",
+      "passed": true
+    },
+    {
+      "name": "project-pages-live-ids",
+      "passed": true,
+      "expectedIds": [
+        43001,
+        43002,
+        43003,
+        43004,
+        43005,
+        43006,
+        43007,
+        43008,
+        43009,
+        43010,
+        43011,
+        43012,
+        43013,
+        43014,
+        43015,
+        43016,
+        43017,
+        43018,
+        43019,
+        43020,
+        43021
+      ],
+      "returnedIds": [
+        43021,
+        43020,
+        43019,
+        43018,
+        43017,
+        43016,
+        43015,
+        43014,
+        43013,
+        43012,
+        43011,
+        43010,
+        43009,
+        43008,
+        43007,
+        43006,
+        43005,
+        43004,
+        43003,
+        43002,
+        43001
+      ]
+    },
+    {
+      "name": "project-latest-sort",
+      "passed": true
+    },
+    {
+      "name": "project-candidate-page-no-fake-total",
+      "passed": true
+    },
+    {
+      "name": "project-VIEWS-contract",
+      "passed": true
+    },
+    {
+      "name": "project-LIKES-contract",
+      "passed": true
+    },
+    {
+      "name": "project-category-exact",
+      "passed": true,
+      "expectedIds": [
+        43018,
+        43010,
+        43002,
+        43001
+      ],
+      "returnedIds": [
+        43018,
+        43010,
+        43002,
+        43001
+      ]
+    },
+    {
+      "name": "unified-groups-visibility-Spring",
+      "passed": true
+    },
+    {
+      "name": "unified-groups-visibility-React",
+      "passed": true
+    },
+    {
+      "name": "unified-groups-visibility-검색",
+      "passed": true
+    },
+    {
+      "name": "unified-groups-visibility-\"",
+      "passed": true
+    },
+    {
+      "name": "anonymous-private",
+      "passed": true,
+      "expectedStatus": 401,
+      "actualStatus": 401
+    },
+    {
+      "name": "other-private",
+      "passed": true,
+      "expectedStatus": 403,
+      "actualStatus": 403
+    },
+    {
+      "name": "anonymous-deleted",
+      "passed": true,
+      "expectedStatus": 404,
+      "actualStatus": 404
+    },
+    {
+      "name": "anonymous-personal",
+      "passed": true,
+      "expectedStatus": 401,
+      "actualStatus": 401
+    },
+    {
+      "name": "owner-personal",
+      "passed": true,
+      "expectedStatus": 200,
+      "actualStatus": 200
+    },
+    {
+      "name": "owner-private-detail-after-latency",
+      "passed": true,
+      "expectedStatus": 200,
+      "actualStatus": 200
+    }
+  ],
+  "functionalPassed": 30,
+  "functionalTotal": 30,
+  "latency": {
+    "all": {
+      "requests": 150,
+      "errors": 0,
+      "p50Ms": 6.788083,
+      "p95Ms": 8.57091600000004
+    },
+    "job": {
+      "requests": 50,
+      "errors": 0,
+      "p50Ms": 6.613832999999847,
+      "p95Ms": 8.135375000000167
+    },
+    "news": {
+      "requests": 50,
+      "errors": 0,
+      "p50Ms": 6.220667000000013,
+      "p95Ms": 7.561249999999742
+    },
+    "project": {
+      "requests": 50,
+      "errors": 0,
+      "p50Ms": 7.595167000000291,
+      "p95Ms": 9.531250000000213
+    }
+  },
+  "httpErrors": 0,
+  "note": "합성 평가와 현재 정렬의 기준선. 관련성·기능·시간 지표를 합치지 않음. 기준선 후 데이터/라벨 변경 없음."
+}

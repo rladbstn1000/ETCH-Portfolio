@@ -1,0 +1,1129 @@
+{
+  "scope": "Observed exact same frozen React queries/documents. Different engine explanations and tokenization are evidence, not an approved ranking policy change.",
+  "rows": [
+    {
+      "queryId": "job-02",
+      "documentId": 41004,
+      "inputSha256": {
+        "score-explain-phase6-job-02-doc41004.json": "a902e64ce3d5b042093fc996aff1921d919de6f166e5136784c27820e58fdd31",
+        "score-explain-fresh-job-02-doc41004-tokens.json": "484135be2f1026b0356f544eb6400bbb3d9ba8a632c053c09a4b24e3d925078f"
+      },
+      "beforeScore": 1.8946381,
+      "afterScore": 1.8049891,
+      "scoreComponentsBefore": [
+        {
+          "description": "boost",
+          "value": 2.2
+        },
+        {
+          "description": "n, number of documents containing term",
+          "value": 3
+        },
+        {
+          "description": "N, total number of documents with field",
+          "value": 23
+        },
+        {
+          "description": "freq, occurrences of term within document",
+          "value": 1.0
+        },
+        {
+          "description": "k1, term saturation parameter",
+          "value": 1.2
+        },
+        {
+          "description": "b, length normalization parameter",
+          "value": 0.75
+        },
+        {
+          "description": "dl, length of field",
+          "value": 8.0
+        },
+        {
+          "description": "avgdl, average length of field",
+          "value": 7.695652
+        },
+        {
+          "description": "# clause",
+          "value": 0.0
+        },
+        {
+          "description": "deleted:F",
+          "value": 1.0
+        }
+      ],
+      "scoreComponentsAfter": [
+        {
+          "description": "boost",
+          "value": 2.2
+        },
+        {
+          "description": "n, number of documents containing term",
+          "value": 3
+        },
+        {
+          "description": "N, total number of documents with field",
+          "value": 23
+        },
+        {
+          "description": "freq, occurrences of term within document",
+          "value": 1.0
+        },
+        {
+          "description": "k1, term saturation parameter",
+          "value": 1.2
+        },
+        {
+          "description": "b, length normalization parameter",
+          "value": 0.75
+        },
+        {
+          "description": "dl, length of field",
+          "value": 9.0
+        },
+        {
+          "description": "avgdl, average length of field",
+          "value": 7.7391305
+        },
+        {
+          "description": "# clause",
+          "value": 0.0
+        },
+        {
+          "description": "deleted:F",
+          "value": 1.0
+        }
+      ],
+      "tokenComparison": {
+        "regions": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "서울",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            }
+          ],
+          "after": [
+            {
+              "token": "서울",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            }
+          ]
+        },
+        "companyName": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "가상",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "파도",
+              "start_offset": 3,
+              "end_offset": 5,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "게임",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 2
+            }
+          ],
+          "after": [
+            {
+              "token": "가상",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "파도",
+              "start_offset": 3,
+              "end_offset": 5,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "게임",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        },
+        "jobCategories": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "프론트엔드",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            }
+          ],
+          "after": [
+            {
+              "token": "프론트엔드",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            }
+          ]
+        },
+        "title": {
+          "sameTokens": false,
+          "before": [
+            {
+              "token": "합성",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "react",
+              "start_offset": 5,
+              "end_offset": 10,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "접근",
+              "start_offset": 11,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "디자인",
+              "start_offset": 15,
+              "end_offset": 18,
+              "type": "word",
+              "position": 4
+            },
+            {
+              "token": "시스템",
+              "start_offset": 19,
+              "end_offset": 22,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "담당",
+              "start_offset": 23,
+              "end_offset": 25,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "자",
+              "start_offset": 25,
+              "end_offset": 26,
+              "type": "word",
+              "position": 7
+            },
+            {
+              "token": "모집",
+              "start_offset": 27,
+              "end_offset": 29,
+              "type": "word",
+              "position": 8
+            }
+          ],
+          "after": [
+            {
+              "token": "합성",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "react",
+              "start_offset": 5,
+              "end_offset": 10,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "접근",
+              "start_offset": 11,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "성",
+              "start_offset": 13,
+              "end_offset": 14,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "디자인",
+              "start_offset": 15,
+              "end_offset": 18,
+              "type": "word",
+              "position": 4
+            },
+            {
+              "token": "시스템",
+              "start_offset": 19,
+              "end_offset": 22,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "담당",
+              "start_offset": 23,
+              "end_offset": 25,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "자",
+              "start_offset": 25,
+              "end_offset": 26,
+              "type": "word",
+              "position": 7
+            },
+            {
+              "token": "모집",
+              "start_offset": 27,
+              "end_offset": 29,
+              "type": "word",
+              "position": 8
+            }
+          ]
+        }
+      },
+      "beforeDocumentStatistics": {
+        "count": 24,
+        "deleted": 0,
+        "total_size_in_bytes": 14107
+      },
+      "afterDocumentStatistics": {
+        "count": 24,
+        "deleted": 0,
+        "total_size_in_bytes": 14723
+      }
+    },
+    {
+      "queryId": "job-02",
+      "documentId": 41003,
+      "inputSha256": {
+        "score-explain-phase6-job-02-doc41003.json": "31d0c9eb7bfc73ffa45cb522094864382f009111793c43a55bd26414b7153eed",
+        "score-explain-fresh-job-02-doc41003-tokens.json": "26c54d5fc1fdb63489aa6e1b5af9ec4a9820cda4ddedcef13713d12696b3931d"
+      },
+      "beforeScore": 1.8946381,
+      "afterScore": 1.8991032,
+      "scoreComponentsBefore": [
+        {
+          "description": "boost",
+          "value": 2.2
+        },
+        {
+          "description": "n, number of documents containing term",
+          "value": 3
+        },
+        {
+          "description": "N, total number of documents with field",
+          "value": 23
+        },
+        {
+          "description": "freq, occurrences of term within document",
+          "value": 1.0
+        },
+        {
+          "description": "k1, term saturation parameter",
+          "value": 1.2
+        },
+        {
+          "description": "b, length normalization parameter",
+          "value": 0.75
+        },
+        {
+          "description": "dl, length of field",
+          "value": 8.0
+        },
+        {
+          "description": "avgdl, average length of field",
+          "value": 7.695652
+        },
+        {
+          "description": "# clause",
+          "value": 0.0
+        },
+        {
+          "description": "deleted:F",
+          "value": 1.0
+        }
+      ],
+      "scoreComponentsAfter": [
+        {
+          "description": "boost",
+          "value": 2.2
+        },
+        {
+          "description": "n, number of documents containing term",
+          "value": 3
+        },
+        {
+          "description": "N, total number of documents with field",
+          "value": 23
+        },
+        {
+          "description": "freq, occurrences of term within document",
+          "value": 1.0
+        },
+        {
+          "description": "k1, term saturation parameter",
+          "value": 1.2
+        },
+        {
+          "description": "b, length normalization parameter",
+          "value": 0.75
+        },
+        {
+          "description": "dl, length of field",
+          "value": 8.0
+        },
+        {
+          "description": "avgdl, average length of field",
+          "value": 7.7391305
+        },
+        {
+          "description": "# clause",
+          "value": 0.0
+        },
+        {
+          "description": "deleted:F",
+          "value": 1.0
+        }
+      ],
+      "tokenComparison": {
+        "regions": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "부산",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            }
+          ],
+          "after": [
+            {
+              "token": "부산",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            }
+          ]
+        },
+        "companyName": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "가상",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "새벽",
+              "start_offset": 3,
+              "end_offset": 5,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "데이터",
+              "start_offset": 5,
+              "end_offset": 8,
+              "type": "word",
+              "position": 2
+            }
+          ],
+          "after": [
+            {
+              "token": "가상",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "새벽",
+              "start_offset": 3,
+              "end_offset": 5,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "데이터",
+              "start_offset": 5,
+              "end_offset": 8,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        },
+        "jobCategories": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "프론트엔드",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            }
+          ],
+          "after": [
+            {
+              "token": "프론트엔드",
+              "start_offset": 0,
+              "end_offset": 5,
+              "type": "word",
+              "position": 0
+            }
+          ]
+        },
+        "title": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "합성",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "react",
+              "start_offset": 5,
+              "end_offset": 10,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "typescript",
+              "start_offset": 11,
+              "end_offset": 21,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "웹",
+              "start_offset": 22,
+              "end_offset": 23,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "화면",
+              "start_offset": 24,
+              "end_offset": 26,
+              "type": "word",
+              "position": 4
+            },
+            {
+              "token": "담당",
+              "start_offset": 27,
+              "end_offset": 29,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "자",
+              "start_offset": 29,
+              "end_offset": 30,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "모집",
+              "start_offset": 31,
+              "end_offset": 33,
+              "type": "word",
+              "position": 7
+            }
+          ],
+          "after": [
+            {
+              "token": "합성",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "react",
+              "start_offset": 5,
+              "end_offset": 10,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "typescript",
+              "start_offset": 11,
+              "end_offset": 21,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "웹",
+              "start_offset": 22,
+              "end_offset": 23,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "화면",
+              "start_offset": 24,
+              "end_offset": 26,
+              "type": "word",
+              "position": 4
+            },
+            {
+              "token": "담당",
+              "start_offset": 27,
+              "end_offset": 29,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "자",
+              "start_offset": 29,
+              "end_offset": 30,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "모집",
+              "start_offset": 31,
+              "end_offset": 33,
+              "type": "word",
+              "position": 7
+            }
+          ]
+        }
+      },
+      "beforeDocumentStatistics": {
+        "count": 24,
+        "deleted": 0,
+        "total_size_in_bytes": 14107
+      },
+      "afterDocumentStatistics": {
+        "count": 24,
+        "deleted": 0,
+        "total_size_in_bytes": 14723
+      }
+    },
+    {
+      "queryId": "news-02",
+      "documentId": 42004,
+      "inputSha256": {
+        "score-explain-phase6-news-02-doc42004.json": "0a40c2c65f46afa16161941dffd1497227e66e4e1a2b0e538597a9f890e407b0",
+        "score-explain-fresh-news-02-doc42004-tokens.json": "2f7ae89d97b63b77af0fe768bf6a713cff534701ba93b7d824951b5c1284cc4e"
+      },
+      "beforeScore": 3.7802873,
+      "afterScore": 3.5768137,
+      "scoreComponentsBefore": [
+        {
+          "description": "boost",
+          "value": 4.4
+        },
+        {
+          "description": "n, number of documents containing term",
+          "value": 3
+        },
+        {
+          "description": "N, total number of documents with field",
+          "value": 23
+        },
+        {
+          "description": "freq, occurrences of term within document",
+          "value": 1.0
+        },
+        {
+          "description": "k1, term saturation parameter",
+          "value": 1.2
+        },
+        {
+          "description": "b, length normalization parameter",
+          "value": 0.75
+        },
+        {
+          "description": "dl, length of field",
+          "value": 7.0
+        },
+        {
+          "description": "avgdl, average length of field",
+          "value": 6.695652
+        },
+        {
+          "description": "# clause",
+          "value": 0.0
+        },
+        {
+          "description": "deleted:F",
+          "value": 1.0
+        }
+      ],
+      "scoreComponentsAfter": [
+        {
+          "description": "boost",
+          "value": 4.4
+        },
+        {
+          "description": "n, number of documents containing term",
+          "value": 3
+        },
+        {
+          "description": "N, total number of documents with field",
+          "value": 23
+        },
+        {
+          "description": "freq, occurrences of term within document",
+          "value": 1.0
+        },
+        {
+          "description": "k1, term saturation parameter",
+          "value": 1.2
+        },
+        {
+          "description": "b, length normalization parameter",
+          "value": 0.75
+        },
+        {
+          "description": "dl, length of field",
+          "value": 8.0
+        },
+        {
+          "description": "avgdl, average length of field",
+          "value": 6.7391305
+        },
+        {
+          "description": "# clause",
+          "value": 0.0
+        },
+        {
+          "description": "deleted:F",
+          "value": 1.0
+        }
+      ],
+      "tokenComparison": {
+        "companyName": {
+          "sameTokens": true,
+          "before": [
+            {
+              "token": "가상",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "파도",
+              "start_offset": 3,
+              "end_offset": 5,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "게임",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 2
+            }
+          ],
+          "after": [
+            {
+              "token": "가상",
+              "start_offset": 0,
+              "end_offset": 2,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "파도",
+              "start_offset": 3,
+              "end_offset": 5,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "게임",
+              "start_offset": 5,
+              "end_offset": 7,
+              "type": "word",
+              "position": 2
+            }
+          ]
+        },
+        "summary": {
+          "sameTokens": false,
+          "before": [
+            {
+              "token": "키보드",
+              "start_offset": 0,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "이동",
+              "start_offset": 4,
+              "end_offset": 6,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "화면",
+              "start_offset": 8,
+              "end_offset": 10,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "읽",
+              "start_offset": 11,
+              "end_offset": 12,
+              "type": "word",
+              "position": 4
+            },
+            {
+              "token": "순서",
+              "start_offset": 14,
+              "end_offset": 16,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "다루",
+              "start_offset": 18,
+              "end_offset": 21,
+              "type": "word",
+              "position": 8
+            },
+            {
+              "token": "실제",
+              "start_offset": 23,
+              "end_offset": 25,
+              "type": "word",
+              "position": 10
+            },
+            {
+              "token": "기사",
+              "start_offset": 26,
+              "end_offset": 28,
+              "type": "word",
+              "position": 11
+            },
+            {
+              "token": "기업",
+              "start_offset": 30,
+              "end_offset": 32,
+              "type": "word",
+              "position": 13
+            },
+            {
+              "token": "발표",
+              "start_offset": 33,
+              "end_offset": 35,
+              "type": "word",
+              "position": 14
+            },
+            {
+              "token": "아니",
+              "start_offset": 37,
+              "end_offset": 39,
+              "type": "word",
+              "position": 16
+            },
+            {
+              "token": "고정",
+              "start_offset": 40,
+              "end_offset": 42,
+              "type": "word",
+              "position": 18
+            },
+            {
+              "token": "데모",
+              "start_offset": 43,
+              "end_offset": 45,
+              "type": "word",
+              "position": 19
+            },
+            {
+              "token": "자료",
+              "start_offset": 46,
+              "end_offset": 48,
+              "type": "word",
+              "position": 20
+            },
+            {
+              "token": "이",
+              "start_offset": 48,
+              "end_offset": 51,
+              "type": "word",
+              "position": 21
+            }
+          ],
+          "after": [
+            {
+              "token": "키보드",
+              "start_offset": 0,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "이동과",
+              "start_offset": 4,
+              "end_offset": 7,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "화면",
+              "start_offset": 8,
+              "end_offset": 10,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "읽",
+              "start_offset": 11,
+              "end_offset": 12,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "순서",
+              "start_offset": 14,
+              "end_offset": 16,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "다루",
+              "start_offset": 18,
+              "end_offset": 21,
+              "type": "word",
+              "position": 7
+            },
+            {
+              "token": "실제",
+              "start_offset": 23,
+              "end_offset": 25,
+              "type": "word",
+              "position": 9
+            },
+            {
+              "token": "기사",
+              "start_offset": 26,
+              "end_offset": 28,
+              "type": "word",
+              "position": 10
+            },
+            {
+              "token": "기업",
+              "start_offset": 30,
+              "end_offset": 32,
+              "type": "word",
+              "position": 12
+            },
+            {
+              "token": "발표",
+              "start_offset": 33,
+              "end_offset": 35,
+              "type": "word",
+              "position": 13
+            },
+            {
+              "token": "아니",
+              "start_offset": 37,
+              "end_offset": 39,
+              "type": "word",
+              "position": 15
+            },
+            {
+              "token": "고정",
+              "start_offset": 40,
+              "end_offset": 42,
+              "type": "word",
+              "position": 17
+            },
+            {
+              "token": "데모",
+              "start_offset": 43,
+              "end_offset": 45,
+              "type": "word",
+              "position": 18
+            },
+            {
+              "token": "자료",
+              "start_offset": 46,
+              "end_offset": 48,
+              "type": "word",
+              "position": 19
+            },
+            {
+              "token": "이",
+              "start_offset": 48,
+              "end_offset": 51,
+              "type": "word",
+              "position": 20
+            }
+          ]
+        },
+        "title": {
+          "sameTokens": false,
+          "before": [
+            {
+              "token": "합성",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "기사",
+              "start_offset": 4,
+              "end_offset": 6,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "react",
+              "start_offset": 8,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "접근",
+              "start_offset": 14,
+              "end_offset": 16,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "디자인",
+              "start_offset": 18,
+              "end_offset": 21,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "시스템",
+              "start_offset": 22,
+              "end_offset": 25,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "이야기",
+              "start_offset": 26,
+              "end_offset": 29,
+              "type": "word",
+              "position": 7
+            }
+          ],
+          "after": [
+            {
+              "token": "합성",
+              "start_offset": 1,
+              "end_offset": 3,
+              "type": "word",
+              "position": 0
+            },
+            {
+              "token": "기사",
+              "start_offset": 4,
+              "end_offset": 6,
+              "type": "word",
+              "position": 1
+            },
+            {
+              "token": "react",
+              "start_offset": 8,
+              "end_offset": 13,
+              "type": "word",
+              "position": 2
+            },
+            {
+              "token": "접근",
+              "start_offset": 14,
+              "end_offset": 16,
+              "type": "word",
+              "position": 3
+            },
+            {
+              "token": "성",
+              "start_offset": 16,
+              "end_offset": 17,
+              "type": "word",
+              "position": 4
+            },
+            {
+              "token": "디자인",
+              "start_offset": 18,
+              "end_offset": 21,
+              "type": "word",
+              "position": 5
+            },
+            {
+              "token": "시스템",
+              "start_offset": 22,
+              "end_offset": 25,
+              "type": "word",
+              "position": 6
+            },
+            {
+              "token": "이야기",
+              "start_offset": 26,
+              "end_offset": 29,
+              "type": "word",
+              "position": 7
+            }
+          ]
+        }
+      },
+      "beforeDocumentStatistics": {
+        "count": 24,
+        "deleted": 0,
+        "total_size_in_bytes": 13799
+      },
+      "afterDocumentStatistics": {
+        "count": 24,
+        "deleted": 0,
+        "total_size_in_bytes": 14508
+      }
+    }
+  ],
+  "complete": true
+}

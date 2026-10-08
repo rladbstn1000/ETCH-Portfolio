@@ -1,0 +1,137 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '4.1.1'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.ssafy'
+version = '0.0.1-SNAPSHOT'
+
+// Boot 4.1 manages the supported Spring/Servlet/Elasticsearch stack as one BOM.
+// Same Tomcat 11 patch line: include the official September 2026 security fixes.
+// Remove when Boot manages 11.0.26+ and HTTP/security regression checks pass.
+ext['tomcat.version'] = '11.0.26'
+// Separate supported patch lines for HTTP/ES Jackson 3 and JJWT's Jackson 2 runtime.
+// Remove each override when Boot manages 3.1.7+/2.21.7+ including the September 2026
+// fixes (CVE-2026-91776/91777/89407/89425), not merely the August 68497 fix.
+ext['jackson-bom.version'] = '3.1.7'
+ext['jackson-2-bom.version'] = '2.21.7'
+// Official date-versioned Connector/J fixes the Oracle July 2026 issues in managed 9.7.0.
+// Remove when Boot's managed driver supersedes the affected 9.7.x line.
+ext['mysql.version'] = '26.7.0'
+
+// The public artifact contains neither the unused AWS runtime nor its implementation classes.
+// Separate output directories prevent a preceding full build from leaking AWS classes into it.
+def publicDemoArtifact = providers.gradleProperty('publicDemoArtifact').isPresent()
+if (publicDemoArtifact) {
+    layout.buildDirectory = layout.projectDirectory.dir('build/public-demo')
+    sourceSets.main.java.exclude('com/ssafy/etch/global/config/S3Config.java')
+    sourceSets.main.java.exclude('com/ssafy/etch/global/service/AwsS3StorageClient.java')
+    sourceSets.test.java.exclude('com/ssafy/etch/global/service/AwsS3StorageClientTest.java')
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.12.3'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.12.3'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-security-oauth2-client'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.1.1'
+    if (!publicDemoArtifact) {
+        implementation platform('software.amazon.awssdk:bom:2.55.7')
+        implementation 'software.amazon.awssdk:s3'
+        implementation 'software.amazon.awssdk:url-connection-client'
+    }
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // [Monitoring].
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
+    // Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    //테스트를 실행할 때만 H2 데이터베이스를 사용합니다.
+    testImplementation 'com.h2database:h2'
+    //Spring Security의 테스트 기능을 사용하기 위해 아래 의존성을 추가합니다.
+    testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
+
+    // fastapi
+    implementation 'org.springframework.boot:spring-boot-starter-webclient'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    maxHeapSize = '256m'
+    maxParallelForks = 1
+}
+
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+
+tasks.register('runtimeInventory') {
+    group = 'verification'
+    description = 'Record actual resolved modules and the packaged runtime; reject AWS in a public artifact.'
+    dependsOn tasks.named('bootJar')
+    doLast {
+        def sha256 = { File item ->
+            def digest = java.security.MessageDigest.getInstance('SHA-256')
+            item.withInputStream { stream ->
+                byte[] buffer = new byte[8192]
+                int count
+                while ((count = stream.read(buffer)) > 0) digest.update(buffer, 0, count)
+            }
+            digest.digest().encodeHex().toString()
+        }
+        def archive = tasks.named('bootJar').get().archiveFile.get().asFile
+        def modules = configurations.runtimeClasspath.resolvedConfiguration.resolvedArtifacts.collect {
+            [group: it.moduleVersion.id.group, name: it.name, version: it.moduleVersion.id.version,
+             file: it.file.name, sha256: sha256(it.file)]
+        }.sort { "${it.group}:${it.name}" }
+        def entries
+        new java.util.zip.ZipFile(archive).withCloseable { zip -> entries = zip.entries().collect { it.name } }
+        def forbidden = modules.findAll {
+            it.group.startsWith('com.amazonaws') || it.group.startsWith('software.amazon') || it.group == 'com.amazon.ion' ||
+                it.name.startsWith('spring-cloud-aws') || it.name == 'spring-cloud-starter-aws'
+        }
+        def awsClasses = entries.findAll { it.endsWith('/S3Config.class') || it.endsWith('/AwsS3StorageClient.class') }
+        if (publicDemoArtifact && (!forbidden.empty || !awsClasses.empty)) {
+            throw new GradleException('Public artifact unexpectedly contains AWS modules or implementation classes')
+        }
+        def report = [artifactFlavor: publicDemoArtifact ? 'public-demo' : 'full',
+            archive: archive.name,
+            archiveSha256: sha256(archive),
+            modules: modules, packagedLibraries: entries.findAll { it.startsWith('BOOT-INF/lib/') }.sort(),
+            awsImplementationClasses: awsClasses,
+            storageFacadeIncluded: entries.contains('BOOT-INF/classes/com/ssafy/etch/global/service/S3Service.class')]
+        def target = layout.buildDirectory.file('reports/runtime-inventory.json').get().asFile
+        target.parentFile.mkdirs()
+        target.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(report)) + '\n'
+        logger.lifecycle("Runtime inventory written for ${report.artifactFlavor}: ${modules.size()} modules")
+    }
+}

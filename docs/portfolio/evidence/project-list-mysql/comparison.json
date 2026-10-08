@@ -1,0 +1,4276 @@
+{
+  "status": "PASS",
+  "comparedRequests": 158,
+  "sameFixture": true,
+  "sameDatabaseSettingsColumnsIndexesTriggers": true,
+  "allResponseJsonEqual": true,
+  "allBeforeAfterBusinessFingerprintsEqual": true,
+  "rows": [
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 205,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 206,
+        "size": 1
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 69,
+        "size": 3
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 70,
+        "size": 3
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 21,
+        "size": 10
+      },
+      "returned": 5,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 22,
+        "size": 10
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 7,
+        "size": 30
+      },
+      "returned": 25,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 8,
+        "size": 30
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 3,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 4,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 5,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 6,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 3,
+        "size": 100
+      },
+      "returned": 5,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "popular",
+        "page": 4,
+        "size": 100
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 205,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 206,
+        "size": 1
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 69,
+        "size": 3
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 70,
+        "size": 3
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 21,
+        "size": 10
+      },
+      "returned": 5,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 22,
+        "size": 10
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 7,
+        "size": 30
+      },
+      "returned": 25,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 8,
+        "size": 30
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 3,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 4,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 5,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 6,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 3,
+        "size": 100
+      },
+      "returned": 5,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 4,
+        "size": 100
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 205,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 206,
+        "size": 1
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 69,
+        "size": 3
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 70,
+        "size": 3
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 21,
+        "size": 10
+      },
+      "returned": 5,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 22,
+        "size": 10
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 7,
+        "size": 30
+      },
+      "returned": 25,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 8,
+        "size": 30
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 3,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 4,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 5,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 6,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 3,
+        "size": 100
+      },
+      "returned": 5,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "latest",
+        "page": 4,
+        "size": 100
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 0,
+        "size": 0
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": -5,
+        "size": -1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 10001
+      },
+      "returned": 100,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": null,
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "unknown",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "same-author",
+      "request": {
+        "sort": "VIEWS",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 205,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 206,
+        "size": 1
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 69,
+        "size": 3
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 70,
+        "size": 3
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 10,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 10,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 12,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 10,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 10,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 12,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 21,
+        "size": 10
+      },
+      "returned": 5,
+      "distinctAuthors": 5,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 5,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 6,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 22,
+        "size": 10
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 7,
+        "size": 30
+      },
+      "returned": 25,
+      "distinctAuthors": 25,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 25,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 26,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 8,
+        "size": 30
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 3,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 4,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 5,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 6,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 1,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 2,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 3,
+        "size": 100
+      },
+      "returned": 5,
+      "distinctAuthors": 5,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 5,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 6,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "popular",
+        "page": 4,
+        "size": 100
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 205,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 206,
+        "size": 1
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 69,
+        "size": 3
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 70,
+        "size": 3
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 10,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 10,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 12,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 10,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 10,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 12,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 21,
+        "size": 10
+      },
+      "returned": 5,
+      "distinctAuthors": 5,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 5,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 6,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 22,
+        "size": 10
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 7,
+        "size": 30
+      },
+      "returned": 25,
+      "distinctAuthors": 25,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 25,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 26,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 8,
+        "size": 30
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 3,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 4,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 5,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 6,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 2,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 3,
+        "size": 100
+      },
+      "returned": 5,
+      "distinctAuthors": 5,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 5,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 6,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 4,
+        "size": 100
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 205,
+        "size": 1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 206,
+        "size": 1
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 69,
+        "size": 3
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 70,
+        "size": 3
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 10,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 10,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 12,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 10
+      },
+      "returned": 10,
+      "distinctAuthors": 10,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 10,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 12,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 21,
+        "size": 10
+      },
+      "returned": 5,
+      "distinctAuthors": 5,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 5,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 6,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 22,
+        "size": 10
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 7,
+        "size": 30
+      },
+      "returned": 25,
+      "distinctAuthors": 25,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 25,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 26,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 8,
+        "size": 30
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 3,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 4,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 5,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 6,
+        "size": 30
+      },
+      "returned": 30,
+      "distinctAuthors": 30,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 30,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 32,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 1,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 2,
+        "size": 100
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 3,
+        "size": 100
+      },
+      "returned": 5,
+      "distinctAuthors": 5,
+      "before": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 5,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 6,
+      "after": {
+        "list": 1,
+        "totalCount": 0,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 1,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "latest",
+        "page": 4,
+        "size": 100
+      },
+      "returned": 0,
+      "distinctAuthors": 0,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 2,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 0,
+        "size": 0
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": -5,
+        "size": -1
+      },
+      "returned": 1,
+      "distinctAuthors": 1,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 1,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 3,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "views",
+        "page": 1,
+        "size": 10001
+      },
+      "returned": 100,
+      "distinctAuthors": 100,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 100,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 102,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": null,
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "unknown",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    },
+    {
+      "scenario": "distinct-authors",
+      "request": {
+        "sort": "VIEWS",
+        "page": 1,
+        "size": 3
+      },
+      "returned": 3,
+      "distinctAuthors": 3,
+      "before": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 3,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "beforeTotal": 5,
+      "after": {
+        "list": 1,
+        "totalCount": 1,
+        "author": 0,
+        "standaloneLikeCount": 0,
+        "other": 0
+      },
+      "afterTotal": 2,
+      "responseEqual": true
+    }
+  ]
+}

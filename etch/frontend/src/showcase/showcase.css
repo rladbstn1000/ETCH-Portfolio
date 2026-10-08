@@ -1,0 +1,13 @@
+.showcase-shell { overflow-wrap: anywhere; }
+.showcase-hero { background-image: radial-gradient(ellipse at top left, #edf5ff, transparent 65%); }
+.showcase-primary, .showcase-secondary { display:inline-flex; align-items:center; justify-content:center; border-radius:.7rem; padding:.8rem 1.2rem; font-weight:600; }
+.showcase-primary { background:#087af5; color:white; }
+.showcase-primary:hover { background:#0766d1; }
+.showcase-secondary { background:white; border:1px solid #d1d5db; color:#374151; }
+.skip-link { position:fixed; top:-80px; left:10px; z-index:100; padding:12px; background:white; border:2px solid #007dfc; }
+.skip-link:focus { top:10px; }
+@media (max-width:640px) {
+  .showcase-shell [role="dialog"] { max-width:96vw; }
+  .showcase-shell .fc-toolbar-title { font-size:1.1rem; }
+  .showcase-shell .fc .fc-button { padding:.4em; font-size:.85rem; }
+}

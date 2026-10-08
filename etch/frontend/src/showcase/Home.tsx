@@ -1,0 +1,13 @@
+import { Link } from "react-router";
+import SearchSVG from "../assets/public/search.svg";
+
+export default function Home() {
+  return <div className="space-y-10">
+    <section className="showcase-hero grid items-center gap-8 overflow-hidden rounded-3xl border border-blue-100 bg-white p-7 sm:p-12 lg:grid-cols-[1.3fr_1fr]">
+      <div><p className="text-sm font-bold tracking-widest text-blue-600">EVERYONE, 취업!</p><h1 className="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">탐색에서 준비까지,<br /><span className="text-blue-600">ETCH를 둘러보세요.</span></h1><p className="mt-6 max-w-xl text-base leading-relaxed text-gray-600">채용·뉴스·프로젝트를 찾아보고, 가상 지원자의 자기소개서와 포트폴리오를 살펴보세요. 실제 개인정보 없이 화면의 흐름을 체험할 수 있습니다.</p><div className="mt-8 flex flex-wrap gap-3"><Link className="showcase-primary" to="/search?q=React">검색 체험하기 →</Link><Link className="showcase-secondary" to="/mypage">가상 마이페이지</Link></div></div>
+      <div className="rounded-2xl bg-blue-50 p-7"><img src={SearchSVG} alt="" className="mx-auto h-24 w-24" /><p className="mt-5 text-center font-semibold text-blue-900">한 가지 관심사, 세 가지 탐색</p><div className="mt-5 space-y-3">{[["채용", "React 개발자 · 서울"], ["뉴스", "접근성을 생각하는 화면 만들기"], ["프로젝트", "함께 준비하는 취업 노트"]].map(([type, text]) => <div key={type} className="flex gap-4 rounded-xl bg-white p-4 text-sm shadow-sm"><span className="font-bold text-blue-600">{type}</span><span>{text}</span></div>)}</div><p className="mt-4 text-center text-xs text-gray-500">공개용으로 새로 작성한 가상 자료</p></div>
+    </section>
+    <section aria-labelledby="explore"><h2 id="explore" className="mb-5 text-2xl font-bold">어디부터 살펴볼까요?</h2><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[["01", "채용 탐색", "달력·목록·직무 필터와 공고 상세", "/jobs"], ["02", "관심 뉴스", "가상 기사 요약과 예시 스크랩", "/news"], ["03", "프로젝트", "팀 작업의 소개와 기술 스택", "/projects"], ["04", "취업 준비", "자기소개서·포트폴리오·지원 현황", "/mypage"]].map(([n, title, description, to]) => <Link key={n} to={to} className="rounded-2xl border border-gray-200 bg-white p-6 transition hover:border-blue-300 hover:shadow-md"><span className="text-sm font-bold text-blue-600">{n}</span><h3 className="mt-4 text-lg font-bold">{title} →</h3><p className="mt-2 text-sm leading-relaxed text-gray-500">{description}</p></Link>)}</div></section>
+    <section className="rounded-2xl bg-slate-900 p-7 text-white sm:p-10"><p className="text-sm font-semibold text-blue-300">개인 고도화 기록</p><h2 className="mt-3 text-2xl font-bold">화면 뒤에서는 무엇을 고쳤을까요?</h2><p className="mt-3 max-w-3xl leading-relaxed text-slate-300">색인 장애 후 복구, 채용·뉴스 증분 전달, 검색 품질의 한계, MySQL 목록 조회까지. 실제 구현과 로컬 검증 기록을 네 가지 사례로 정리했습니다.</p><Link className="mt-6 inline-block rounded-lg bg-white px-5 py-3 font-semibold text-slate-900" to="/process">개발 과정 읽기 →</Link></section>
+  </div>;
+}

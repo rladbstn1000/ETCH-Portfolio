@@ -1,0 +1,108 @@
+{
+  "startingCommit": "48f155fb629fe1ad3553ca9a9c5a82ba9f4c619d",
+  "baselineCommit": "236bd387b45c029bc639aeee953b09bff79a6cdc",
+  "branch": "feat/project-list-mysql",
+  "historyMethod": {
+    "commit": "1a13eed^",
+    "sourcePath": "etch/backend/business-server/src/main/java/com/ssafy/etch/project/service/ProjectServiceImpl.java",
+    "fileSha256": "d3d81746aabf6d6fdaace1a0975e9fd22dd3e610b12d07f707efdd9f7758e2fa",
+    "method": "getAllProjects",
+    "reproduction": "Same method body verified after removing comments/whitespace and replacing MAX_PAGE_SIZE with its value 100; test method renamed; same existing current repository and read-only transaction; not a historical whole server deployment"
+  },
+  "currentServiceSha256": "0e28350dd2c215b2fe3e97f3af66754b8b73edebd181aad388bafd5bf69dd2c9",
+  "productionChange": {
+    "path": "etch/backend/business-server/src/main/java/com/ssafy/etch/project/repository/ProjectRepository.java",
+    "beforeSha256": "8eb3c95ba1e06a07f140c4c48089ad83e043f339275e9a3358c50a8944417c56",
+    "afterSha256": "8da38bdd7af21e70148d970a7484b47722cff4deda84cbc7c04edd78b7f7daae",
+    "scope": "Only the public DB-list repository method fetches the member to-one relation; no service/entity/DTO/security/DDL/build configuration change"
+  },
+  "sourceSha256": {
+    "etch/backend/business-server/src/main/java/com/ssafy/etch/project/repository/ProjectRepository.java": "8da38bdd7af21e70148d970a7484b47722cff4deda84cbc7c04edd78b7f7daae",
+    "etch/backend/business-server/src/test/java/com/ssafy/etch/project/service/MysqlQueryCapture.java": "691108b6699cccb63a2a750c3a50ca8571cac5ec3f3dddd2ef679b80d6705fc1",
+    "etch/backend/business-server/src/test/java/com/ssafy/etch/project/service/ProjectListMysqlAuthorizationIntegrationTest.java": "3c98402ab5389946edbdbe1ee5b25883f93eb86c6defd44aee70151720fc74ed",
+    "etch/backend/business-server/src/test/java/com/ssafy/etch/project/service/ProjectListMysqlIntegrationTest.java": "8833f60ccaf2c4d9feafb31a3769cc63dfc996d2ab54fe7ff31233f19a6a80ca",
+    "local/project-list-mysql.compose.yml": "8dcc616f8899abbfca8c565baa756cefe75210a54a58affb3c4e164abc6ac447",
+    "local/project-list-mysql.py": "fdcf0296661161b51e192d877837213e3f1b0130d4884ae8b0ebcc22d9b801ce"
+  },
+  "jar": {
+    "path": "etch/backend/business-server/build/project-list-mysql/libs/etch-0.0.1-SNAPSHOT.jar",
+    "bytes": 126346078,
+    "sha256": "ee596c3d97a8be750929dd9e35095b8b02adb628042f4c4b832c45b2daa37e96",
+    "flavor": "default full backend bootJar, not publicDemoArtifact",
+    "purpose": "Local project-list improvement verification only; not a released image or approved search candidate",
+    "imageBuilt": false,
+    "deployed": false
+  },
+  "executions": [
+    {
+      "stage": "current",
+      "scope": "MySQL baseline 158 + historical method 158 requests",
+      "log": ".local/project-list-mysql/runner-current-20260930T163359100829Z.log",
+      "logSha256": "c7ccc12b7acf5431ed978eb2bb0f21239dba91690edce71297c893c70f655a8b",
+      "result": "BUILD SUCCESSFUL",
+      "timestampBasis": "Log filename UTC; local KST 2026-10-01"
+    },
+    {
+      "stage": "improved",
+      "scope": "MySQL improved 158 requests",
+      "log": ".local/project-list-mysql/runner-improved-20260930T163532106829Z.log",
+      "logSha256": "db540c106fb3ee56c188c79e620f49b1532a33a133f1a2815c3b9af4e1262fc7",
+      "result": "BUILD SUCCESSFUL",
+      "timestampBasis": "Log filename UTC; local KST 2026-10-01"
+    },
+    {
+      "stage": "improved",
+      "scope": "50 related tests and bootJar",
+      "log": ".local/project-list-mysql/runner-improved-20260930T163641332633Z.log",
+      "logSha256": "a83e07dc9d175efda3f324d45f14ed3fbd29e7f32e603328afedb096802af71a",
+      "result": "BUILD SUCCESSFUL",
+      "timestampBasis": "Log filename UTC; local KST 2026-10-01"
+    }
+  ],
+  "evidenceSha256": {
+    "comparison.json": "264d7fc912774bd77ec391e54e7ed02bfc179a3cd667b771397e093f3cbbf94c",
+    "current-distinct-latest-100.analyze.txt": "4e4691d5f97d0434a5086cdacc42814fb4b9639c461249fdf88d8cfe99b1e8e9",
+    "current-distinct-latest-100.explain.json": "0d565e67f3db4f06f9664c38f1b0edf9c215fe98c1f9538dffbf99979c6976f6",
+    "current-distinct-latest-100.sql": "b36d424672fb63db9a961163c3a8a9f22a7753aa31694573e99f5c001b75935a",
+    "current-distinct-popular-100.analyze.txt": "465cdd01eb1697fbe8086f1cb34f1e692f8dc52709c7794f850f4dfa697e998b",
+    "current-distinct-popular-100.explain.json": "7c243649313f4c3d795576aafde00ddf3ab3523a110873a342d813f9fad5b230",
+    "current-distinct-popular-100.sql": "e2555a915b545571eece8b6945a4c18059a914eb1f947156d4859532c9af3c4f",
+    "current-distinct-views-100.analyze.txt": "907c6620cd614f2663003ffb4084566f96de8bcfba5ad2a8243f42c44aa870c4",
+    "current-distinct-views-100.explain.json": "0d565e67f3db4f06f9664c38f1b0edf9c215fe98c1f9538dffbf99979c6976f6",
+    "current-distinct-views-100.sql": "c089ebea8a742dcde2b48a8e3429095c2bd5b148d990cc023aee3772b49ab22e",
+    "current.json": "bacdcb40816ac5c87c232cb5bdf8c26e53f8f4b2d2837a668ede4d2285b501ec",
+    "environment.json": "50aa49a1cf571696d32ce9c36e8eb08eaf35c0f9bdff5858d6dcff6d65febfdd",
+    "gradle-cache-ready.json": "2cd990c9da3a94b501c8f5ec832bc281820d2bfc573b3fd3074784b07b52b401",
+    "improved-distinct-latest-100.analyze.txt": "5f4f060f5ec0a670105d9ca60037bf879498d91a7e83615d7785448d8fe160c6",
+    "improved-distinct-latest-100.explain.json": "44f2f3513f587517541ba524a62fc1f3cff353d3d3c76a2da6d01e64bedc0f96",
+    "improved-distinct-latest-100.sql": "370ca347f8329b3e3a8d86367385d9acf128cb0bb2567bcf7f9c490266645d6a",
+    "improved-distinct-popular-100.analyze.txt": "bd8e60867ab1cd3722db53623294824dc2ae9d3a6469daf5b2ae06ac73a9186a",
+    "improved-distinct-popular-100.explain.json": "bc5918369fa4f8f0df735e30813f5b2600b023baed68d87347e25db6d1635cf4",
+    "improved-distinct-popular-100.sql": "184ff48303d30ff8de973a144544bbcf7476138f971181788846e2bb63a41116",
+    "improved-distinct-views-100.analyze.txt": "9c2b6fbbcfb7f888606a59ec2229b7cfe7549eb2d0bc06635903c94ff86f8d74",
+    "improved-distinct-views-100.explain.json": "44f2f3513f587517541ba524a62fc1f3cff353d3d3c76a2da6d01e64bedc0f96",
+    "improved-distinct-views-100.sql": "90a602c24eb997100d5ab0e16a31ec8c1a092e5f4ae85a92f81eec395cf1b0fd",
+    "improved.json": "ffc7b66192f2aa05a9c7c6e4acb4dc46dccc16caa37017e34854ccce820fe42c",
+    "related-tests.json": "2221d2081844df72b86f7bd5fc3a526f8fc0c6434575238aebe7b8be4738aed3",
+    "preservation.json": "e457d97dbdd082d1b5ded2b7e548952dfac0367fc9173c0a895f89975ff9ade2"
+  },
+  "unchangedScope": {
+    "comparedTo": "48f155f",
+    "trackedPaths": [
+      "etch/frontend",
+      "docs/portfolio/SHOWCASE.md",
+      "docs/portfolio/PHASE8.md",
+      "docs/portfolio/phase8-search.md",
+      "docs/portfolio/evidence/phase8",
+      "docs/portfolio/evidence/showcase",
+      "README.md"
+    ],
+    "trackedDiffEmpty": true,
+    "showcaseFileCount": 9,
+    "showcaseBytes": 796101,
+    "showcaseManifestSha256": "94a388c33b9033102f2f60ec41bf02d9bd86e523f95eaec8b96db8345ee43a53",
+    "showcaseMatchesRecordedDeployment": true,
+    "publicSiteRevalidated": false,
+    "externalOperations": "None; prior deployment evidence reused only to compare local artifact identity"
+  }
+}

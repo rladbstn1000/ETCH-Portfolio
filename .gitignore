@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.local/
+**/__pycache__/
+
+**/node_modules/
+**/dist/
+**/dist-showcase/
+**/build/
+**/.gradle/
+**/test-results/
+**/playwright-report/
+*.zip
+*.tar.gz

@@ -1,0 +1,55 @@
+{
+  "properties": {
+    "jobId": {
+      "type": "long"
+    },
+    "title": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer"
+    },
+    "companyName": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer"
+    },
+    "regions": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "jobCategories": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer",
+      "fields": {
+        "keyword": {
+          "type": "keyword"
+        }
+      }
+    },
+    "industries": {
+      "type": "text",
+      "analyzer": "my_nori_analyzer"
+    },
+    "workType": {
+      "type": "keyword"
+    },
+    "educationLevel": {
+      "type": "keyword"
+    },
+    "openingDate": {
+      "type": "date"
+    },
+    "expirationDate": {
+      "type": "date"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "syncRevision": {
+      "type": "long"
+    }
+  }
+}
