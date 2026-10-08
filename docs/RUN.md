@@ -18,6 +18,8 @@ npm run preview:showcase
 
 `build`는 실제 API 모드, `build:showcase`는 가상 데이터·메모리 편집 모드입니다. showcase는 `.env`를 읽지 않으며 API·OAuth·WebSocket 연결 없이 실행됩니다. 앱의 설정을 바꿔 실제 인증을 우회하지 않습니다.
 
+공개 화면은 [etch-showcase.pages.dev](https://etch-showcase.pages.dev/), 기술 사례는 [/process](https://etch-showcase.pages.dev/process)입니다. 공통 메뉴의 소스 코드와 사례별 근거 링크는 이 공개 저장소를 새 탭으로 엽니다. 사용자가 누르는 GitHub 탐색과 체험판의 자동 네트워크 호출은 브라우저 검사에서 별도로 확인합니다.
+
 정적 산출물은 `dist-showcase/`에만 생성됩니다. 산출물 검사기는 아래 명령입니다. 새로 npm advisory를 조회하는 단계이며 결과를 과거 검사처럼 혼동하지 않습니다.
 
 ```sh
@@ -25,6 +27,8 @@ node scripts/check-showcase.mjs --refresh-audit --output ../../.local/showcase/r
 ```
 
 이번 제출 작업에서는 같은 lock의 과거 npm 감사 응답과 입력 hash를 재사용하고, **변경된 정적 파일·포함 모듈·라이선스·패턴은 새로 검사**했습니다. 재사용 응답은 Git에 넣지 않습니다. 일반 API 빌드 `dist/`는 이 정적 업로드 대상으로 사용하지 않습니다.
+
+2026-10-08 후속 정적 배포는 [공개 검증 기록](VALIDATION.md)과 [배포 manifest](evidence/showcase-deployment.json)에 연결했습니다. 이후 배포도 검토한 `dist-showcase/`만 기존 Pages 프로젝트 `etch-showcase`의 Production에 Direct Upload합니다. `main`은 Pages production 대상이며 로컬 작업 브랜치 이름과 별개입니다. 업로드 전에 소스 커밋·파일별 SHA-256을 확정하고, 공개된 파일과 헤더를 다시 대조합니다.
 
 ## MySQL·검색 서버
 

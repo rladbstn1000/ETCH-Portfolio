@@ -1,0 +1,108 @@
+{
+  "recordedAt": "2026-10-08T03:18:29.353480+00:00",
+  "sourceRepository": "https://github.com/rladbstn1000/ETCH-Portfolio",
+  "sourceCommit": "805872791b40885c7d769376de7025520e56cde0",
+  "frontendTree": "580c06837fec102c24ae7f4aca9d2dba8cb4bf0e",
+  "buildCommand": "npm run build:showcase",
+  "nodeVersion": "v22.14.0",
+  "project": "etch-showcase",
+  "productionBranch": "main",
+  "productionUrl": "https://etch-showcase.pages.dev/",
+  "uniqueUrl": "https://3cad4120.etch-showcase.pages.dev/",
+  "deploymentId": "3cad4120-2159-4c15-8969-6a1d8ba35b0e",
+  "previousDeploymentId": "7bb1fdec-1df1-492c-a30a-713ef16bc67c",
+  "fileCount": 9,
+  "totalBytes": 806632,
+  "files": [
+    {
+      "file": "_headers",
+      "bytes": 387,
+      "sha256": "cf4dc25919568eef7062405fe87aed7e98a2aa73311e3bb2d8c07a152ecc6dd3"
+    },
+    {
+      "file": "assets/etch-BqU0gRAH.svg",
+      "bytes": 305,
+      "sha256": "8784afcd715be1acab52fd99cf0bd90c7b2b3b0378e89c46d3b19396d20c2ddb"
+    },
+    {
+      "file": "assets/index-dIhFYviB.js",
+      "bytes": 721919,
+      "sha256": "9be39d2c59f449bc63c42c86b0074638dcbbb58b077798b2bef9b5a7af5e6606"
+    },
+    {
+      "file": "assets/index-zCYWgrw1.css",
+      "bytes": 68098,
+      "sha256": "a67e0727f13e11953099af39ee771ec5b1f5ac34cbfcb65436e9e60b19557846"
+    },
+    {
+      "file": "assets/placeholder-Co-8Hq3d.svg",
+      "bytes": 422,
+      "sha256": "01e543f14e27d91345ddbcbfe6694ed017581effb65391a3845e63020790a9ce"
+    },
+    {
+      "file": "assets/profile-BTKEvTGJ.svg",
+      "bytes": 288,
+      "sha256": "8a1fe69d9e6272a65721bd63fe63a5bd37a1fb7bacd9638263a3f7a0c4874c3e"
+    },
+    {
+      "file": "assets/search-BxjB-TBI.svg",
+      "bytes": 273,
+      "sha256": "7897f20f0fec04ea5de2abc04f87286b233074308a7f17391d310b04499ba1eb"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1186,
+      "sha256": "04df93a528d1b02b72d7827df571850f849f924e8d264b7ac91c279a45af206d"
+    },
+    {
+      "file": "licenses.html",
+      "bytes": 13754,
+      "sha256": "a5f1dc015264ef7606d99c3316bfc1c567b15300366f43d0f42e85cc674cc3cf"
+    }
+  ],
+  "zipSha256": "9ef52fa26dec1e90e52ab6b3ccf0686be00b03d55e42c874d6cf1325cb19d41c",
+  "zipBytes": 232539,
+  "rebuildMatchesTestedArtifact": true,
+  "delivery": "Dashboard Direct Upload; static files only",
+  "validation": {
+    "frontendTests": {
+      "showcase": 13,
+      "general": 31
+    },
+    "localChrome": "8 initial PASS; corrected nonexistent expected text in new link test, then 1 PASS",
+    "productionChrome": "8 initial PASS; one SVG body collection failure, unchanged strict test rerun 1 PASS",
+    "immutableChrome": "9 PASS",
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "normalApiOauthSocketExternalDataAttempts": 0,
+    "normalPageErrors": 0,
+    "deliberateNegativeControlKinds": 7,
+    "githubTargetsViaExplicitKeyboardNavigationPerOrigin": 9,
+    "allPayloadFilesAndSpaBytesAndHeadersMatch": true,
+    "publicPayloadFilesPerOrigin": 8,
+    "spaPathsPerOrigin": 5,
+    "settingsFile": "_headers verified by actual response headers, excluded from payload fetch",
+    "browser": "Installed Chrome with fresh contexts, blocked service workers, normal TLS validation",
+    "safari": "NOT_RUN",
+    "webkit": "NOT_RUN",
+    "physicalMobile": "NOT_RUN"
+  },
+  "reuse": [
+    "Unchanged backend, MySQL, ES, approved baseline and historical comparison evidence",
+    "Prior npm audit response verified against unchanged lock and response hash"
+  ],
+  "preserved": [
+    "Original ETCH remains private",
+    "Backend not deployed; no Docker/data/volume/checkpoint/PQ/DLQ mutations",
+    "Historical comparison failures and original approval unchanged",
+    "Credential owner actions remain pending"
+  ],
+  "notes": [
+    "App source commit differs from subsequent documentation commit",
+    "Raw browser logs and screenshots retained outside public Git",
+    "No CI activation, Functions, backend, Git history or environment files uploaded"
+  ]
+}
