@@ -33,12 +33,12 @@
 - Gradle wrapper JAR: 원본 바이트와 내장 Apache 2.0 고지 확인. 내려받은 라이브러리와 빌드 결과는 Git에 포함하지 않음.
 - 과거 이미지 inventory의 Nokogiri maintainer 메일: 공급자 MIT gemspec 메타데이터이며 실회원 데이터가 아님. 승인 hash가 묶인 원본 파일을 임의 편집하지 않음.
 
-## 향후 About 제안
+## 공개 저장소와 소개
 
-최종 공개 대상이 결정된 뒤 사용할 값이며 현재 원격 About은 변경하지 않았습니다.
+[ETCH-Portfolio](https://github.com/rladbstn1000/ETCH-Portfolio)는 검토한 독립 사본의 원격 저장소입니다. 기존 ETCH는 비공개로 유지합니다. 팀 당시 개발과 이후 개인 개선의 구분 및 기존 저작권 고지는 그대로입니다.
 
-- 설명: `채용·뉴스·프로젝트 탐색 서비스와 검색 색인 복구·목록 조회 개선 사례`
+- 설명: `채용·뉴스·프로젝트 탐색 서비스 ETCH의 개인 개선 코드와 검증 자료`
 - Website: `https://etch-showcase.pages.dev/`
-- Topics: `spring-boot`, `react`, `mysql`, `elasticsearch`, `transactional-outbox`
+- Topics: `spring-boot`, `elasticsearch`, `mysql`, `transactional-outbox`, `logstash`, `react`, `portfolio`
 
-새 정제 코드가 원격에 공개된 뒤에만 해당 구현을 공개 코드로 소개합니다.
+제출 사본의 초기 커밋은 검토한 현재 소스의 묶음입니다. 원본 Git 이력을 가져오거나 작성 시점을 소급하지 않았으며, 팀 구현 전체의 개인 저작을 증명하는 커밋으로 해석하지 않습니다.

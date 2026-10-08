@@ -25,7 +25,6 @@ IMAGE = 'sha256:ccbf152841ff331161b37aeb0f77a015e114245038c724a5a252482fd902c07f
 IMAGE_ID = 'sha256:ccbf152841ff331161b37aeb0f77a015e114245038c724a5a252482fd902c07f'
 LABEL = 'submission-project-list-mysql-v1'
 BUILDER = 'sha256:7be9e75385877e513e1150a37c5b9bb33115d0b4b5681e300c88648ebc859a63'
-GRADLE_SOURCE_VOLUME = 'etch-phase7-gradle'
 DEPENDENCIES = ROOT / '.local/submission-dependencies.json'
 BUILDER_REFERENCE = 'gradle:8.14.4-jdk17-noble@sha256:7be9e75385877e513e1150a37c5b9bb33115d0b4b5681e300c88648ebc859a63'
 if DEPENDENCIES.exists():
@@ -235,7 +234,7 @@ def dependencies():
     image_id = iid.read_text().strip()
     builder_id = docker('image', 'inspect', BUILDER, '--format', '{{.Id}}').stdout.strip()
     DEPENDENCIES.write_text(json.dumps({'mysqlImageId': image_id, 'builderImageId': builder_id,
-        'builderReference': BUILDER_REFERENCE, 'allowExistingDependencyCache': False,
+        'builderReference': BUILDER_REFERENCE,
         'mysqlDockerfileSha256': hashlib.sha256((ROOT / 'local/Dockerfile.mysql').read_bytes()).hexdigest(),
         'note': 'New local image/dependency resolution; this does not inherit historical search approval.'}, indent=2) + '\n')
     print('Candidate dependency images prepared from included Dockerfile and pinned upstream reference.')
@@ -244,8 +243,6 @@ def dependencies():
 def cache():
     own_guard()
     builder_id = docker('image', 'inspect', BUILDER, '--format', '{{.Id}}').stdout.strip()
-    allow_existing = not DEPENDENCIES.exists() or json.loads(DEPENDENCIES.read_text()).get('allowExistingDependencyCache') is True
-    source = resource('volume', GRADLE_SOURCE_VOLUME) if allow_existing else None
     target = STATE / 'gradle-cache'
     ready = STATE / 'gradle-cache-ready.json'
     if ready.exists():
@@ -257,32 +254,22 @@ def cache():
     if target.exists() and any(target.iterdir()):
         raise RuntimeError('부분 cache 사본을 덮어쓰지 않습니다. 상태를 먼저 확인하세요.')
     target.mkdir(exist_ok=True)
-    if not source:
-        # Resolve dependencies before entering the internal-only MySQL test network.
-        # No DB, credentials or original source/cache is mounted in this downloader.
-        resolver = STATE / 'resolve-dependencies.gradle'
-        resolver.write_text("allprojects { tasks.register('resolveSubmissionDependencies') { doLast { ['compileClasspath','runtimeClasspath','testCompileClasspath','testRuntimeClasspath'].each { configurations.getByName(it).resolve() } } } }\n")
-        docker('run', '--rm', '--name', PROJECT + '-dependency-resolve', '--network', 'bridge', '--user', '0',
-               '--memory=1200m', '--cpus=2', '-e', 'GRADLE_USER_HOME=/cache',
-               '-v', str(ROOT / 'etch/backend/business-server') + ':/workspace',
-               '-v', str(target) + ':/cache', '-v', str(resolver) + ':/task/resolve.gradle:ro',
-               '-w', '/workspace', BUILDER, 'gradle', '--no-daemon', '--no-build-cache', '--max-workers=1',
-               '-Dorg.gradle.jvmargs=-Xmx512m -XX:MaxMetaspaceSize=256m', '-I', '/task/resolve.gradle', 'resolveSubmissionDependencies')
-        ready.write_text(json.dumps({'sourceVolume': None, 'sourceMountMode': None, 'builderImage': BUILDER,
-            'builderImageId': builder_id, 'copyDirectory': '.local/project-list-mysql/gradle-cache',
-            'offline': True, 'preparedAt': datetime.now(timezone.utc).isoformat(),
-            'note': 'New candidate-owned cache resolved from public registries in a separate downloader; actual tests stay offline on the internal MySQL network.'}, indent=2) + '\n')
-        print('Candidate dependencies downloaded without database credentials; tests remain offline.')
-        return
-    docker('run', '--rm', '--name', PROJECT + '-cache-copy', '--network', 'none', '--user', '0',
-           '--memory=512m', '--cpus=1', '--label', 'org.etch.validation=' + LABEL,
-           '-v', GRADLE_SOURCE_VOLUME + ':/source:ro', '-v', str(target) + ':/target',
-           '--entrypoint', '/bin/sh', BUILDER, '-c', 'mkdir -p /target/caches && cp -a /source/caches/modules-2 /target/caches/')
-    ready.write_text(json.dumps({'sourceVolume': GRADLE_SOURCE_VOLUME, 'offline': True, 'sourceMountMode': 'read-only', 'copiedPaths': ['caches/modules-2'], 'excluded': ['build-cache', 'daemon', 'init scripts', 'source', 'credentials'], 'builderImage': BUILDER,
-                               'builderImageId': builder_id, 'copyDirectory': '.local/project-list-mysql/gradle-cache',
-                               'contains': 'Dependency/build cache only; original source, environment and DB not mounted during tests',
-                               'preparedAt': datetime.now(timezone.utc).isoformat()}, indent=2) + '\n')
-    print('Gradle cache 사본 준비: 원본 volume 읽기 전용, 이후 검증은 프로젝트 .local 사본만 사용.')
+    # Resolve dependencies before entering the internal-only MySQL test network.
+    # No DB, credentials or original source/cache is mounted in this downloader.
+    resolver = STATE / 'resolve-dependencies.gradle'
+    resolver.write_text("allprojects { tasks.register('resolveSubmissionDependencies') { doLast { ['compileClasspath','runtimeClasspath','testCompileClasspath','testRuntimeClasspath'].each { configurations.getByName(it).resolve() } } } }\n")
+    docker('run', '--rm', '--name', PROJECT + '-dependency-resolve', '--network', 'bridge', '--user', '0',
+           '--memory=1200m', '--cpus=2', '-e', 'GRADLE_USER_HOME=/cache',
+           '-v', str(ROOT / 'etch/backend/business-server') + ':/workspace',
+           '-v', str(target) + ':/cache', '-v', str(resolver) + ':/task/resolve.gradle:ro',
+           '-w', '/workspace', BUILDER, 'gradle', '--no-daemon', '--no-build-cache', '--max-workers=1',
+           '-Dorg.gradle.jvmargs=-Xmx512m -XX:MaxMetaspaceSize=256m', '-I', '/task/resolve.gradle', 'resolveSubmissionDependencies')
+    ready.write_text(json.dumps({'sourceVolume': None, 'sourceMountMode': None, 'builderImage': BUILDER,
+        'builderImageId': builder_id, 'copyDirectory': '.local/project-list-mysql/gradle-cache',
+        'offline': True, 'preparedAt': datetime.now(timezone.utc).isoformat(),
+        'note': 'New candidate-owned cache resolved from public registries in a separate downloader; actual tests stay offline on the internal MySQL network.'}, indent=2) + '\n')
+    print('Candidate dependencies downloaded without database credentials; tests remain offline.')
+    return
 
 
 def test(stage, selectors, build):
